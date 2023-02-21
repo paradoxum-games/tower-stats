@@ -39,7 +39,17 @@
                         "properties": {
                           "KnifeAngles": {
                             "type": "table",
-                            "default": 0
+                            "default": {
+                              "items": {
+                                "type": "number"
+                              },
+                              "type": "array",
+                              "title": "KnifeAngles",
+                              "default": [
+                                0
+                              ],
+                              "uniqueItems": true
+                            }
                           },
                           "MaxHits": {
                             "type": "number",

@@ -44,12 +44,12 @@
                           "ParryLength": {
                             "type": "number",
                             "default": 0,
-                            "description": "How long the gladiator's parry lasts"
+                            "description": "How long the tower's parry lasts"
                           },
                           "ParryCooldown": {
                             "type": "number",
                             "default": 0,
-                            "description": "How long until the gladiator can parry again"
+                            "description": "How long until the tower can parry again"
                           },
                           "MaxHits": {
                             "type": "number",
@@ -5039,7 +5039,7 @@
                           "ParryCooldown": {
                             "type": "number",
                             "default": 0,
-                            "description": "How long until the gladiator can parry again"
+                            "description": "How long until the tower can parry again"
                           },
                           "MaxHits": {
                             "type": "number",
@@ -5049,7 +5049,7 @@
                           "ParryLength": {
                             "type": "number",
                             "default": 0,
-                            "description": "How long the gladiator's parry lasts"
+                            "description": "How long the tower's parry lasts"
                           }
                         }
                       },
@@ -9059,7 +9059,17 @@
                         "properties": {
                           "KnifeAngles": {
                             "type": "table",
-                            "default": 0
+                            "default": {
+                              "items": {
+                                "type": "number"
+                              },
+                              "type": "array",
+                              "title": "KnifeAngles",
+                              "default": [
+                                0
+                              ],
+                              "uniqueItems": true
+                            }
                           },
                           "MaxHits": {
                             "type": "number",

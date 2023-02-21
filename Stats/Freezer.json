@@ -1,0 +1,85 @@
+{
+  "Freezer": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Attributes": {
+          "MaxFreezeTime": 0.8,
+          "ExplosionRadius": 3,
+          "DefenseMelt": 0,
+          "MinFreezeTime": 0.35
+        },
+        "Price": 350,
+        "Cooldown": 3,
+        "Range": 8,
+        "Damage": 0
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Attributes": {
+              "MaxFreezeTime": 1.35
+            },
+            "Range": 10,
+            "Extras": [
+              "Longer freeze"
+            ]
+          },
+          "Image": 3354968287.0,
+          "Title": "Frost Knuckles",
+          "Cost": 350
+        },
+        {
+          "Stats": {
+            "Range": 12
+          },
+          "Image": 3354969462.0,
+          "Title": "Frost Vision",
+          "Cost": 400
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Defense melting"
+            ],
+            "Attributes": {
+              "DefenseMelt": 5
+            },
+            "Damage": 2
+          },
+          "Image": 3354970959.0,
+          "Title": "Cold Snap",
+          "Cost": 1400
+        },
+        {
+          "Stats": {
+            "Cooldown": 1.5
+          },
+          "Image": 3354972102.0,
+          "Title": "Arctic Commando",
+          "Cost": 2500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "MaxFreezeTime": 1.5,
+              "DefenseMelt": 10
+            },
+            "Cooldown": 1,
+            "Range": 14,
+            "Extras": [
+              "Longer freeze",
+              "More defense reducing"
+            ]
+          },
+          "Image": 3280084231.0,
+          "Title": "Subzero Hero",
+          "Cost": 6000
+        }
+      ]
+    }
+  }
+}

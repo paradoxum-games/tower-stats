@@ -1,0 +1,296 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "Warden": {
+      "type": "object",
+      "title": "Warden",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {
+                          "CanBlock": {
+                            "type": "boolean",
+                            "default": 0
+                          },
+                          "ParryLength": {
+                            "type": "number",
+                            "default": 0,
+                            "description": "How long the gladiator's parry lasts"
+                          },
+                          "ParryCooldown": {
+                            "type": "number",
+                            "default": 0,
+                            "description": "How long until the gladiator can parry again"
+                          },
+                          "MaxHits": {
+                            "type": "number",
+                            "default": 0,
+                            "description": "How many enemies the attack can pierce"
+                          },
+                          "StunLength": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "CanStun": {
+                            "type": "boolean",
+                            "default": 0
+                          }
+                        }
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 11415010529.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "ParryLength": 1.25,
+                      "CanBlock": false,
+                      "ParryCooldown": 5,
+                      "MaxHits": 1,
+                      "StunLength": 1,
+                      "CanStun": false
+                    },
+                    "Cooldown": 1,
+                    "Range": 5,
+                    "Damage": 8
+                  },
+                  "Title": "Night Shift",
+                  "Cost": 350
+                },
+                {
+                  "Image": 11415012702.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "ParryLength": 1.25,
+                      "CanBlock": false,
+                      "ParryCooldown": 5,
+                      "MaxHits": 1,
+                      "StunLength": 1,
+                      "CanStun": false
+                    },
+                    "Range": 6,
+                    "Cooldown": 0.8,
+                    "Damage": 12
+                  },
+                  "Title": "Heavier Stick",
+                  "Cost": 750
+                },
+                {
+                  "Image": 11415014676.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "Stun Enemies"
+                    ],
+                    "Attributes": {
+                      "StunLength": 1.5,
+                      "CanBlock": false,
+                      "ParryCooldown": 5,
+                      "MaxHits": 1,
+                      "ParryLength": 1.25,
+                      "CanStun": true
+                    },
+                    "Cooldown": 0.8,
+                    "Range": 6,
+                    "Damage": 30
+                  },
+                  "Title": "Stunning Blows",
+                  "Cost": 5000
+                },
+                {
+                  "Image": 11415015418.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "Riot Shield",
+                      "Longer Stuns"
+                    ],
+                    "Attributes": {
+                      "CanBlock": true,
+                      "StunLength": 2,
+                      "ParryCooldown": 5,
+                      "MaxHits": 1,
+                      "ParryLength": 1.25,
+                      "CanStun": true
+                    },
+                    "Cooldown": 0.8,
+                    "Range": 7,
+                    "Damage": 80
+                  },
+                  "Title": "Riot Control",
+                  "Cost": 13500
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Attributes": {
+                  "type": "object",
+                  "title": "Attributes",
+                  "properties": {
+                    "CanBlock": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "ParryLength": {
+                      "default": 1.25,
+                      "type": "number"
+                    },
+                    "ParryCooldown": {
+                      "default": 5,
+                      "type": "number"
+                    },
+                    "MaxHits": {
+                      "default": 1,
+                      "type": "number"
+                    },
+                    "StunLength": {
+                      "default": 1,
+                      "type": "number"
+                    },
+                    "CanStun": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Price": {
+                  "default": 500,
+                  "type": "number"
+                },
+                "Range": {
+                  "default": 5,
+                  "type": "number"
+                },
+                "Cooldown": {
+                  "default": 1.2,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 5,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

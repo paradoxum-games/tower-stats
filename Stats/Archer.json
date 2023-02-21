@@ -1,0 +1,88 @@
+{
+  "Archer": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": true
+        },
+        "Attributes": {
+          "BurnDamage": 2,
+          "BurnTick": 1,
+          "EnemyBuff": 0.15,
+          "ArrowType": "Normal",
+          "MaxStun": 1,
+          "MaxHits": 1,
+          "MinStun": 0.25,
+          "BurnTime": 3
+        },
+        "Price": 400,
+        "Cooldown": 4,
+        "Range": 20,
+        "Damage": 3
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Cooldown": 3.2
+          },
+          "Image": 3280081327.0,
+          "Title": "Faster Reloading",
+          "Cost": 100
+        },
+        {
+          "Stats": {
+            "Range": 22,
+            "Detections": {
+              "Hidden": true
+            }
+          },
+          "Image": 524302408,
+          "Title": "Hawkeye",
+          "Cost": 250
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "MaxHits": 3
+            },
+            "Extras": [
+              "Arrow penetration"
+            ],
+            "Damage": 8
+          },
+          "Image": 141745478,
+          "Title": "Sharp Shooter",
+          "Cost": 400
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "ArrowType": "Normal"
+            },
+            "Range": 24,
+            "Cooldown": 2
+          },
+          "Image": 456573844,
+          "Title": "Mechanical Bow",
+          "Cost": 1000
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "More penetration"
+            ],
+            "Attributes": {
+              "MaxHits": 6
+            },
+            "Range": 26,
+            "Damage": 25
+          },
+          "Image": 106341823,
+          "Title": "Professional Archer",
+          "Cost": 3500
+        }
+      ]
+    }
+  }
+}

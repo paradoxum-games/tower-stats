@@ -1,0 +1,199 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "Hunter": {
+      "type": "object",
+      "title": "Hunter",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {}
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 3839040358.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": true,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Cooldown": 1.8,
+                    "Range": 16,
+                    "Damage": 3
+                  },
+                  "Title": "Faster Hands",
+                  "Cost": 300
+                },
+                {
+                  "Image": 3839041547.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": true,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Range": 17,
+                    "Cooldown": 1.8,
+                    "Damage": 6
+                  },
+                  "Title": "Experienced",
+                  "Cost": 600
+                },
+                {
+                  "Image": 3839042767.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": true,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Range": 20,
+                    "Cooldown": 1.8,
+                    "Damage": 12
+                  },
+                  "Title": "Better Gear",
+                  "Cost": 1000
+                },
+                {
+                  "Image": 3839043838.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": true,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Range": 22,
+                    "Cooldown": 1.8,
+                    "Damage": 24
+                  },
+                  "Title": "Deadliest Hunter",
+                  "Cost": 2500
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Price": {
+                  "default": 500,
+                  "type": "number"
+                },
+                "Range": {
+                  "default": 15,
+                  "type": "number"
+                },
+                "Cooldown": {
+                  "default": 2.5,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 3,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

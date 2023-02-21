@@ -1,0 +1,93 @@
+{
+  "Military Base": {
+    "Default": {
+      "Defaults": {
+        "Attributes": {
+          "SpawnTime": 60,
+          "UnitToSend": "Humvee"
+        },
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Cooldown": 0,
+        "Price": 400,
+        "Limit": 5,
+        "Range": 0,
+        "Damage": 0
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Extras": [
+              "Faster spawn time"
+            ],
+            "Attributes": {
+              "SpawnTime": 40,
+              "UnitToSend": "Humvee"
+            }
+          },
+          "Image": 3877874591.0,
+          "Title": "Mechanics",
+          "Cost": 200
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "More health"
+            ],
+            "Attributes": {
+              "UnitToSend": "Humvee 2"
+            }
+          },
+          "Image": 3877875003.0,
+          "Title": "Barbed Wire",
+          "Cost": 400
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Gunner"
+            ],
+            "Attributes": {
+              "UnitToSend": "Humvee 3"
+            }
+          },
+          "Image": 3877873543.0,
+          "Title": "Mounted Gunner",
+          "Cost": 1200
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "More health",
+              "More damage",
+              "Explosive shells"
+            ],
+            "Attributes": {
+              "UnitToSend": "Tank"
+            }
+          },
+          "Image": 3444568329.0,
+          "Title": "Tank",
+          "Cost": 6000
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "More health",
+              "More damage",
+              "Stronger explosions"
+            ],
+            "Attributes": {
+              "UnitToSend": "Railgun Tank"
+            }
+          },
+          "Image": 3444568580.0,
+          "Title": "Railgun Tank",
+          "Cost": 26000
+        }
+      ]
+    }
+  }
+}

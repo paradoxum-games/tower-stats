@@ -1,0 +1,386 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "Scout": {
+      "type": "object",
+      "title": "Scout",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {}
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 3278746120.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Range": 12,
+                    "Cooldown": 1.2,
+                    "Damage": 1
+                  },
+                  "Title": "Faster Reloading",
+                  "Cost": 50
+                },
+                {
+                  "Image": 3278749117.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Range": 14,
+                    "Cooldown": 1.2,
+                    "Damage": 2
+                  },
+                  "Title": "Precise Aiming",
+                  "Cost": 300
+                },
+                {
+                  "Image": 3278741672.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Cooldown": 0.8,
+                    "Range": 14,
+                    "Damage": 4
+                  },
+                  "Title": "Stronger Equipment",
+                  "Cost": 800
+                },
+                {
+                  "Image": 3279537687.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Cooldown": 0.4,
+                    "Range": 16,
+                    "Damage": 4
+                  },
+                  "Title": "Double Tap",
+                  "Cost": 2000
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Price": {
+                  "default": 200,
+                  "type": "number"
+                },
+                "Range": {
+                  "default": 12,
+                  "type": "number"
+                },
+                "Cooldown": {
+                  "default": 1.5,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 1,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        },
+        "Golden": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Golden Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {}
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 3032133716.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Range": 14,
+                    "Cooldown": 1.2,
+                    "Damage": 3
+                  },
+                  "Title": "Higher Caliber",
+                  "Cost": 125
+                },
+                {
+                  "Image": 115730014,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Cooldown": 1,
+                    "Range": 16,
+                    "Damage": 4
+                  },
+                  "Title": "Precise Aiming",
+                  "Cost": 500
+                },
+                {
+                  "Image": 3279537687.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Range": 18,
+                    "Cooldown": 0.4,
+                    "Damage": 15
+                  },
+                  "Title": "Double Tap",
+                  "Cost": 4000
+                },
+                {
+                  "Image": 3278741672.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Cooldown": 0.75,
+                    "Range": 18,
+                    "Damage": 10
+                  },
+                  "Title": "Golden Deagle",
+                  "Cost": 1500
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Price": {
+                  "default": 200,
+                  "type": "number"
+                },
+                "Range": {
+                  "default": 12,
+                  "type": "number"
+                },
+                "Cooldown": {
+                  "default": 1.2,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 2,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

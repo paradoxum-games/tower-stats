@@ -1,0 +1,70 @@
+{
+  "Commando": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Price": 1600,
+        "Cooldown": 0.5,
+        "Range": 12,
+        "Damage": 2
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 14
+          },
+          "Image": 3615110168.0,
+          "Title": "Radar Pack",
+          "Cost": 350
+        },
+        {
+          "Stats": {
+            "Range": 16,
+            "Extras": [
+              "Missile launcher"
+            ]
+          },
+          "Image": 3615110536.0,
+          "Title": "Disposable Missile",
+          "Cost": 700
+        },
+        {
+          "Stats": {
+            "Range": 17,
+            "Damage": 4
+          },
+          "Image": 3615110964.0,
+          "Title": "Recon Armor",
+          "Cost": 2000
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Quad missiles"
+            ],
+            "Range": 19,
+            "Damage": 10
+          },
+          "Image": 3615111324.0,
+          "Title": "Quad Launcher",
+          "Cost": 7500
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Really cool armor"
+            ],
+            "Range": 22,
+            "Damage": 22
+          },
+          "Image": 3615112120.0,
+          "Title": "Flex Armor",
+          "Cost": 10000
+        }
+      ]
+    }
+  }
+}

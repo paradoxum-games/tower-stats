@@ -1,0 +1,111 @@
+{
+  "Scout": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Price": 200,
+        "Cooldown": 1.5,
+        "Range": 12,
+        "Damage": 1
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Cooldown": 1.2
+          },
+          "Image": 3278746120.0,
+          "Title": "Faster Reloading",
+          "Cost": 50
+        },
+        {
+          "Stats": {
+            "Range": 14,
+            "Detections": {
+              "Hidden": true
+            },
+            "Damage": 2
+          },
+          "Image": 3278749117.0,
+          "Title": "Precise Aiming",
+          "Cost": 300
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.8,
+            "Damage": 4
+          },
+          "Image": 3278741672.0,
+          "Title": "Stronger Equipment",
+          "Cost": 800
+        },
+        {
+          "Stats": {
+            "Range": 16,
+            "Cooldown": 0.4
+          },
+          "Image": 3279537687.0,
+          "Title": "Double Tap",
+          "Cost": 2000
+        }
+      ]
+    },
+    "Golden": {
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 14,
+            "Damage": 3
+          },
+          "Image": 3032133716.0,
+          "Title": "Higher Caliber",
+          "Cost": 125
+        },
+        {
+          "Stats": {
+            "Range": 16,
+            "Cooldown": 1,
+            "Detections": {
+              "Hidden": true
+            },
+            "Damage": 4
+          },
+          "Image": 115730014,
+          "Title": "Precise Aiming",
+          "Cost": 500
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.4,
+            "Range": 18,
+            "Damage": 15
+          },
+          "Image": 3279537687.0,
+          "Title": "Double Tap",
+          "Cost": 4000
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.75,
+            "Damage": 10
+          },
+          "Image": 3278741672.0,
+          "Title": "Golden Deagle",
+          "Cost": 1500
+        }
+      ],
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Price": 200,
+        "Cooldown": 1.2,
+        "Range": 12,
+        "Damage": 2
+      }
+    }
+  }
+}

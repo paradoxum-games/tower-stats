@@ -1,0 +1,81 @@
+{
+  "Gladiator": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Abilities": [
+          {
+            "Name": "Warrior's Call",
+            "Debounce": 30,
+            "Price": 0,
+            "Level": 3,
+            "Icon": 4118870230.0
+          }
+        ],
+        "Cooldown": 1,
+        "Price": 300,
+        "Attributes": {
+          "ParryCooldown": 5,
+          "MaxHits": 3,
+          "ParryLength": 1.25
+        },
+        "Range": 5,
+        "Damage": 2
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Damage": 3
+          },
+          "Image": 3356186535.0,
+          "Title": "Warrior Armor",
+          "Cost": 250
+        },
+        {
+          "Stats": {
+            "Detections": {
+              "Hidden": true
+            },
+            "Damage": 5
+          },
+          "Image": 141745478,
+          "Title": "Dangersense",
+          "Cost": 500
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Warrior's Call"
+            ],
+            "Damage": 10
+          },
+          "Image": 4118882122.0,
+          "Title": "Extra Protection",
+          "Cost": 1500
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.75,
+            "Damage": 25
+          },
+          "Image": 16620737,
+          "Title": "Illumina",
+          "Cost": 2500
+        },
+        {
+          "Stats": {
+            "Range": 6,
+            "Cooldown": 0.5,
+            "Damage": 40
+          },
+          "Image": 16868189,
+          "Title": "Darkheart Swordsman",
+          "Cost": 6000
+        }
+      ]
+    }
+  }
+}

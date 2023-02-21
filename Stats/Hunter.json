@@ -1,0 +1,57 @@
+{
+  "Hunter": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": true
+        },
+        "Price": 500,
+        "Cooldown": 2.5,
+        "Range": 15,
+        "Damage": 3
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 16,
+            "Cooldown": 1.8
+          },
+          "Image": 3839040358.0,
+          "Title": "Faster Hands",
+          "Cost": 300
+        },
+        {
+          "Stats": {
+            "Detections": {
+              "Hidden": true
+            },
+            "Range": 17,
+            "Damage": 6
+          },
+          "Image": 3839041547.0,
+          "Title": "Experienced",
+          "Cost": 600
+        },
+        {
+          "Stats": {
+            "Range": 20,
+            "Damage": 12
+          },
+          "Image": 3839042767.0,
+          "Title": "Better Gear",
+          "Cost": 1000
+        },
+        {
+          "Stats": {
+            "Range": 22,
+            "Damage": 24
+          },
+          "Image": 3839043838.0,
+          "Title": "Deadliest Hunter",
+          "Cost": 2500
+        }
+      ]
+    }
+  }
+}

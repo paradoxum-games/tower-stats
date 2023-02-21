@@ -1,0 +1,404 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "Elf Camp": {
+      "type": "object",
+      "title": "Elf Camp",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {
+                          "GiftBomberElfLimit": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "RippedElfSpawnTime": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "RippedElfLimit": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "CannoneerElfSpawnTime": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "GunnerElfSpawnTime": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "GuardianElfLimit": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "CannoneerElfLimit": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "GiftBomberElfSpawnTime": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "SnowballElfLimit": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "SnowballElfSpawnTime": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "GunnerElfLimit": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "GuardianElfSpawnTime": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "BasicElfSpawnTime": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "BomberElfSpawnTime": {
+                            "type": "number",
+                            "default": 0
+                          }
+                        }
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "SpawnTime": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 11756694085.0,
+                  "Stats": {
+                    "Extras": [
+                      "Faster spawning"
+                    ],
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "BasicElfSpawnTime": 12
+                    },
+                    "SpawnTime": 40,
+                    "Range": 0,
+                    "Cooldown": 0,
+                    "Damage": 0
+                  },
+                  "Title": "Winter Training",
+                  "Cost": 150
+                },
+                {
+                  "Image": 11866247025.0,
+                  "Stats": {
+                    "Extras": [
+                      "Snowball Elfs"
+                    ],
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "BasicElfSpawnTime": 12,
+                      "SnowballElfLimit": 4,
+                      "SnowballElfSpawnTime": 20
+                    },
+                    "SpawnTime": 40,
+                    "Range": 0,
+                    "Cooldown": 0,
+                    "Damage": 0
+                  },
+                  "Title": "Snowball Fight",
+                  "Cost": 325
+                },
+                {
+                  "Image": 11866247585.0,
+                  "Stats": {
+                    "Extras": [
+                      "Bomber Elfs"
+                    ],
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "BasicElfSpawnTime": 12,
+                      "BomberElfSpawnTime": 25,
+                      "SnowballElfLimit": 4,
+                      "SnowballElfSpawnTime": 20
+                    },
+                    "SpawnTime": 40,
+                    "Range": 0,
+                    "Cooldown": 0,
+                    "Damage": 0
+                  },
+                  "Title": "Explosive Surprise",
+                  "Cost": 1500
+                },
+                {
+                  "Image": 11866248209.0,
+                  "Stats": {
+                    "Extras": [
+                      "Guardian Elfs",
+                      "Cannoneer Elfs"
+                    ],
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "CannoneerElfLimit": 4,
+                      "GuardianElfSpawnTime": 20,
+                      "SnowballElfLimit": 4,
+                      "SnowballElfSpawnTime": 20,
+                      "CannoneerElfSpawnTime": 25,
+                      "GuardianElfLimit": 4,
+                      "BasicElfSpawnTime": 12,
+                      "BomberElfSpawnTime": 25
+                    },
+                    "SpawnTime": 40,
+                    "Range": 0,
+                    "Cooldown": 0,
+                    "Damage": 0
+                  },
+                  "Title": "Winter Workshop",
+                  "Cost": 3500
+                },
+                {
+                  "Image": 11866248664.0,
+                  "Stats": {
+                    "Extras": [
+                      "Ripped Elfs",
+                      "Gift Bombers",
+                      "Gunner Elfs"
+                    ],
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "GiftBomberElfLimit": 2,
+                      "RippedElfSpawnTime": 80,
+                      "RippedElfLimit": 2,
+                      "BasicElfSpawnTime": 12,
+                      "GunnerElfSpawnTime": 25,
+                      "GuardianElfLimit": 4,
+                      "GiftBomberElfSpawnTime": 50,
+                      "GuardianElfSpawnTime": 20,
+                      "SnowballElfLimit": 4,
+                      "SnowballElfSpawnTime": 20,
+                      "GunnerElfLimit": 4,
+                      "CannoneerElfSpawnTime": 25,
+                      "CannoneerElfLimit": 4,
+                      "BomberElfSpawnTime": 25
+                    },
+                    "SpawnTime": 40,
+                    "Range": 0,
+                    "Cooldown": 0,
+                    "Damage": 0
+                  },
+                  "Title": "X-Mas Army",
+                  "Cost": 9500
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Limit": {
+                  "default": 2,
+                  "type": "number"
+                },
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Range": {
+                  "default": 0,
+                  "type": "number"
+                },
+                "Price": {
+                  "default": 300,
+                  "type": "number"
+                },
+                "Attributes": {
+                  "type": "object",
+                  "title": "Attributes",
+                  "properties": {
+                    "GiftBomberElfLimit": {
+                      "type": "number",
+                      "default": 0
+                    },
+                    "RippedElfSpawnTime": {
+                      "type": "number",
+                      "default": 0
+                    },
+                    "RippedElfLimit": {
+                      "type": "number",
+                      "default": 0
+                    },
+                    "CannoneerElfSpawnTime": {
+                      "type": "number",
+                      "default": 0
+                    },
+                    "GunnerElfSpawnTime": {
+                      "type": "number",
+                      "default": 0
+                    },
+                    "GuardianElfLimit": {
+                      "type": "number",
+                      "default": 0
+                    },
+                    "CannoneerElfLimit": {
+                      "type": "number",
+                      "default": 0
+                    },
+                    "GiftBomberElfSpawnTime": {
+                      "type": "number",
+                      "default": 0
+                    },
+                    "SnowballElfLimit": {
+                      "type": "number",
+                      "default": 0
+                    },
+                    "SnowballElfSpawnTime": {
+                      "type": "number",
+                      "default": 0
+                    },
+                    "GunnerElfLimit": {
+                      "type": "number",
+                      "default": 0
+                    },
+                    "GuardianElfSpawnTime": {
+                      "type": "number",
+                      "default": 0
+                    },
+                    "BasicElfSpawnTime": {
+                      "default": 15,
+                      "type": "number"
+                    },
+                    "BomberElfSpawnTime": {
+                      "type": "number",
+                      "default": 0
+                    }
+                  }
+                },
+                "Cooldown": {
+                  "default": 0,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 0,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,294 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "Swarmer": {
+      "type": "object",
+      "title": "Swarmer",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {
+                          "StingTime": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "ExplosionRadius": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "BeeDamage": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "TickRate": {
+                            "type": "number",
+                            "default": 0
+                          }
+                        }
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 4865025162.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "StingTime": 4,
+                      "ExplosionRadius": 8,
+                      "BeeDamage": 1,
+                      "TickRate": 0.75
+                    },
+                    "Cooldown": 2,
+                    "Range": 12,
+                    "Damage": 1
+                  },
+                  "Title": "Aggressive Bees",
+                  "Cost": 250
+                },
+                {
+                  "Image": 4865025274.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "BeeDamage": 1,
+                      "ExplosionRadius": 8,
+                      "StingTime": 4,
+                      "TickRate": 0.75
+                    },
+                    "Cooldown": 2,
+                    "Range": 16,
+                    "Damage": 1
+                  },
+                  "Title": "Improve Handling",
+                  "Cost": 300
+                },
+                {
+                  "Image": 4865025421.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "BeeDamage": 1,
+                      "ExplosionRadius": 8,
+                      "StingTime": 4,
+                      "TickRate": 0.75
+                    },
+                    "Cooldown": 1,
+                    "Range": 18,
+                    "Damage": 1
+                  },
+                  "Title": "Bee Gun",
+                  "Cost": 500
+                },
+                {
+                  "Image": 4865025564.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "More bee damage",
+                      "Even faster tick",
+                      "Longer stings",
+                      "Beehive grenade"
+                    ],
+                    "Attributes": {
+                      "BeeDamage": 2,
+                      "ExplosionRadius": 8,
+                      "StingTime": 6,
+                      "TickRate": 0.5
+                    },
+                    "Range": 18,
+                    "Cooldown": 1,
+                    "Damage": 1
+                  },
+                  "Title": "Beehive of Madness",
+                  "Cost": 1200
+                },
+                {
+                  "Image": 4865025676.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "More bee damage",
+                      "Faster tick",
+                      "Longer strings"
+                    ],
+                    "Attributes": {
+                      "BeeDamage": 4,
+                      "ExplosionRadius": 8,
+                      "StingTime": 8,
+                      "TickRate": 0.25
+                    },
+                    "Cooldown": 0.5,
+                    "Range": 20,
+                    "Damage": 1
+                  },
+                  "Title": "Beekeeper of Death",
+                  "Cost": 4000
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Attributes": {
+                  "type": "object",
+                  "title": "Attributes",
+                  "properties": {
+                    "StingTime": {
+                      "default": 3,
+                      "type": "number"
+                    },
+                    "ExplosionRadius": {
+                      "default": 8,
+                      "type": "number"
+                    },
+                    "BeeDamage": {
+                      "default": 1,
+                      "type": "number"
+                    },
+                    "TickRate": {
+                      "default": 1,
+                      "type": "number"
+                    }
+                  }
+                },
+                "Price": {
+                  "default": 300,
+                  "type": "number"
+                },
+                "Range": {
+                  "default": 12,
+                  "type": "number"
+                },
+                "Cooldown": {
+                  "default": 2,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 1,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

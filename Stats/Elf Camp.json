@@ -1,0 +1,100 @@
+{
+  "Elf Camp": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Limit": 2,
+        "Cooldown": 0,
+        "Price": 300,
+        "Attributes": {
+          "BasicElfSpawnTime": 15
+        },
+        "Range": 0,
+        "Damage": 0
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "SpawnTime": 40,
+            "Extras": [
+              "Faster spawning"
+            ],
+            "Attributes": {
+              "BasicElfSpawnTime": 12
+            }
+          },
+          "Image": 11756694085.0,
+          "Title": "Winter Training",
+          "Cost": 150
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Snowball Elfs"
+            ],
+            "Attributes": {
+              "SnowballElfLimit": 4,
+              "SnowballElfSpawnTime": 20
+            }
+          },
+          "Image": 11866247025.0,
+          "Title": "Snowball Fight",
+          "Cost": 325
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Bomber Elfs"
+            ],
+            "Attributes": {
+              "BomberElfSpawnTime": 25
+            }
+          },
+          "Image": 11866247585.0,
+          "Title": "Explosive Surprise",
+          "Cost": 1500
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Guardian Elfs",
+              "Cannoneer Elfs"
+            ],
+            "Attributes": {
+              "CannoneerElfSpawnTime": 25,
+              "CannoneerElfLimit": 4,
+              "GuardianElfLimit": 4,
+              "GuardianElfSpawnTime": 20
+            }
+          },
+          "Image": 11866248209.0,
+          "Title": "Winter Workshop",
+          "Cost": 3500
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Ripped Elfs",
+              "Gift Bombers",
+              "Gunner Elfs"
+            ],
+            "Attributes": {
+              "GunnerElfLimit": 4,
+              "GiftBomberElfLimit": 2,
+              "RippedElfSpawnTime": 80,
+              "RippedElfLimit": 2,
+              "GunnerElfSpawnTime": 25,
+              "GiftBomberElfSpawnTime": 50
+            }
+          },
+          "Image": 11866248664.0,
+          "Title": "X-Mas Army",
+          "Cost": 9500
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "DJ Booth": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Limit": 1,
+        "Cooldown": 0,
+        "Price": 600,
+        "Attributes": {
+          "RangeBuff": 10,
+          "Discount": 0
+        },
+        "Range": 15,
+        "Damage": 0
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 17
+          },
+          "Image": 5523221280.0,
+          "Title": "Laptop Studio",
+          "Cost": 300
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "15% range buff"
+            ],
+            "Attributes": {
+              "RangeBuff": 15
+            }
+          },
+          "Image": 5523222880.0,
+          "Title": "Party Mode",
+          "Cost": 850
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "Discount": 10
+            },
+            "Range": 18,
+            "Extras": [
+              "10% discount buff"
+            ]
+          },
+          "Image": 5523224020.0,
+          "Title": "Thrifty Music",
+          "Cost": 2500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "RangeBuff": 25
+            },
+            "Range": 18,
+            "Extras": [
+              "25% range buff"
+            ]
+          },
+          "Image": 5523225033.0,
+          "Title": "Audio Visualizer",
+          "Cost": 4000
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "RangeBuff": 35,
+              "Discount": 20
+            },
+            "Range": 20,
+            "Extras": [
+              "35% range buff",
+              "20% discount buff"
+            ]
+          },
+          "Image": 5523225756.0,
+          "Title": "Apocalypse Rave",
+          "Cost": 9000
+        }
+      ]
+    }
+  }
+}

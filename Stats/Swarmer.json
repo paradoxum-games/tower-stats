@@ -1,0 +1,102 @@
+{
+  "Swarmer": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Abilities": [
+          {
+            "Name": "Swarm",
+            "Debounce": 15,
+            "Price": 0,
+            "Level": 4,
+            "Icon": 4865025806.0
+          }
+        ],
+        "Cooldown": 2,
+        "Price": 300,
+        "Attributes": {
+          "BeeDamage": 1,
+          "ExplosionRadius": 8,
+          "StingTime": 3,
+          "TickRate": 1
+        },
+        "Range": 12,
+        "Damage": 1
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Attributes": {
+              "StingTime": 4,
+              "TickRate": 0.75
+            },
+            "Extas": [
+              "Faster tick rate",
+              "Longer stings"
+            ]
+          },
+          "Image": 4865025162.0,
+          "Title": "Aggressive Bees",
+          "Cost": 250
+        },
+        {
+          "Stats": {
+            "Range": 16
+          },
+          "Image": 4865025274.0,
+          "Title": "Improve Handling",
+          "Cost": 300
+        },
+        {
+          "Stats": {
+            "Range": 18,
+            "Cooldown": 1
+          },
+          "Image": 4865025421.0,
+          "Title": "Bee Gun",
+          "Cost": 500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "StingTime": 6,
+              "BeeDamage": 2,
+              "TickRate": 0.5
+            },
+            "Extras": [
+              "More bee damage",
+              "Even faster tick",
+              "Longer stings",
+              "Beehive grenade"
+            ]
+          },
+          "Image": 4865025564.0,
+          "Title": "Beehive of Madness",
+          "Cost": 1200
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.5,
+            "Range": 20,
+            "Attributes": {
+              "StingTime": 8,
+              "BeeDamage": 4,
+              "TickRate": 0.25
+            },
+            "Extras": [
+              "More bee damage",
+              "Faster tick",
+              "Longer strings"
+            ]
+          },
+          "Image": 4865025676.0,
+          "Title": "Beekeeper of Death",
+          "Cost": 4000
+        }
+      ]
+    }
+  }
+}

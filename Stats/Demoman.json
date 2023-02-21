@@ -1,0 +1,67 @@
+{
+  "Demoman": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Flying": false,
+          "Hidden": false,
+          "Lead": true
+        },
+        "Attributes": {
+          "ExplosionRadius": 2.5
+        },
+        "Price": 300,
+        "Cooldown": 2.5,
+        "Range": 7,
+        "Damage": 3
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 10,
+            "Cooldown": 2
+          },
+          "Image": 0,
+          "Title": "Further Throwing",
+          "Cost": 150
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "ExplosionRadius": 3.5
+            },
+            "Damage": 6
+          },
+          "Image": 5523227714.0,
+          "Title": "Steil Grenade",
+          "Cost": 525
+        },
+        {
+          "Stats": {
+            "Cooldown": 1.5,
+            "Damage": 12
+          },
+          "Image": 5523228733.0,
+          "Title": "Chinalake",
+          "Cost": 1500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "ExplosionRadius": 4
+            },
+            "Extras": [
+              "Bigger explosion"
+            ],
+            "Cooldown": 1.2,
+            "Range": 14,
+            "Damage": 28
+          },
+          "Image": 5523229364.0,
+          "Title": "Collateral Damage",
+          "Cost": 6000
+        }
+      ]
+    }
+  }
+}

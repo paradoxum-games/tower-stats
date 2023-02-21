@@ -1,0 +1,98 @@
+{
+  "Sledger": {
+    "Default": {
+      "Defaults": {
+        "Attributes": {
+          "CanFreeze": false,
+          "MinFreezeTime": 1.5,
+          "FreezeBonus": false,
+          "MaxHits": 1,
+          "DefenseMelt": 0,
+          "MaxFreezeTime": 2.5
+        },
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Cooldown": 2,
+        "Price": 350,
+        "Limit": 6,
+        "Range": 6,
+        "Damage": 4
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Damage": 6
+          },
+          "Image": 3356186535.0,
+          "Title": "Heavier Swings",
+          "Cost": 250
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "Lead": true,
+              "MaxHits": 2
+            },
+            "Detections": {
+              "Lead": true
+            },
+            "Cooldown": 1.75,
+            "Extras": [
+              "2 max hits."
+            ],
+            "Damage": 8
+          },
+          "Image": 141745478,
+          "Title": "Better Sledge",
+          "Cost": 500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "CanFreeze": true
+            },
+            "Extras": [
+              "Freeze enemies on hit."
+            ],
+            "Damage": 15
+          },
+          "Image": 4118882122.0,
+          "Title": "Freezing Strikes",
+          "Cost": 1500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "FreezeBonus": true
+            },
+            "Cooldown": 1.5,
+            "Extras": [
+              "Frozen enemies take x2 damage."
+            ],
+            "Damage": 35
+          },
+          "Image": 16620737,
+          "Title": "Ice Breaker",
+          "Cost": 2500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "MaxHits": 4
+            },
+            "Cooldown": 1.25,
+            "Extras": [
+              "4 max hits."
+            ],
+            "Damage": 50
+          },
+          "Image": 16868189,
+          "Title": "Arctic Commando",
+          "Cost": 8500
+        }
+      ]
+    }
+  }
+}

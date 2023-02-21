@@ -1,0 +1,75 @@
+{
+  "Accelerator": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": true,
+          "Flying": false
+        },
+        "Limit": 8,
+        "Cooldown": 0.2,
+        "Price": 3500,
+        "Attributes": {
+          "ChargeTime": 3,
+          "LaserTime": 6,
+          "LaserCooldown": 2
+        },
+        "Range": 13,
+        "Damage": 8
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 16
+          },
+          "Image": 11821094308.0,
+          "Title": "Focused Aiming",
+          "Cost": 600
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Longer burst"
+            ],
+            "Attributes": {
+              "LaserTime": 8.5
+            }
+          },
+          "Image": 11821094198.0,
+          "Title": "Extra Juice",
+          "Cost": 1200
+        },
+        {
+          "Stats": {
+            "Damage": 15
+          },
+          "Image": 11821093989.0,
+          "Title": "Powerhouse Armor",
+          "Cost": 3200
+        },
+        {
+          "Stats": {
+            "Range": 19,
+            "Cooldown": 0.1
+          },
+          "Image": 11821093828.0,
+          "Title": "Super Charged",
+          "Cost": 9500
+        },
+        {
+          "Stats": {
+            "Range": 20,
+            "Attributes": {
+              "LaserTime": 12,
+              "ChargeTime": 2
+            },
+            "Damage": 35
+          },
+          "Image": 11821093672.0,
+          "Title": "Energy From The Void..",
+          "Cost": 30000
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "Accelerator": {
+      "type": "object",
+      "title": "Accelerator",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {
+                          "ChargeTime": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "LaserTime": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "LaserCooldown": {
+                            "type": "number",
+                            "default": 0
+                          }
+                        }
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 11821094308.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "ChargeTime": 3,
+                      "LaserTime": 6,
+                      "LaserCooldown": 2
+                    },
+                    "Cooldown": 0.2,
+                    "Range": 16,
+                    "Damage": 8
+                  },
+                  "Title": "Focused Aiming",
+                  "Cost": 600
+                },
+                {
+                  "Image": 11821094198.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "Longer burst"
+                    ],
+                    "Attributes": {
+                      "ChargeTime": 3,
+                      "LaserTime": 8.5,
+                      "LaserCooldown": 2
+                    },
+                    "Range": 16,
+                    "Cooldown": 0.2,
+                    "Damage": 8
+                  },
+                  "Title": "Extra Juice",
+                  "Cost": 1200
+                },
+                {
+                  "Image": 11821093989.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "ChargeTime": 3,
+                      "LaserTime": 8.5,
+                      "LaserCooldown": 2
+                    },
+                    "Cooldown": 0.2,
+                    "Range": 16,
+                    "Damage": 15
+                  },
+                  "Title": "Powerhouse Armor",
+                  "Cost": 3200
+                },
+                {
+                  "Image": 11821093828.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "ChargeTime": 3,
+                      "LaserTime": 8.5,
+                      "LaserCooldown": 2
+                    },
+                    "Cooldown": 0.1,
+                    "Range": 19,
+                    "Damage": 15
+                  },
+                  "Title": "Super Charged",
+                  "Cost": 9500
+                },
+                {
+                  "Image": 11821093672.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "ChargeTime": 2,
+                      "LaserTime": 12,
+                      "LaserCooldown": 2
+                    },
+                    "Range": 20,
+                    "Cooldown": 0.1,
+                    "Damage": 35
+                  },
+                  "Title": "Energy From The Void..",
+                  "Cost": 30000
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Limit": {
+                  "default": 8,
+                  "type": "number"
+                },
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Range": {
+                  "default": 13,
+                  "type": "number"
+                },
+                "Price": {
+                  "default": 3500,
+                  "type": "number"
+                },
+                "Attributes": {
+                  "type": "object",
+                  "title": "Attributes",
+                  "properties": {
+                    "ChargeTime": {
+                      "default": 3,
+                      "type": "number"
+                    },
+                    "LaserTime": {
+                      "default": 6,
+                      "type": "number"
+                    },
+                    "LaserCooldown": {
+                      "default": 2,
+                      "type": "number"
+                    }
+                  }
+                },
+                "Cooldown": {
+                  "default": 0.2,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 8,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

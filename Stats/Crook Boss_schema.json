@@ -1,0 +1,499 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "Crook Boss": {
+      "type": "object",
+      "title": "Crook Boss",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {
+                          "UnitToSend": {
+                            "type": "string",
+                            "default": "",
+                            "description": "The unit to spawn"
+                          },
+                          "MaxCrooks": {
+                            "type": "number",
+                            "default": 0
+                          }
+                        }
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "SpawnTime": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 3032133716.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "MaxCrooks": 3
+                    },
+                    "SpawnTime": 60,
+                    "Cooldown": 0.8,
+                    "Range": 10,
+                    "Damage": 3
+                  },
+                  "Title": "9mm Caliber",
+                  "Cost": 300
+                },
+                {
+                  "Image": 3444643559.0,
+                  "Stats": {
+                    "Extras": [
+                      "Guards"
+                    ],
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "UnitToSend": "Guard1",
+                      "MaxCrooks": 3
+                    },
+                    "SpawnTime": 60,
+                    "Range": 11,
+                    "Cooldown": 0.8,
+                    "Damage": 3
+                  },
+                  "Title": "Eyes Everywhere",
+                  "Cost": 800
+                },
+                {
+                  "Image": 3838914605.0,
+                  "Stats": {
+                    "Extras": [
+                      "x2 guards"
+                    ],
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "UnitToSend": "Guard2",
+                      "MaxCrooks": 3
+                    },
+                    "SpawnTime": 45,
+                    "Range": 13,
+                    "Cooldown": 0.2,
+                    "Damage": 3
+                  },
+                  "Title": "Better Armed",
+                  "Cost": 1500
+                },
+                {
+                  "Image": 3444644903.0,
+                  "Stats": {
+                    "Extras": [
+                      "Stronger guards"
+                    ],
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "UnitToSend": "Guard3",
+                      "MaxCrooks": 3
+                    },
+                    "SpawnTime": 45,
+                    "Range": 15,
+                    "Cooldown": 0.15,
+                    "Damage": 7
+                  },
+                  "Title": "Most Wanted",
+                  "Cost": 9000
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Attributes": {
+                  "type": "object",
+                  "title": "Attributes",
+                  "properties": {
+                    "UnitToSend": {
+                      "type": "string",
+                      "default": "",
+                      "description": "The unit to spawn"
+                    },
+                    "MaxCrooks": {
+                      "default": 3,
+                      "type": "number"
+                    }
+                  }
+                },
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Range": {
+                  "default": 10,
+                  "type": "number"
+                },
+                "Price": {
+                  "default": 650,
+                  "type": "number"
+                },
+                "SpawnTime": {
+                  "default": 60,
+                  "type": "number"
+                },
+                "Cooldown": {
+                  "default": 0.8,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 2,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        },
+        "Golden": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Golden Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {
+                          "UnitToSend": {
+                            "type": "string",
+                            "default": "",
+                            "description": "The unit to spawn"
+                          }
+                        }
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "SpawnTime": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 3032133716.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Attributes": {},
+                    "SpawnTime": 45,
+                    "Cooldown": 0.8,
+                    "Range": 12,
+                    "Damage": 4
+                  },
+                  "Title": "9mm Caliber",
+                  "Cost": 400
+                },
+                {
+                  "Image": 3444643559.0,
+                  "Stats": {
+                    "Extras": [
+                      "Guards"
+                    ],
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "UnitToSend": "GoldenGuard1"
+                    },
+                    "SpawnTime": 45,
+                    "Range": 14,
+                    "Cooldown": 0.55,
+                    "Damage": 4
+                  },
+                  "Title": "Henchmen Funds",
+                  "Cost": 1000
+                },
+                {
+                  "Image": 3838914605.0,
+                  "Stats": {
+                    "Extras": [
+                      "x2 guards"
+                    ],
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "UnitToSend": "GoldenGuard2"
+                    },
+                    "SpawnTime": 45,
+                    "Range": 14,
+                    "Cooldown": 0.2,
+                    "Damage": 4
+                  },
+                  "Title": "Better Armed",
+                  "Cost": 2000
+                },
+                {
+                  "Image": 3444644903.0,
+                  "Stats": {
+                    "Extras": [
+                      "Stronger guards"
+                    ],
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "UnitToSend": "GoldenGuard3"
+                    },
+                    "SpawnTime": 45,
+                    "Range": 16,
+                    "Cooldown": 0.13,
+                    "Damage": 10
+                  },
+                  "Title": "Most Wanted",
+                  "Cost": 9000
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Attributes": {
+                  "type": "object",
+                  "title": "Attributes",
+                  "properties": {
+                    "UnitToSend": {
+                      "type": "string",
+                      "default": "",
+                      "description": "The unit to spawn"
+                    }
+                  }
+                },
+                "Range": {
+                  "default": 12,
+                  "type": "number"
+                },
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "SpawnTime": {
+                  "default": 45,
+                  "type": "number"
+                },
+                "Price": {
+                  "default": 600,
+                  "type": "number"
+                },
+                "Limit": {
+                  "default": 4,
+                  "type": "number"
+                },
+                "Cooldown": {
+                  "default": 0.8,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 3,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

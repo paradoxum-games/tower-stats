@@ -1,0 +1,93 @@
+{
+  "Electroshocker": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Flying": false,
+          "Hidden": false,
+          "Lead": true
+        },
+        "Limit": 4,
+        "Cooldown": 3,
+        "Price": 325,
+        "Attributes": {
+          "MinStun": 0.25,
+          "MaxStun": 1,
+          "MaxHits": 1,
+          "DefenseMelt": 0,
+          "ChainRange": 5
+        },
+        "Range": 7,
+        "Damage": 0
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 9
+          },
+          "Image": 3280081327.0,
+          "Title": "Improved Handling",
+          "Cost": 250
+        },
+        {
+          "Stats": {
+            "Range": 10,
+            "Detections": {
+              "Hidden": true
+            }
+          },
+          "Image": 4675534331.0,
+          "Title": "Outside Support",
+          "Cost": 400
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "MaxStun": 1.5
+            },
+            "Extras": [
+              "Longer stuns"
+            ],
+            "Damage": 2
+          },
+          "Image": 4675521746.0,
+          "Title": "Faraday's Vest",
+          "Cost": 1000
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "MaxHits": 3
+            },
+            "Cooldown": 2,
+            "Extras": [
+              "Increased chaining"
+            ],
+            "Damage": 4
+          },
+          "Image": 4675504505.0,
+          "Title": "Lightning Cannon",
+          "Cost": 3000
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "MaxStun": 2,
+              "MaxHits": 5,
+              "DefenseMelt": 1
+            },
+            "Range": 12,
+            "Extras": [
+              "Inceased chaining",
+              "Longer stuns",
+              "Reduce defense"
+            ]
+          },
+          "Image": 4675504640.0,
+          "Title": "Shock Force",
+          "Cost": 6500
+        }
+      ]
+    }
+  }
+}

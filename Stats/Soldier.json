@@ -1,0 +1,151 @@
+{
+  "Soldier": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Attributes": {
+          "Burst": 3,
+          "BurstCool": 1
+        },
+        "Price": 350,
+        "Cooldown": 0.15,
+        "Range": 13,
+        "Damage": 1
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 15
+          },
+          "Image": 5523192002.0,
+          "Title": "Better Vision",
+          "Cost": 100
+        },
+        {
+          "Stats": {
+            "Range": 16,
+            "Detections": {
+              "Hidden": true
+            },
+            "Damage": 2
+          },
+          "Image": 5523193619.0,
+          "Title": "Better Aiming",
+          "Cost": 500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "Burst": 5
+            },
+            "Extras": [
+              "Increased burst (5)"
+            ],
+            "Damage": 3
+          },
+          "Image": 5523195646.0,
+          "Title": "Equipment Upgrades",
+          "Cost": 1500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "Burst": 7
+            },
+            "Extras": [
+              "Increased burst (7)"
+            ],
+            "Cooldown": 0.125,
+            "Range": 18,
+            "Damage": 6
+          },
+          "Image": 5523196519.0,
+          "Title": "Deadliest Soldier",
+          "Cost": 4000
+        }
+      ]
+    },
+    "Golden": {
+      "Upgrades": [
+        {
+          "Image": 5523192002.0,
+          "Attributes": {
+            "Burst": 4
+          },
+          "Cost": 250,
+          "Title": "Trigger Finger",
+          "Stats": {
+            "Range": 16,
+            "Cooldown": 0.15
+          }
+        },
+        {
+          "Stats": {
+            "Detections": {
+              "Hidden": true
+            },
+            "Extras": [
+              "Increased burst (5)"
+            ],
+            "Attributes": {
+              "Burst": 5
+            },
+            "Range": 17,
+            "Damage": 3
+          },
+          "Image": 5523193619.0,
+          "Title": "Better Aiming",
+          "Cost": 750
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "Burst": 8
+            },
+            "Cooldown": 0.125,
+            "Extras": [
+              "Increased burst (8)"
+            ],
+            "Damage": 4
+          },
+          "Image": 5523195646.0,
+          "Title": "Equipment Upgrades",
+          "Cost": 2000
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "Burst": 12
+            },
+            "Extras": [
+              "Increased burst (12)"
+            ],
+            "Cooldown": 0.1,
+            "Range": 19,
+            "Damage": 7
+          },
+          "Image": 5523196519.0,
+          "Title": "Deadliest's Soldier",
+          "Cost": 5000
+        }
+      ],
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Attributes": {
+          "Burst": 3,
+          "BurstCool": 1
+        },
+        "Price": 500,
+        "Cooldown": 0.2,
+        "Range": 13,
+        "Damage": 2
+      }
+    }
+  }
+}

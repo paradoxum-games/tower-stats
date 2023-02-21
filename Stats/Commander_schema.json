@@ -1,0 +1,238 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "Commander": {
+      "type": "object",
+      "title": "Commander",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {
+                          "FirerateBuff": {
+                            "type": "number",
+                            "default": 0
+                          }
+                        }
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 5525000768.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "15% firerate buff"
+                    ],
+                    "Attributes": {
+                      "FirerateBuff": 15
+                    },
+                    "Cooldown": 0.5,
+                    "Range": 14,
+                    "Damage": 4
+                  },
+                  "Title": "Leadership",
+                  "Cost": 850
+                },
+                {
+                  "Image": 4594880289.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "Call to Arms"
+                    ],
+                    "Attributes": {
+                      "FirerateBuff": 15
+                    },
+                    "Cooldown": 0.5,
+                    "Range": 14,
+                    "Damage": 4
+                  },
+                  "Title": "Call to Arms",
+                  "Cost": 1800
+                },
+                {
+                  "Image": 5525002879.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "20% firerate buff"
+                    ],
+                    "Attributes": {
+                      "FirerateBuff": 20
+                    },
+                    "Range": 16,
+                    "Cooldown": 0.5,
+                    "Damage": 6
+                  },
+                  "Title": "Intense Training",
+                  "Cost": 5500
+                },
+                {
+                  "Image": 5525003528.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "25% firerate buff"
+                    ],
+                    "Attributes": {
+                      "FirerateBuff": 25
+                    },
+                    "Range": 20,
+                    "Cooldown": 0.5,
+                    "Damage": 10
+                  },
+                  "Title": "World Leader",
+                  "Cost": 9000
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Attributes": {
+                  "type": "object",
+                  "title": "Attributes",
+                  "properties": {
+                    "FirerateBuff": {
+                      "default": 10,
+                      "type": "number"
+                    }
+                  }
+                },
+                "Price": {
+                  "default": 650,
+                  "type": "number"
+                },
+                "Range": {
+                  "default": 12,
+                  "type": "number"
+                },
+                "Cooldown": {
+                  "default": 0.5,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 4,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

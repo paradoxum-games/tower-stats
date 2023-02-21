@@ -1,0 +1,231 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "Farm": {
+      "type": "object",
+      "title": "Farm",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {}
+                      },
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Income": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 3294497195.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Income": 100,
+                    "Cooldown": 0,
+                    "Range": 3,
+                    "Damage": 0
+                  },
+                  "Title": "Carrot Farm",
+                  "Cost": 200
+                },
+                {
+                  "Image": 3294496318.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Income": 250,
+                    "Cooldown": 0,
+                    "Range": 3,
+                    "Damage": 0
+                  },
+                  "Title": "Wheat Farm",
+                  "Cost": 550
+                },
+                {
+                  "Image": 3294498124.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Income": 500,
+                    "Cooldown": 0,
+                    "Range": 3,
+                    "Damage": 0
+                  },
+                  "Title": "Tree Farm",
+                  "Cost": 1000
+                },
+                {
+                  "Image": 3294499153.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Income": 750,
+                    "Cooldown": 0,
+                    "Range": 3,
+                    "Damage": 0
+                  },
+                  "Title": "Apple Farm",
+                  "Cost": 2500
+                },
+                {
+                  "Image": 3294500097.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Income": 1500,
+                    "Cooldown": 0,
+                    "Range": 3,
+                    "Damage": 0
+                  },
+                  "Title": "Space Fruit Farm",
+                  "Cost": 5000
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Income": {
+                  "default": 50,
+                  "type": "number"
+                },
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Range": {
+                  "default": 3,
+                  "type": "number"
+                },
+                "Price": {
+                  "default": 250,
+                  "type": "number"
+                },
+                "Limit": {
+                  "default": 8,
+                  "type": "number"
+                },
+                "Cooldown": {
+                  "default": 0,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 0,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

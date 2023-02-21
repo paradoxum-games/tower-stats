@@ -1,0 +1,100 @@
+{
+  "Pursuit": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": true
+        },
+        "Limit": 10,
+        "Cooldown": 0.3,
+        "Price": 1000,
+        "Attributes": {
+          "Spread": 10,
+          "MissileAmount": 2,
+          "MissilesEnabled": false,
+          "TimeBetweenMissiles": 0.5,
+          "ExplosionRadius": 5,
+          "MissileCooldown": 5,
+          "ExplosionDamage": 3
+        },
+        "Range": 9,
+        "Damage": 1
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Damage": 2
+          },
+          "Image": 3577061449.0,
+          "Title": "Armor Penetration",
+          "Cost": 500
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Missiles",
+              "5 second reload"
+            ],
+            "Attributes": {
+              "MissilesEnabled": true
+            }
+          },
+          "Image": 5528331895.0,
+          "Title": "Missiles",
+          "Cost": 650
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.15,
+            "Attributes": {
+              "ExplosionDamage": 5
+            },
+            "Range": 10,
+            "Extras": [
+              "Stronger explosions"
+            ]
+          },
+          "Image": 5528336509.0,
+          "Title": "Tri-Barrel Minigun",
+          "Cost": 1500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "TimeBetweenMissiles": 0.35,
+              "MissileAmount": 4
+            },
+            "Extras": [
+              "More missiles"
+            ],
+            "Damage": 4
+          },
+          "Image": 5528337682.0,
+          "Title": "Huey",
+          "Cost": 6000
+        },
+        {
+          "Stats": {
+            "Detections": {
+              "Hidden": true
+            },
+            "Extras": [
+              "More missiles"
+            ],
+            "Cooldown": 0.1,
+            "Attributes": {
+              "TimeBetweenMissiles": 0.2,
+              "MissileAmount": 6
+            },
+            "Range": 12,
+            "Damage": 8
+          },
+          "Image": 5528341233.0,
+          "Title": "Laser Apache",
+          "Cost": 9500
+        }
+      ]
+    }
+  }
+}

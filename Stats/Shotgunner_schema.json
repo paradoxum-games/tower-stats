@@ -1,0 +1,246 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "Shotgunner": {
+      "type": "object",
+      "title": "Shotgunner",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {
+                          "Spread": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "ShotSize": {
+                            "type": "number",
+                            "default": 0
+                          }
+                        }
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 5587697635.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "Spread": 80,
+                      "ShotSize": 6
+                    },
+                    "Range": 7,
+                    "Cooldown": 1.8,
+                    "Damage": 2
+                  },
+                  "Title": "Faster Reloading",
+                  "Cost": 200
+                },
+                {
+                  "Image": 5587697884.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "8 Shots",
+                      "Tighter Spread"
+                    ],
+                    "Attributes": {
+                      "Spread": 60,
+                      "ShotSize": 8
+                    },
+                    "Range": 9,
+                    "Cooldown": 1.8,
+                    "Damage": 3
+                  },
+                  "Title": "Better Handling",
+                  "Cost": 1250
+                },
+                {
+                  "Image": 5587698104.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "Spread": 60,
+                      "ShotSize": 8
+                    },
+                    "Cooldown": 1.5,
+                    "Range": 9,
+                    "Damage": 5
+                  },
+                  "Title": "Slug Madness",
+                  "Cost": 3500
+                },
+                {
+                  "Image": 5587698246.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "12 Shots",
+                      "Tighter Spread"
+                    ],
+                    "Attributes": {
+                      "Spread": 50,
+                      "ShotSize": 12
+                    },
+                    "Range": 11,
+                    "Cooldown": 1,
+                    "Damage": 6
+                  },
+                  "Title": "Tactical Blowback",
+                  "Cost": 10000
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Attributes": {
+                  "type": "object",
+                  "title": "Attributes",
+                  "properties": {
+                    "Spread": {
+                      "default": 80,
+                      "type": "number"
+                    },
+                    "ShotSize": {
+                      "default": 6,
+                      "type": "number"
+                    }
+                  }
+                },
+                "Price": {
+                  "default": 400,
+                  "type": "number"
+                },
+                "Range": {
+                  "default": 7,
+                  "type": "number"
+                },
+                "Cooldown": {
+                  "default": 2.5,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 2,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

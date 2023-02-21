@@ -1,0 +1,151 @@
+{
+  "Crook Boss": {
+    "Default": {
+      "Defaults": {
+        "Attributes": {
+          "MaxCrooks": 3
+        },
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Cooldown": 0.8,
+        "Price": 650,
+        "SpawnTime": 60,
+        "Range": 10,
+        "Damage": 2
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Damage": 3
+          },
+          "Image": 3032133716.0,
+          "Title": "9mm Caliber",
+          "Cost": 300
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Guards"
+            ],
+            "Attributes": {
+              "UnitToSend": "Guard1"
+            },
+            "Range": 11,
+            "Detections": {
+              "Hidden": true
+            }
+          },
+          "Image": 3444643559.0,
+          "Title": "Eyes Everywhere",
+          "Cost": 800
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "UnitToSend": "Guard2"
+            },
+            "SpawnTime": 45,
+            "Range": 13,
+            "Extras": [
+              "x2 guards"
+            ],
+            "Cooldown": 0.2
+          },
+          "Image": 3838914605.0,
+          "Title": "Better Armed",
+          "Cost": 1500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "UnitToSend": "Guard3"
+            },
+            "Extras": [
+              "Stronger guards"
+            ],
+            "Cooldown": 0.15,
+            "Range": 15,
+            "Damage": 7
+          },
+          "Image": 3444644903.0,
+          "Title": "Most Wanted",
+          "Cost": 9000
+        }
+      ]
+    },
+    "Golden": {
+      "Upgrades": [
+        {
+          "Stats": {
+            "Damage": 4
+          },
+          "Image": 3032133716.0,
+          "Title": "9mm Caliber",
+          "Cost": 400
+        },
+        {
+          "Stats": {
+            "Detections": {
+              "Hidden": true
+            },
+            "Cooldown": 0.55,
+            "Attributes": {
+              "UnitToSend": "GoldenGuard1"
+            },
+            "Range": 14,
+            "Extras": [
+              "Guards"
+            ]
+          },
+          "Image": 3444643559.0,
+          "Title": "Henchmen Funds",
+          "Cost": 1000
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.2,
+            "Extras": [
+              "x2 guards"
+            ],
+            "Attributes": {
+              "UnitToSend": "GoldenGuard2"
+            }
+          },
+          "Image": 3838914605.0,
+          "Title": "Better Armed",
+          "Cost": 2000
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "UnitToSend": "GoldenGuard3"
+            },
+            "Extras": [
+              "Stronger guards"
+            ],
+            "Cooldown": 0.13,
+            "Range": 16,
+            "Damage": 10
+          },
+          "Image": 3444644903.0,
+          "Title": "Most Wanted",
+          "Cost": 9000
+        }
+      ],
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Limit": 4,
+        "Cooldown": 0.8,
+        "Price": 600,
+        "SpawnTime": 45,
+        "Range": 12,
+        "Damage": 3
+      }
+    }
+  }
+}

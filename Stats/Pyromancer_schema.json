@@ -1,0 +1,676 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "Pyromancer": {
+      "type": "object",
+      "title": "Pyromancer",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {
+                          "BurnDamage": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "EnemyBuff": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "DefenseMelt": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "TurningSpeed": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "BurnTick": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "BurnTime": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "Width": {
+                            "type": "number",
+                            "default": 0
+                          }
+                        }
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 3280081327.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "More range",
+                      "Bigger flames"
+                    ],
+                    "Attributes": {
+                      "BurnDamage": 1,
+                      "EnemyBuff": 0,
+                      "DefenseMelt": 0,
+                      "TurningSpeed": 4,
+                      "BurnTick": 1,
+                      "Width": 1.5,
+                      "BurnTime": 3
+                    },
+                    "Cooldown": 0.25,
+                    "Range": 9,
+                    "Damage": 0
+                  },
+                  "Title": "Improved Handling",
+                  "Cost": 350
+                },
+                {
+                  "Image": 3304823121.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "Defense melting"
+                    ],
+                    "Attributes": {
+                      "BurnDamage": 1,
+                      "EnemyBuff": 0,
+                      "DefenseMelt": 5,
+                      "TurningSpeed": 4,
+                      "BurnTick": 1,
+                      "Width": 1.5,
+                      "BurnTime": 3
+                    },
+                    "Cooldown": 0.25,
+                    "Range": 9,
+                    "Damage": 1
+                  },
+                  "Title": "Fire Fighting",
+                  "Cost": 500
+                },
+                {
+                  "Image": 3304823988.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "More burn damage",
+                      "Longer burn time"
+                    ],
+                    "Attributes": {
+                      "BurnDamage": 2,
+                      "EnemyBuff": 0,
+                      "DefenseMelt": 5,
+                      "TurningSpeed": 4,
+                      "BurnTick": 1,
+                      "BurnTime": 5,
+                      "Width": 1.5
+                    },
+                    "Range": 9,
+                    "Cooldown": 0.25,
+                    "Damage": 1
+                  },
+                  "Title": "Fire Hazard",
+                  "Cost": 1200
+                },
+                {
+                  "Image": 3304824958.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "More fire damage",
+                      "Longer burn time",
+                      "Double tick speed"
+                    ],
+                    "Attributes": {
+                      "BurnDamage": 3,
+                      "EnemyBuff": 0,
+                      "DefenseMelt": 5,
+                      "TurningSpeed": 4,
+                      "BurnTick": 0.5,
+                      "BurnTime": 6,
+                      "Width": 1.75
+                    },
+                    "Cooldown": 0.25,
+                    "Range": 9,
+                    "Damage": 2
+                  },
+                  "Title": "Napalm Thrower",
+                  "Cost": 3800
+                },
+                {
+                  "Image": 3304825822.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "More burn damage",
+                      "Longer burn time",
+                      "More defense melting",
+                      "Bigger flames"
+                    ],
+                    "Attributes": {
+                      "BurnDamage": 8,
+                      "EnemyBuff": 0,
+                      "DefenseMelt": 10,
+                      "TurningSpeed": 4,
+                      "BurnTick": 0.5,
+                      "BurnTime": 8,
+                      "Width": 2.5
+                    },
+                    "Cooldown": 0.25,
+                    "Range": 11,
+                    "Damage": 2
+                  },
+                  "Title": "Pyromaniac",
+                  "Cost": 7500
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Attributes": {
+                  "type": "object",
+                  "title": "Attributes",
+                  "properties": {
+                    "BurnDamage": {
+                      "default": 1,
+                      "type": "number"
+                    },
+                    "EnemyBuff": {
+                      "default": 0,
+                      "type": "number"
+                    },
+                    "DefenseMelt": {
+                      "default": 0,
+                      "type": "number"
+                    },
+                    "TurningSpeed": {
+                      "default": 4,
+                      "type": "number"
+                    },
+                    "BurnTick": {
+                      "default": 1,
+                      "type": "number"
+                    },
+                    "BurnTime": {
+                      "default": 3,
+                      "type": "number"
+                    },
+                    "Width": {
+                      "default": 0,
+                      "type": "number"
+                    }
+                  }
+                },
+                "Price": {
+                  "default": 650,
+                  "type": "number"
+                },
+                "Range": {
+                  "default": 7,
+                  "type": "number"
+                },
+                "Cooldown": {
+                  "default": 0.25,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 0,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        },
+        "Golden": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Golden Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {
+                          "BurnDamage": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "EnemyBuff": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "DefenseMelt": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "TurningSpeed": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "BurnTick": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "BurnTime": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "Width": {
+                            "type": "number",
+                            "default": 0
+                          }
+                        }
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 3280081327.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "More range",
+                      "Bigger flames"
+                    ],
+                    "Attributes": {
+                      "BurnDamage": 1,
+                      "EnemyBuff": 0,
+                      "DefenseMelt": 0,
+                      "TurningSpeed": 4,
+                      "BurnTick": 1,
+                      "Width": 0,
+                      "BurnTime": 3
+                    },
+                    "Range": 11,
+                    "Cooldown": 0.25,
+                    "Damage": 1
+                  },
+                  "Title": "Improved Handling",
+                  "Cost": 350
+                },
+                {
+                  "Image": 3304823121.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "Defense melting"
+                    ],
+                    "Attributes": {
+                      "BurnDamage": 1,
+                      "EnemyBuff": 0,
+                      "DefenseMelt": 5,
+                      "TurningSpeed": 4,
+                      "BurnTick": 1,
+                      "Width": 0,
+                      "BurnTime": 3
+                    },
+                    "Cooldown": 0.25,
+                    "Range": 11,
+                    "Damage": 2
+                  },
+                  "Title": "Fire Fighting",
+                  "Cost": 500
+                },
+                {
+                  "Image": 3304823988.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "More burn damage",
+                      "Longer burn time"
+                    ],
+                    "Attributes": {
+                      "BurnDamage": 2,
+                      "EnemyBuff": 0,
+                      "DefenseMelt": 5,
+                      "TurningSpeed": 4,
+                      "BurnTick": 1,
+                      "BurnTime": 5,
+                      "Width": 0
+                    },
+                    "Cooldown": 0.25,
+                    "Range": 11,
+                    "Damage": 3
+                  },
+                  "Title": "Fire Hazard",
+                  "Cost": 1200
+                },
+                {
+                  "Image": 3304824958.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "More fire damage",
+                      "Longer burn time",
+                      "Double tick speed"
+                    ],
+                    "Attributes": {
+                      "BurnDamage": 4,
+                      "EnemyBuff": 0,
+                      "DefenseMelt": 5,
+                      "TurningSpeed": 4,
+                      "BurnTick": 0.5,
+                      "BurnTime": 6,
+                      "Width": 1.75
+                    },
+                    "Range": 13,
+                    "Cooldown": 0.25,
+                    "Damage": 4
+                  },
+                  "Title": "Napalm Thrower",
+                  "Cost": 3800
+                },
+                {
+                  "Image": 3304825822.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "More burn damage",
+                      "Longer burn time",
+                      "More defense melting",
+                      "Bigger flames"
+                    ],
+                    "Attributes": {
+                      "BurnDamage": 10,
+                      "EnemyBuff": 0,
+                      "DefenseMelt": 10,
+                      "TurningSpeed": 4,
+                      "BurnTick": 0.5,
+                      "BurnTime": 8,
+                      "Width": 2.5
+                    },
+                    "Cooldown": 0.25,
+                    "Range": 13,
+                    "Damage": 6
+                  },
+                  "Title": "Pyromaniac",
+                  "Cost": 7500
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Attributes": {
+                  "type": "object",
+                  "title": "Attributes",
+                  "properties": {
+                    "BurnDamage": {
+                      "default": 1,
+                      "type": "number"
+                    },
+                    "EnemyBuff": {
+                      "default": 0,
+                      "type": "number"
+                    },
+                    "DefenseMelt": {
+                      "default": 0,
+                      "type": "number"
+                    },
+                    "TurningSpeed": {
+                      "default": 4,
+                      "type": "number"
+                    },
+                    "BurnTick": {
+                      "default": 1,
+                      "type": "number"
+                    },
+                    "BurnTime": {
+                      "default": 3,
+                      "type": "number"
+                    },
+                    "Width": {
+                      "default": 0,
+                      "type": "number"
+                    }
+                  }
+                },
+                "Price": {
+                  "default": 800,
+                  "type": "number"
+                },
+                "Range": {
+                  "default": 7,
+                  "type": "number"
+                },
+                "Cooldown": {
+                  "default": 0.25,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 1,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

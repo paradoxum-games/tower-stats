@@ -1,0 +1,218 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "Ranger": {
+      "type": "object",
+      "title": "Ranger",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {}
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 3280081327.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": true,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Cooldown": 4.5,
+                    "Range": 25,
+                    "Damage": 60
+                  },
+                  "Title": "Improved Handling",
+                  "Cost": 550
+                },
+                {
+                  "Image": 3381734408.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": true,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Range": 30,
+                    "Cooldown": 4.5,
+                    "Damage": 100
+                  },
+                  "Title": "Steady Aiming",
+                  "Cost": 1800
+                },
+                {
+                  "Image": 3381734757.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": true,
+                      "Hidden": false,
+                      "Lead": true
+                    },
+                    "Range": 35,
+                    "Cooldown": 4.5,
+                    "Damage": 165
+                  },
+                  "Title": "Railgunner",
+                  "Cost": 3500
+                },
+                {
+                  "Image": 3381735232.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": true,
+                      "Hidden": false,
+                      "Lead": true
+                    },
+                    "Cooldown": 4,
+                    "Range": 35,
+                    "Damage": 230
+                  },
+                  "Title": "Trained Assassin",
+                  "Cost": 11500
+                },
+                {
+                  "Image": 3381735846.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": true,
+                      "Hidden": false,
+                      "Lead": true
+                    },
+                    "Range": 40,
+                    "Cooldown": 3.5,
+                    "Damage": 450
+                  },
+                  "Title": "Cyber Assassin",
+                  "Cost": 22500
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Limit": {
+                  "default": 10,
+                  "type": "number"
+                },
+                "Price": {
+                  "default": 3500,
+                  "type": "number"
+                },
+                "Range": {
+                  "default": 20,
+                  "type": "number"
+                },
+                "Cooldown": {
+                  "default": 5,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 60,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "Turret": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Limit": 5,
+        "Price": 4000,
+        "Cooldown": 0.5,
+        "Range": 16,
+        "Damage": 6
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 18
+          },
+          "Image": 149177741,
+          "Title": "Radar",
+          "Cost": 500
+        },
+        {
+          "Stats": {
+            "Range": 19,
+            "Damage": 13
+          },
+          "Image": 149177741,
+          "Title": "Stronger Ammunition",
+          "Cost": 2000
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.375,
+            "Detections": {
+              "Hidden": true
+            },
+            "Range": 21
+          },
+          "Image": 3584258139.0,
+          "Title": "Dual Turret",
+          "Cost": 5000
+        },
+        {
+          "Stats": {
+            "Range": 24,
+            "Cooldown": 0.2
+          },
+          "Image": 3584280869.0,
+          "Title": "Even Heavier Ammo",
+          "Cost": 12500
+        },
+        {
+          "Stats": {
+            "Range": 26,
+            "Damage": 25
+          },
+          "Image": 3584258608.0,
+          "Title": "Double Barrel Minigun",
+          "Cost": 20000
+        }
+      ]
+    }
+  }
+}

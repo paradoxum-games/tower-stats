@@ -1,0 +1,293 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "Freezer": {
+      "type": "object",
+      "title": "Freezer",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {
+                          "MaxFreezeTime": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "ExplosionRadius": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "MinFreezeTime": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "DefenseMelt": {
+                            "type": "number",
+                            "default": 0
+                          }
+                        }
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 3354968287.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "Longer freeze"
+                    ],
+                    "Attributes": {
+                      "MaxFreezeTime": 1.35,
+                      "ExplosionRadius": 3,
+                      "DefenseMelt": 0,
+                      "MinFreezeTime": 0.35
+                    },
+                    "Cooldown": 3,
+                    "Range": 10,
+                    "Damage": 0
+                  },
+                  "Title": "Frost Knuckles",
+                  "Cost": 350
+                },
+                {
+                  "Image": 3354969462.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "MaxFreezeTime": 1.35,
+                      "ExplosionRadius": 3,
+                      "DefenseMelt": 0,
+                      "MinFreezeTime": 0.35
+                    },
+                    "Cooldown": 3,
+                    "Range": 12,
+                    "Damage": 0
+                  },
+                  "Title": "Frost Vision",
+                  "Cost": 400
+                },
+                {
+                  "Image": 3354970959.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "Defense melting"
+                    ],
+                    "Attributes": {
+                      "MaxFreezeTime": 1.35,
+                      "ExplosionRadius": 3,
+                      "DefenseMelt": 5,
+                      "MinFreezeTime": 0.35
+                    },
+                    "Cooldown": 3,
+                    "Range": 12,
+                    "Damage": 2
+                  },
+                  "Title": "Cold Snap",
+                  "Cost": 1400
+                },
+                {
+                  "Image": 3354972102.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "MaxFreezeTime": 1.35,
+                      "ExplosionRadius": 3,
+                      "DefenseMelt": 5,
+                      "MinFreezeTime": 0.35
+                    },
+                    "Range": 12,
+                    "Cooldown": 1.5,
+                    "Damage": 2
+                  },
+                  "Title": "Arctic Commando",
+                  "Cost": 2500
+                },
+                {
+                  "Image": 3280084231.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "Longer freeze",
+                      "More defense reducing"
+                    ],
+                    "Attributes": {
+                      "MaxFreezeTime": 1.5,
+                      "ExplosionRadius": 3,
+                      "DefenseMelt": 10,
+                      "MinFreezeTime": 0.35
+                    },
+                    "Cooldown": 1,
+                    "Range": 14,
+                    "Damage": 2
+                  },
+                  "Title": "Subzero Hero",
+                  "Cost": 6000
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Attributes": {
+                  "type": "object",
+                  "title": "Attributes",
+                  "properties": {
+                    "MaxFreezeTime": {
+                      "default": 0.8,
+                      "type": "number"
+                    },
+                    "ExplosionRadius": {
+                      "default": 3,
+                      "type": "number"
+                    },
+                    "MinFreezeTime": {
+                      "default": 0.35,
+                      "type": "number"
+                    },
+                    "DefenseMelt": {
+                      "default": 0,
+                      "type": "number"
+                    }
+                  }
+                },
+                "Price": {
+                  "default": 350,
+                  "type": "number"
+                },
+                "Range": {
+                  "default": 8,
+                  "type": "number"
+                },
+                "Cooldown": {
+                  "default": 3,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 0,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

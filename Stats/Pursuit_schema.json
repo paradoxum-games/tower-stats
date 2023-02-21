@@ -1,0 +1,339 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "Pursuit": {
+      "type": "object",
+      "title": "Pursuit",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {
+                          "MissileCooldown": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "MissileAmount": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "MissilesEnabled": {
+                            "type": "boolean",
+                            "default": 0
+                          },
+                          "TimeBetweenMissiles": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "ExplosionRadius": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "Spread": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "ExplosionDamage": {
+                            "type": "number",
+                            "default": 0
+                          }
+                        }
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 3577061449.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": true,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "Spread": 10,
+                      "MissileAmount": 2,
+                      "MissilesEnabled": false,
+                      "TimeBetweenMissiles": 0.5,
+                      "ExplosionRadius": 5,
+                      "MissileCooldown": 5,
+                      "ExplosionDamage": 3
+                    },
+                    "Cooldown": 0.3,
+                    "Range": 9,
+                    "Damage": 2
+                  },
+                  "Title": "Armor Penetration",
+                  "Cost": 500
+                },
+                {
+                  "Image": 5528331895.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": true,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "Missiles",
+                      "5 second reload"
+                    ],
+                    "Attributes": {
+                      "Spread": 10,
+                      "MissileAmount": 2,
+                      "MissilesEnabled": true,
+                      "TimeBetweenMissiles": 0.5,
+                      "ExplosionRadius": 5,
+                      "MissileCooldown": 5,
+                      "ExplosionDamage": 3
+                    },
+                    "Range": 9,
+                    "Cooldown": 0.3,
+                    "Damage": 2
+                  },
+                  "Title": "Missiles",
+                  "Cost": 650
+                },
+                {
+                  "Image": 5528336509.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": true,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "Stronger explosions"
+                    ],
+                    "Attributes": {
+                      "Spread": 10,
+                      "MissileAmount": 2,
+                      "MissilesEnabled": true,
+                      "TimeBetweenMissiles": 0.5,
+                      "ExplosionRadius": 5,
+                      "MissileCooldown": 5,
+                      "ExplosionDamage": 5
+                    },
+                    "Cooldown": 0.15,
+                    "Range": 10,
+                    "Damage": 2
+                  },
+                  "Title": "Tri-Barrel Minigun",
+                  "Cost": 1500
+                },
+                {
+                  "Image": 5528337682.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": true,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "More missiles"
+                    ],
+                    "Attributes": {
+                      "Spread": 10,
+                      "MissileAmount": 4,
+                      "MissilesEnabled": true,
+                      "TimeBetweenMissiles": 0.35,
+                      "ExplosionRadius": 5,
+                      "MissileCooldown": 5,
+                      "ExplosionDamage": 5
+                    },
+                    "Cooldown": 0.15,
+                    "Range": 10,
+                    "Damage": 4
+                  },
+                  "Title": "Huey",
+                  "Cost": 6000
+                },
+                {
+                  "Image": 5528341233.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": true,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "More missiles"
+                    ],
+                    "Attributes": {
+                      "Spread": 10,
+                      "MissileAmount": 6,
+                      "MissilesEnabled": true,
+                      "TimeBetweenMissiles": 0.2,
+                      "ExplosionRadius": 5,
+                      "MissileCooldown": 5,
+                      "ExplosionDamage": 5
+                    },
+                    "Range": 12,
+                    "Cooldown": 0.1,
+                    "Damage": 8
+                  },
+                  "Title": "Laser Apache",
+                  "Cost": 9500
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Limit": {
+                  "default": 10,
+                  "type": "number"
+                },
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Range": {
+                  "default": 9,
+                  "type": "number"
+                },
+                "Price": {
+                  "default": 1000,
+                  "type": "number"
+                },
+                "Attributes": {
+                  "type": "object",
+                  "title": "Attributes",
+                  "properties": {
+                    "MissileCooldown": {
+                      "default": 5,
+                      "type": "number"
+                    },
+                    "MissileAmount": {
+                      "default": 2,
+                      "type": "number"
+                    },
+                    "MissilesEnabled": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "TimeBetweenMissiles": {
+                      "default": 0.5,
+                      "type": "number"
+                    },
+                    "ExplosionRadius": {
+                      "default": 5,
+                      "type": "number"
+                    },
+                    "Spread": {
+                      "default": 10,
+                      "type": "number"
+                    },
+                    "ExplosionDamage": {
+                      "default": 3,
+                      "type": "number"
+                    }
+                  }
+                },
+                "Cooldown": {
+                  "default": 0.3,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 1,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

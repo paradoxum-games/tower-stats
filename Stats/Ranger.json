@@ -1,0 +1,69 @@
+{
+  "Ranger": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Flying": true,
+          "Hidden": false,
+          "Lead": false
+        },
+        "Limit": 10,
+        "Price": 3500,
+        "Cooldown": 5,
+        "Range": 20,
+        "Damage": 60
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 25,
+            "Cooldown": 4.5
+          },
+          "Image": 3280081327.0,
+          "Title": "Improved Handling",
+          "Cost": 550
+        },
+        {
+          "Stats": {
+            "Range": 30,
+            "Damage": 100
+          },
+          "Image": 3381734408.0,
+          "Title": "Steady Aiming",
+          "Cost": 1800
+        },
+        {
+          "Stats": {
+            "Range": 35,
+            "Detections": {
+              "Lead": true
+            },
+            "Damage": 165
+          },
+          "Image": 3381734757.0,
+          "Title": "Railgunner",
+          "Cost": 3500
+        },
+        {
+          "Stats": {
+            "Cooldown": 4,
+            "Damage": 230
+          },
+          "Image": 3381735232.0,
+          "Title": "Trained Assassin",
+          "Cost": 11500
+        },
+        {
+          "Stats": {
+            "Cooldown": 3.5,
+            "Range": 40,
+            "Damage": 450
+          },
+          "Image": 3381735846.0,
+          "Title": "Cyber Assassin",
+          "Cost": 22500
+        }
+      ]
+    }
+  }
+}

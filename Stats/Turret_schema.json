@@ -1,0 +1,218 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "Turret": {
+      "type": "object",
+      "title": "Turret",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {}
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 149177741,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Cooldown": 0.5,
+                    "Range": 18,
+                    "Damage": 6
+                  },
+                  "Title": "Radar",
+                  "Cost": 500
+                },
+                {
+                  "Image": 149177741,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Range": 19,
+                    "Cooldown": 0.5,
+                    "Damage": 13
+                  },
+                  "Title": "Stronger Ammunition",
+                  "Cost": 2000
+                },
+                {
+                  "Image": 3584258139.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Cooldown": 0.375,
+                    "Range": 21,
+                    "Damage": 13
+                  },
+                  "Title": "Dual Turret",
+                  "Cost": 5000
+                },
+                {
+                  "Image": 3584280869.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Cooldown": 0.2,
+                    "Range": 24,
+                    "Damage": 13
+                  },
+                  "Title": "Even Heavier Ammo",
+                  "Cost": 12500
+                },
+                {
+                  "Image": 3584258608.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Range": 26,
+                    "Cooldown": 0.2,
+                    "Damage": 25
+                  },
+                  "Title": "Double Barrel Minigun",
+                  "Cost": 20000
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Limit": {
+                  "default": 5,
+                  "type": "number"
+                },
+                "Price": {
+                  "default": 4000,
+                  "type": "number"
+                },
+                "Range": {
+                  "default": 16,
+                  "type": "number"
+                },
+                "Cooldown": {
+                  "default": 0.5,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 6,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

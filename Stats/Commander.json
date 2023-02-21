@@ -1,0 +1,84 @@
+{
+  "Commander": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Abilities": [
+          {
+            "Name": "Call Of Arms",
+            "Debounce": 30,
+            "Price": 300,
+            "Level": 2,
+            "Icon": 4594880289.0
+          }
+        ],
+        "Cooldown": 0.5,
+        "Price": 650,
+        "Attributes": {
+          "FirerateBuff": 10
+        },
+        "Range": 12,
+        "Damage": 4
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Attributes": {
+              "FirerateBuff": 15
+            },
+            "Range": 14,
+            "Extras": [
+              "15% firerate buff"
+            ]
+          },
+          "Image": 5525000768.0,
+          "Title": "Leadership",
+          "Cost": 850
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Call to Arms"
+            ]
+          },
+          "Image": 4594880289.0,
+          "Title": "Call to Arms",
+          "Cost": 1800
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "20% firerate buff"
+            ],
+            "Attributes": {
+              "FirerateBuff": 20
+            },
+            "Range": 16,
+            "Damage": 6
+          },
+          "Image": 5525002879.0,
+          "Title": "Intense Training",
+          "Cost": 5500
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "25% firerate buff"
+            ],
+            "Attributes": {
+              "FirerateBuff": 25
+            },
+            "Range": 20,
+            "Damage": 10
+          },
+          "Image": 5525003528.0,
+          "Title": "World Leader",
+          "Cost": 9000
+        }
+      ]
+    }
+  }
+}

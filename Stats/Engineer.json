@@ -1,0 +1,114 @@
+{
+  "Engineer": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Flying": false,
+          "Hidden": false,
+          "Lead": true
+        },
+        "Limit": 6,
+        "Cooldown": 1.5,
+        "Price": 750,
+        "Attributes": {
+          "BuildTime": 2,
+          "MaxUnits": 2,
+          "UnitToSend": "Sentry1",
+          "SpawnTime": 1,
+          "Buildzone": 6,
+          "Deadzone": 2
+        },
+        "Range": 14,
+        "Damage": 3
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 15,
+            "Damage": 5
+          },
+          "Image": 4517035597.0,
+          "Title": "Precise Calculations",
+          "Cost": 250
+        },
+        {
+          "Stats": {
+            "Range": 18,
+            "Detections": {
+              "Hidden": true,
+              "Flying": true
+            }
+          },
+          "Image": 149177741,
+          "Title": "Makeshift Radar",
+          "Cost": 400
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "UnitToSend": "Sentry2"
+            },
+            "Cooldown": 1.25,
+            "Extras": [
+              "Rifle Sentry"
+            ],
+            "Damage": 8
+          },
+          "Image": 8998290803.0,
+          "Title": "Auto Converter",
+          "Cost": 1600
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "MaxUnits": 3,
+              "SentryShield": true
+            },
+            "Extras": [
+              "3 Max Units",
+              "Sentry Shield"
+            ],
+            "Cooldown": 1,
+            "Range": 18,
+            "Damage": 15
+          },
+          "Image": 31857714,
+          "Title": "Pressure Tank",
+          "Cost": 3500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "UnitToSend": "Sentry3"
+            },
+            "Extras": [
+              "Minigun Sentry"
+            ],
+            "Damage": 25
+          },
+          "Image": 155526941,
+          "Title": "Heavy Construction",
+          "Cost": 12500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "MaxUnits": 4,
+              "UnitToSend": "Sentry4"
+            },
+            "Extras": [
+              "War Machine Sentry",
+              "4 Max Units"
+            ],
+            "Cooldown": 0.8,
+            "Range": 20,
+            "Damage": 40
+          },
+          "Image": 7852911857.0,
+          "Title": "Illegal Gun Parts",
+          "Cost": 35000
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "Gladiator": {
+      "type": "object",
+      "title": "Gladiator",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {
+                          "ParryCooldown": {
+                            "type": "number",
+                            "default": 0,
+                            "description": "How long until the gladiator can parry again"
+                          },
+                          "MaxHits": {
+                            "type": "number",
+                            "default": 0,
+                            "description": "How many enemies the attack can pierce"
+                          },
+                          "ParryLength": {
+                            "type": "number",
+                            "default": 0,
+                            "description": "How long the gladiator's parry lasts"
+                          }
+                        }
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 3356186535.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "ParryCooldown": 5,
+                      "MaxHits": 3,
+                      "ParryLength": 1.25
+                    },
+                    "Cooldown": 1,
+                    "Range": 5,
+                    "Damage": 3
+                  },
+                  "Title": "Warrior Armor",
+                  "Cost": 250
+                },
+                {
+                  "Image": 141745478,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "ParryCooldown": 5,
+                      "MaxHits": 3,
+                      "ParryLength": 1.25
+                    },
+                    "Cooldown": 1,
+                    "Range": 5,
+                    "Damage": 5
+                  },
+                  "Title": "Dangersense",
+                  "Cost": 500
+                },
+                {
+                  "Image": 4118882122.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "Warrior's Call"
+                    ],
+                    "Attributes": {
+                      "ParryCooldown": 5,
+                      "MaxHits": 3,
+                      "ParryLength": 1.25
+                    },
+                    "Cooldown": 1,
+                    "Range": 5,
+                    "Damage": 10
+                  },
+                  "Title": "Extra Protection",
+                  "Cost": 1500
+                },
+                {
+                  "Image": 16620737,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "ParryCooldown": 5,
+                      "MaxHits": 3,
+                      "ParryLength": 1.25
+                    },
+                    "Cooldown": 0.75,
+                    "Range": 5,
+                    "Damage": 25
+                  },
+                  "Title": "Illumina",
+                  "Cost": 2500
+                },
+                {
+                  "Image": 16868189,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "ParryCooldown": 5,
+                      "MaxHits": 3,
+                      "ParryLength": 1.25
+                    },
+                    "Cooldown": 0.5,
+                    "Range": 6,
+                    "Damage": 40
+                  },
+                  "Title": "Darkheart Swordsman",
+                  "Cost": 6000
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Attributes": {
+                  "type": "object",
+                  "title": "Attributes",
+                  "properties": {
+                    "ParryCooldown": {
+                      "default": 5,
+                      "type": "number"
+                    },
+                    "MaxHits": {
+                      "default": 3,
+                      "type": "number"
+                    },
+                    "ParryLength": {
+                      "default": 1.25,
+                      "type": "number"
+                    }
+                  }
+                },
+                "Price": {
+                  "default": 300,
+                  "type": "number"
+                },
+                "Range": {
+                  "default": 5,
+                  "type": "number"
+                },
+                "Cooldown": {
+                  "default": 1,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 2,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

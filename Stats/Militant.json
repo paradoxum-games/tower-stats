@@ -1,0 +1,58 @@
+{
+  "Militant": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Price": 800,
+        "Cooldown": 0.25,
+        "Range": 14,
+        "Damage": 1
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Detections": {
+              "Hidden": true
+            },
+            "Range": 17
+          },
+          "Image": 5523212631.0,
+          "Title": "Radio Comms",
+          "Cost": 250
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.2,
+            "Damage": 2
+          },
+          "Image": 5523215135.0,
+          "Title": "Bigger Rifle",
+          "Cost": 1500
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.18,
+            "Range": 19,
+            "Damage": 4
+          },
+          "Image": 5523216332.0,
+          "Title": "Upskill",
+          "Cost": 3500
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.15,
+            "Range": 21,
+            "Damage": 7
+          },
+          "Image": 5523217773.0,
+          "Title": "Stealth Mercenary",
+          "Cost": 7500
+        }
+      ]
+    }
+  }
+}

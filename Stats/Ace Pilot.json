@@ -1,0 +1,94 @@
+{
+  "Ace Pilot": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": true
+        },
+        "Limit": 10,
+        "Cooldown": 0.15,
+        "Price": 500,
+        "Attributes": {
+          "BombTime": 4,
+          "BombDropping": false,
+          "ExplosionRadius": 4,
+          "HiddenAssist": false,
+          "ExplosionDamage": 10
+        },
+        "Range": 7,
+        "Damage": 1
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Damage": 2
+          },
+          "Image": 3577061449.0,
+          "Title": "Better bullets",
+          "Cost": 250
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "BombDropping": true
+            },
+            "Range": 8,
+            "Extras": [
+              "Bomb dropping"
+            ]
+          },
+          "Image": 5525754186.0,
+          "Title": "Bombs away!",
+          "Cost": 350
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "ExplosionDamage": 18
+            },
+            "Cooldown": 0.1,
+            "Damage": 4
+          },
+          "Image": 5525748117.0,
+          "Title": "Aerial  Ace",
+          "Cost": 1500
+        },
+        {
+          "Stats": {
+            "Detections": {
+              "Hidden": true
+            },
+            "Attributes": {
+              "HiddenAssist": true,
+              "BombTime": 3.5
+            },
+            "Extras": [
+              "Stronger bombs",
+              "Nearby towers get HD at the start of a wave."
+            ],
+            "Damage": 6
+          },
+          "Image": 5525748988.0,
+          "Title": "Spy plane",
+          "Cost": 3600
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "BombTime": 3,
+              "ExplosionRadius": 6,
+              "ExplosionDamage": 24
+            },
+            "Cooldown": 0.05,
+            "Range": 10,
+            "Damage": 9
+          },
+          "Image": 5525749418.0,
+          "Title": "Air fighter",
+          "Cost": 7500
+        }
+      ]
+    }
+  }
+}

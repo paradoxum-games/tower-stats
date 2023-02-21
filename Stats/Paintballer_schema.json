@@ -1,0 +1,253 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "Paintballer": {
+      "type": "object",
+      "title": "Paintballer",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {
+                          "ExplosiveRange": {
+                            "type": "number",
+                            "default": 0
+                          }
+                        }
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 3280081327.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": true
+                    },
+                    "Attributes": {
+                      "ExplosiveRange": 2
+                    },
+                    "Cooldown": 2,
+                    "Range": 13,
+                    "Damage": 2
+                  },
+                  "Title": "Paintball Gear",
+                  "Cost": 100
+                },
+                {
+                  "Image": 3319083300.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "Larger splash"
+                    ],
+                    "Attributes": {
+                      "ExplosiveRange": 3
+                    },
+                    "Cooldown": 2,
+                    "Range": 13,
+                    "Damage": 3
+                  },
+                  "Title": "Shoulder Pads",
+                  "Cost": 500
+                },
+                {
+                  "Image": 3280082028.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": true
+                    },
+                    "Attributes": {
+                      "ExplosiveRange": 3
+                    },
+                    "Cooldown": 1.5,
+                    "Range": 15,
+                    "Damage": 3
+                  },
+                  "Title": "Double Barrel Gun",
+                  "Cost": 700
+                },
+                {
+                  "Image": 3319084508.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "Larger splash"
+                    ],
+                    "Attributes": {
+                      "ExplosiveRange": 4
+                    },
+                    "Cooldown": 1,
+                    "Range": 15,
+                    "Damage": 5
+                  },
+                  "Title": "Competitive Gear",
+                  "Cost": 2500
+                },
+                {
+                  "Image": 3319085582.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "Larger splash"
+                    ],
+                    "Attributes": {
+                      "ExplosiveRange": 5
+                    },
+                    "Cooldown": 1,
+                    "Range": 15,
+                    "Damage": 10
+                  },
+                  "Title": "Paintball Champion",
+                  "Cost": 3500
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Attributes": {
+                  "type": "object",
+                  "title": "Attributes",
+                  "properties": {
+                    "ExplosiveRange": {
+                      "default": 2,
+                      "type": "number"
+                    }
+                  }
+                },
+                "Price": {
+                  "default": 400,
+                  "type": "number"
+                },
+                "Range": {
+                  "default": 11,
+                  "type": "number"
+                },
+                "Cooldown": {
+                  "default": 2,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 2,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

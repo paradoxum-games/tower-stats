@@ -1,0 +1,479 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "Soldier": {
+      "type": "object",
+      "title": "Soldier",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {
+                          "Burst": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "BurstCool": {
+                            "type": "number",
+                            "default": 0
+                          }
+                        }
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 5523192002.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "Burst": 3,
+                      "BurstCool": 1
+                    },
+                    "Cooldown": 0.15,
+                    "Range": 15,
+                    "Damage": 1
+                  },
+                  "Title": "Better Vision",
+                  "Cost": 100
+                },
+                {
+                  "Image": 5523193619.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "Burst": 3,
+                      "BurstCool": 1
+                    },
+                    "Range": 16,
+                    "Cooldown": 0.15,
+                    "Damage": 2
+                  },
+                  "Title": "Better Aiming",
+                  "Cost": 500
+                },
+                {
+                  "Image": 5523195646.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "Increased burst (5)"
+                    ],
+                    "Attributes": {
+                      "Burst": 5,
+                      "BurstCool": 1
+                    },
+                    "Cooldown": 0.15,
+                    "Range": 16,
+                    "Damage": 3
+                  },
+                  "Title": "Equipment Upgrades",
+                  "Cost": 1500
+                },
+                {
+                  "Image": 5523196519.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "Increased burst (7)"
+                    ],
+                    "Attributes": {
+                      "Burst": 7,
+                      "BurstCool": 1
+                    },
+                    "Range": 18,
+                    "Cooldown": 0.125,
+                    "Damage": 6
+                  },
+                  "Title": "Deadliest Soldier",
+                  "Cost": 4000
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Attributes": {
+                  "type": "object",
+                  "title": "Attributes",
+                  "properties": {
+                    "Burst": {
+                      "default": 3,
+                      "type": "number"
+                    },
+                    "BurstCool": {
+                      "default": 1,
+                      "type": "number"
+                    }
+                  }
+                },
+                "Price": {
+                  "default": 350,
+                  "type": "number"
+                },
+                "Range": {
+                  "default": 13,
+                  "type": "number"
+                },
+                "Cooldown": {
+                  "default": 0.15,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 1,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        },
+        "Golden": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Golden Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {
+                          "Burst": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "BurstCool": {
+                            "type": "number",
+                            "default": 0
+                          }
+                        }
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "Burst": 3,
+                      "BurstCool": 1
+                    },
+                    "Cooldown": 0.15,
+                    "Range": 16,
+                    "Damage": 2
+                  },
+                  "Image": 5523192002.0,
+                  "Title": "Trigger Finger",
+                  "Cost": 250
+                },
+                {
+                  "Image": 5523193619.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "Increased burst (5)"
+                    ],
+                    "Attributes": {
+                      "Burst": 5,
+                      "BurstCool": 1
+                    },
+                    "Range": 17,
+                    "Cooldown": 0.15,
+                    "Damage": 3
+                  },
+                  "Title": "Better Aiming",
+                  "Cost": 750
+                },
+                {
+                  "Image": 5523195646.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "Increased burst (8)"
+                    ],
+                    "Attributes": {
+                      "Burst": 8,
+                      "BurstCool": 1
+                    },
+                    "Cooldown": 0.125,
+                    "Range": 17,
+                    "Damage": 4
+                  },
+                  "Title": "Equipment Upgrades",
+                  "Cost": 2000
+                },
+                {
+                  "Image": 5523196519.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "Increased burst (12)"
+                    ],
+                    "Attributes": {
+                      "Burst": 12,
+                      "BurstCool": 1
+                    },
+                    "Range": 19,
+                    "Cooldown": 0.1,
+                    "Damage": 7
+                  },
+                  "Title": "Deadliest's Soldier",
+                  "Cost": 5000
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Attributes": {
+                  "type": "object",
+                  "title": "Attributes",
+                  "properties": {
+                    "Burst": {
+                      "default": 3,
+                      "type": "number"
+                    },
+                    "BurstCool": {
+                      "default": 1,
+                      "type": "number"
+                    }
+                  }
+                },
+                "Price": {
+                  "default": 500,
+                  "type": "number"
+                },
+                "Range": {
+                  "default": 13,
+                  "type": "number"
+                },
+                "Cooldown": {
+                  "default": 0.2,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 2,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

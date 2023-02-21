@@ -1,0 +1,369 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "Engineer": {
+      "type": "object",
+      "title": "Engineer",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {
+                          "BuildTime": {
+                            "type": "number",
+                            "default": 0,
+                            "description": "The time it takes to build the sentry before the engineer can attack again"
+                          },
+                          "MaxUnits": {
+                            "type": "number",
+                            "default": 0,
+                            "description": "The maximum number of units that can be spawned at once per tower (-1 = infinite)"
+                          },
+                          "UnitToSend": {
+                            "type": "string",
+                            "default": "",
+                            "description": "The unit to spawn"
+                          },
+                          "SpawnTime": {
+                            "type": "number",
+                            "default": 0,
+                            "description": "The time it takes for a unit to spawn"
+                          },
+                          "SentryShield": {
+                            "type": "boolean",
+                            "default": 0,
+                            "description": "Should the sentry have a shield"
+                          },
+                          "Buildzone": {
+                            "type": "number",
+                            "default": 0,
+                            "description": "The range around the tower that units can spawn in"
+                          },
+                          "Deadzone": {
+                            "type": "number",
+                            "default": 0,
+                            "description": "The range around the tower that units cannot spawn in (or that the tower cannot attack in)"
+                          }
+                        }
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 4517035597.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": true
+                    },
+                    "Attributes": {
+                      "BuildTime": 2,
+                      "MaxUnits": 2,
+                      "UnitToSend": "Sentry1",
+                      "SpawnTime": 1,
+                      "Buildzone": 6,
+                      "Deadzone": 2
+                    },
+                    "Range": 15,
+                    "Cooldown": 1.5,
+                    "Damage": 5
+                  },
+                  "Title": "Precise Calculations",
+                  "Cost": 250
+                },
+                {
+                  "Image": 149177741,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": true,
+                      "Hidden": true,
+                      "Lead": true
+                    },
+                    "Attributes": {
+                      "BuildTime": 2,
+                      "MaxUnits": 2,
+                      "UnitToSend": "Sentry1",
+                      "SpawnTime": 1,
+                      "Buildzone": 6,
+                      "Deadzone": 2
+                    },
+                    "Cooldown": 1.5,
+                    "Range": 18,
+                    "Damage": 5
+                  },
+                  "Title": "Makeshift Radar",
+                  "Cost": 400
+                },
+                {
+                  "Image": 8998290803.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": true,
+                      "Hidden": true,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "Rifle Sentry"
+                    ],
+                    "Attributes": {
+                      "BuildTime": 2,
+                      "MaxUnits": 2,
+                      "UnitToSend": "Sentry2",
+                      "SpawnTime": 1,
+                      "Buildzone": 6,
+                      "Deadzone": 2
+                    },
+                    "Cooldown": 1.25,
+                    "Range": 18,
+                    "Damage": 8
+                  },
+                  "Title": "Auto Converter",
+                  "Cost": 1600
+                },
+                {
+                  "Image": 31857714,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": true,
+                      "Hidden": true,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "3 Max Units",
+                      "Sentry Shield"
+                    ],
+                    "Attributes": {
+                      "BuildTime": 2,
+                      "MaxUnits": 3,
+                      "UnitToSend": "Sentry2",
+                      "SentryShield": true,
+                      "SpawnTime": 1,
+                      "Buildzone": 6,
+                      "Deadzone": 2
+                    },
+                    "Range": 18,
+                    "Cooldown": 1,
+                    "Damage": 15
+                  },
+                  "Title": "Pressure Tank",
+                  "Cost": 3500
+                },
+                {
+                  "Image": 155526941,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": true,
+                      "Hidden": true,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "Minigun Sentry"
+                    ],
+                    "Attributes": {
+                      "BuildTime": 2,
+                      "MaxUnits": 3,
+                      "UnitToSend": "Sentry3",
+                      "SpawnTime": 1,
+                      "Deadzone": 2,
+                      "Buildzone": 6,
+                      "SentryShield": true
+                    },
+                    "Cooldown": 1,
+                    "Range": 18,
+                    "Damage": 25
+                  },
+                  "Title": "Heavy Construction",
+                  "Cost": 12500
+                },
+                {
+                  "Image": 7852911857.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": true,
+                      "Hidden": true,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "War Machine Sentry",
+                      "4 Max Units"
+                    ],
+                    "Attributes": {
+                      "BuildTime": 2,
+                      "MaxUnits": 4,
+                      "UnitToSend": "Sentry4",
+                      "SpawnTime": 1,
+                      "Deadzone": 2,
+                      "Buildzone": 6,
+                      "SentryShield": true
+                    },
+                    "Range": 20,
+                    "Cooldown": 0.8,
+                    "Damage": 40
+                  },
+                  "Title": "Illegal Gun Parts",
+                  "Cost": 35000
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Limit": {
+                  "default": 6,
+                  "type": "number"
+                },
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Range": {
+                  "default": 14,
+                  "type": "number"
+                },
+                "Price": {
+                  "default": 750,
+                  "type": "number"
+                },
+                "Attributes": {
+                  "type": "object",
+                  "title": "Attributes",
+                  "properties": {
+                    "BuildTime": {
+                      "default": 2,
+                      "type": "number"
+                    },
+                    "MaxUnits": {
+                      "default": 2,
+                      "type": "number"
+                    },
+                    "UnitToSend": {
+                      "default": "Sentry1",
+                      "type": "string"
+                    },
+                    "SpawnTime": {
+                      "default": 1,
+                      "type": "number"
+                    },
+                    "SentryShield": {
+                      "type": "boolean",
+                      "default": 0,
+                      "description": "Should the sentry have a shield"
+                    },
+                    "Buildzone": {
+                      "default": 6,
+                      "type": "number"
+                    },
+                    "Deadzone": {
+                      "default": 2,
+                      "type": "number"
+                    }
+                  }
+                },
+                "Cooldown": {
+                  "default": 1.5,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 3,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

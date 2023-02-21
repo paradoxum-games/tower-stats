@@ -1,0 +1,97 @@
+{
+  "War Machine": {
+    "Default": {
+      "Defaults": {
+        "Attributes": {
+          "MissileTime": 5,
+          "DamageBuff": 0,
+          "ExplosionRadius": 5,
+          "Spread": 10,
+          "ExplosionDamage": 20
+        },
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Cooldown": 0.1,
+        "Price": 2000,
+        "Limit": 10,
+        "Range": 12,
+        "Damage": 1
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 18
+          },
+          "Image": 4989372339.0,
+          "Title": "IMPROVED HANDLING",
+          "Cost": 250
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Missile",
+              "20 damage",
+              "5 sec reload"
+            ],
+            "Range": 22,
+            "Damage": 2
+          },
+          "Image": 4989372568.0,
+          "Title": "STARK MISSILE",
+          "Cost": 650
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Nearby troops get 10% DMG buff"
+            ],
+            "Attributes": {
+              "DamageBuff": 10
+            },
+            "Damage": 4
+          },
+          "Image": 3584258139.0,
+          "Title": "EPIC ARMOR PLATING",
+          "Cost": 5000
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Quad Missile Launcher",
+              "25 damage",
+              "Bigger boom"
+            ],
+            "Range": 24,
+            "Attributes": {
+              "ExplosionDamage": 25,
+              "ExplosionRadius": 6
+            },
+            "Damage": 10
+          },
+          "Image": 4989373124.0,
+          "Title": "ULTRA CHARGED BODY ARMOR",
+          "Cost": 12500
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Faster missile reloading",
+              "Nearby troops get 20% DMG buff"
+            ],
+            "Range": 26,
+            "Attributes": {
+              "MissileTime": 4,
+              "DamageBuff": 20
+            },
+            "Damage": 18
+          },
+          "Image": 4989373460.0,
+          "Title": "To The Void and Back",
+          "Cost": 75000
+        }
+      ]
+    }
+  }
+}

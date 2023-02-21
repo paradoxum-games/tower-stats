@@ -1,0 +1,223 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "Commando": {
+      "type": "object",
+      "title": "Commando",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {}
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 3615110168.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Cooldown": 0.5,
+                    "Range": 14,
+                    "Damage": 2
+                  },
+                  "Title": "Radar Pack",
+                  "Cost": 350
+                },
+                {
+                  "Image": 3615110536.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "Missile launcher"
+                    ],
+                    "Cooldown": 0.5,
+                    "Range": 16,
+                    "Damage": 2
+                  },
+                  "Title": "Disposable Missile",
+                  "Cost": 700
+                },
+                {
+                  "Image": 3615110964.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Range": 17,
+                    "Cooldown": 0.5,
+                    "Damage": 4
+                  },
+                  "Title": "Recon Armor",
+                  "Cost": 2000
+                },
+                {
+                  "Image": 3615111324.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "Quad missiles"
+                    ],
+                    "Range": 19,
+                    "Cooldown": 0.5,
+                    "Damage": 10
+                  },
+                  "Title": "Quad Launcher",
+                  "Cost": 7500
+                },
+                {
+                  "Image": 3615112120.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "Really cool armor"
+                    ],
+                    "Range": 22,
+                    "Cooldown": 0.5,
+                    "Damage": 22
+                  },
+                  "Title": "Flex Armor",
+                  "Cost": 10000
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Price": {
+                  "default": 1600,
+                  "type": "number"
+                },
+                "Range": {
+                  "default": 12,
+                  "type": "number"
+                },
+                "Cooldown": {
+                  "default": 0.5,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 2,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

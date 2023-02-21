@@ -1,0 +1,274 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "DJ Booth": {
+      "type": "object",
+      "title": "DJ Booth",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {
+                          "RangeBuff": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "Discount": {
+                            "type": "number",
+                            "default": 0
+                          }
+                        }
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 5523221280.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "RangeBuff": 10,
+                      "Discount": 0
+                    },
+                    "Cooldown": 0,
+                    "Range": 17,
+                    "Damage": 0
+                  },
+                  "Title": "Laptop Studio",
+                  "Cost": 300
+                },
+                {
+                  "Image": 5523222880.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "15% range buff"
+                    ],
+                    "Attributes": {
+                      "RangeBuff": 15,
+                      "Discount": 0
+                    },
+                    "Range": 17,
+                    "Cooldown": 0,
+                    "Damage": 0
+                  },
+                  "Title": "Party Mode",
+                  "Cost": 850
+                },
+                {
+                  "Image": 5523224020.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "10% discount buff"
+                    ],
+                    "Attributes": {
+                      "Discount": 10,
+                      "RangeBuff": 15
+                    },
+                    "Cooldown": 0,
+                    "Range": 18,
+                    "Damage": 0
+                  },
+                  "Title": "Thrifty Music",
+                  "Cost": 2500
+                },
+                {
+                  "Image": 5523225033.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "25% range buff"
+                    ],
+                    "Attributes": {
+                      "RangeBuff": 25,
+                      "Discount": 10
+                    },
+                    "Cooldown": 0,
+                    "Range": 18,
+                    "Damage": 0
+                  },
+                  "Title": "Audio Visualizer",
+                  "Cost": 4000
+                },
+                {
+                  "Image": 5523225756.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "35% range buff",
+                      "20% discount buff"
+                    ],
+                    "Attributes": {
+                      "RangeBuff": 35,
+                      "Discount": 20
+                    },
+                    "Cooldown": 0,
+                    "Range": 20,
+                    "Damage": 0
+                  },
+                  "Title": "Apocalypse Rave",
+                  "Cost": 9000
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Limit": {
+                  "default": 1,
+                  "type": "number"
+                },
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Range": {
+                  "default": 15,
+                  "type": "number"
+                },
+                "Price": {
+                  "default": 600,
+                  "type": "number"
+                },
+                "Attributes": {
+                  "type": "object",
+                  "title": "Attributes",
+                  "properties": {
+                    "RangeBuff": {
+                      "default": 10,
+                      "type": "number"
+                    },
+                    "Discount": {
+                      "default": 0,
+                      "type": "number"
+                    }
+                  }
+                },
+                "Cooldown": {
+                  "default": 0,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 0,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

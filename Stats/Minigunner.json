@@ -1,0 +1,116 @@
+{
+  "Minigunner": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Attributes": {
+          "RevTime": 1.4
+        },
+        "Price": 2000,
+        "Cooldown": 0.14,
+        "Range": 16,
+        "Damage": 1
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 18,
+            "Cooldown": 0.1
+          },
+          "Image": 5523183082.0,
+          "Title": "Improved Handling",
+          "Cost": 500
+        },
+        {
+          "Stats": {
+            "Hidden": true,
+            "Detections": {
+              "Hidden": true
+            },
+            "Range": 19
+          },
+          "Image": 5523183560.0,
+          "Title": "Heat Vision Goggles",
+          "Cost": 650
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.05,
+            "Damage": 2
+          },
+          "Image": 5523183784.0,
+          "Title": "Geared Up",
+          "Cost": 5500
+        },
+        {
+          "Stats": {
+            "Range": 21,
+            "Damage": 4
+          },
+          "Image": 5523184267.0,
+          "Title": "Futuristic Armory",
+          "Cost": 9000
+        }
+      ]
+    },
+    "Golden": {
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 18,
+            "Cooldown": 0.1
+          },
+          "Image": 5523183082.0,
+          "Title": "Improved Handling",
+          "Cost": 750
+        },
+        {
+          "Stats": {
+            "Range": 19,
+            "Detections": {
+              "Hidden": true
+            },
+            "Damage": 3
+          },
+          "Image": 5523183560.0,
+          "Title": "Heat Vision Goggles",
+          "Cost": 2000
+        },
+        {
+          "Stats": {
+            "Range": 21,
+            "Damage": 6
+          },
+          "Image": 5523184267.0,
+          "Title": "Futuristic Armory",
+          "Cost": 10000
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.05,
+            "Damage": 4
+          },
+          "Image": 5523183784.0,
+          "Title": "Geared Up",
+          "Cost": 7500
+        }
+      ],
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Attributes": {
+          "RevTime": 1.4
+        },
+        "Price": 3000,
+        "Cooldown": 0.14,
+        "Range": 16,
+        "Damage": 2
+      }
+    }
+  }
+}

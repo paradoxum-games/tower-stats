@@ -1,0 +1,338 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "Sledger": {
+      "type": "object",
+      "title": "Sledger",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {
+                          "CanFreeze": {
+                            "type": "boolean",
+                            "default": 0
+                          },
+                          "DefenseMelt": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "MinFreezeTime": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "FreezeBonus": {
+                            "type": "boolean",
+                            "default": 0
+                          },
+                          "MaxHits": {
+                            "type": "number",
+                            "default": 0,
+                            "description": "How many enemies the attack can pierce"
+                          },
+                          "MaxFreezeTime": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "Lead": {
+                            "type": "boolean",
+                            "default": 0
+                          }
+                        }
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 3356186535.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "CanFreeze": false,
+                      "MinFreezeTime": 1.5,
+                      "FreezeBonus": false,
+                      "MaxHits": 1,
+                      "DefenseMelt": 0,
+                      "MaxFreezeTime": 2.5
+                    },
+                    "Cooldown": 2,
+                    "Range": 6,
+                    "Damage": 6
+                  },
+                  "Title": "Heavier Swings",
+                  "Cost": 250
+                },
+                {
+                  "Image": 141745478,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "2 max hits."
+                    ],
+                    "Attributes": {
+                      "CanFreeze": false,
+                      "MaxFreezeTime": 2.5,
+                      "MinFreezeTime": 1.5,
+                      "FreezeBonus": false,
+                      "MaxHits": 2,
+                      "DefenseMelt": 0,
+                      "Lead": true
+                    },
+                    "Cooldown": 1.75,
+                    "Range": 6,
+                    "Damage": 8
+                  },
+                  "Title": "Better Sledge",
+                  "Cost": 500
+                },
+                {
+                  "Image": 4118882122.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "Freeze enemies on hit."
+                    ],
+                    "Attributes": {
+                      "CanFreeze": true,
+                      "MinFreezeTime": 1.5,
+                      "DefenseMelt": 0,
+                      "FreezeBonus": false,
+                      "MaxHits": 2,
+                      "MaxFreezeTime": 2.5,
+                      "Lead": true
+                    },
+                    "Cooldown": 1.75,
+                    "Range": 6,
+                    "Damage": 15
+                  },
+                  "Title": "Freezing Strikes",
+                  "Cost": 1500
+                },
+                {
+                  "Image": 16620737,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "Frozen enemies take x2 damage."
+                    ],
+                    "Attributes": {
+                      "CanFreeze": true,
+                      "MinFreezeTime": 1.5,
+                      "DefenseMelt": 0,
+                      "FreezeBonus": true,
+                      "MaxHits": 2,
+                      "MaxFreezeTime": 2.5,
+                      "Lead": true
+                    },
+                    "Cooldown": 1.5,
+                    "Range": 6,
+                    "Damage": 35
+                  },
+                  "Title": "Ice Breaker",
+                  "Cost": 2500
+                },
+                {
+                  "Image": 16868189,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "4 max hits."
+                    ],
+                    "Attributes": {
+                      "CanFreeze": true,
+                      "MinFreezeTime": 1.5,
+                      "DefenseMelt": 0,
+                      "FreezeBonus": true,
+                      "MaxHits": 4,
+                      "MaxFreezeTime": 2.5,
+                      "Lead": true
+                    },
+                    "Cooldown": 1.25,
+                    "Range": 6,
+                    "Damage": 50
+                  },
+                  "Title": "Arctic Commando",
+                  "Cost": 8500
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Attributes": {
+                  "type": "object",
+                  "title": "Attributes",
+                  "properties": {
+                    "CanFreeze": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "DefenseMelt": {
+                      "default": 0,
+                      "type": "number"
+                    },
+                    "MinFreezeTime": {
+                      "default": 1.5,
+                      "type": "number"
+                    },
+                    "FreezeBonus": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "MaxHits": {
+                      "default": 1,
+                      "type": "number"
+                    },
+                    "MaxFreezeTime": {
+                      "default": 2.5,
+                      "type": "number"
+                    },
+                    "Lead": {
+                      "type": "boolean",
+                      "default": 0
+                    }
+                  }
+                },
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Range": {
+                  "default": 6,
+                  "type": "number"
+                },
+                "Price": {
+                  "default": 350,
+                  "type": "number"
+                },
+                "Limit": {
+                  "default": 6,
+                  "type": "number"
+                },
+                "Cooldown": {
+                  "default": 2,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 4,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "Medic": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Abilities": [
+          {
+            "Name": "Cleansing",
+            "Debounce": 30,
+            "Price": 0,
+            "Level": 5,
+            "Icon": 231100685
+          }
+        ],
+        "Cooldown": 1,
+        "Price": 900,
+        "Attributes": {
+          "Healing": 5
+        },
+        "Range": 10,
+        "Damage": 2
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 11,
+            "Damage": 3
+          },
+          "Image": 4119547116.0,
+          "Title": "Medical Precautions",
+          "Cost": 400
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Increased healings"
+            ],
+            "Cooldown": 0.8,
+            "Range": 12,
+            "Damage": 6
+          },
+          "Image": 4119547593.0,
+          "Title": "Prescribed Vitamins",
+          "Cost": 900
+        },
+        {
+          "Stats": {
+            "Detections": {
+              "Hidden": true
+            },
+            "Range": 15
+          },
+          "Image": 4119548000.0,
+          "Title": "BIG BRAIN",
+          "Cost": 2400
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Increased healing"
+            ],
+            "Cooldown": 0.65,
+            "Range": 16,
+            "Damage": 8
+          },
+          "Image": 4119548431.0,
+          "Title": "Medical Pack",
+          "Cost": 4500
+        },
+        {
+          "Stats": {
+            "Range": 18,
+            "Cooldown": 0.3
+          },
+          "Image": 4119548907.0,
+          "Title": "Goddess of Healing",
+          "Cost": 6500
+        }
+      ]
+    }
+  }
+}

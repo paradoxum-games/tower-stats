@@ -1,0 +1,229 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "Demoman": {
+      "type": "object",
+      "title": "Demoman",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {
+                          "ExplosionRadius": {
+                            "type": "number",
+                            "default": 0
+                          }
+                        }
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": true
+                    },
+                    "Attributes": {
+                      "ExplosionRadius": 2.5
+                    },
+                    "Cooldown": 2,
+                    "Range": 10,
+                    "Damage": 3
+                  },
+                  "Title": "Further Throwing",
+                  "Cost": 150
+                },
+                {
+                  "Image": 5523227714.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": true
+                    },
+                    "Attributes": {
+                      "ExplosionRadius": 3.5
+                    },
+                    "Cooldown": 2,
+                    "Range": 10,
+                    "Damage": 6
+                  },
+                  "Title": "Steil Grenade",
+                  "Cost": 525
+                },
+                {
+                  "Image": 5523228733.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": true
+                    },
+                    "Attributes": {
+                      "ExplosionRadius": 3.5
+                    },
+                    "Cooldown": 1.5,
+                    "Range": 10,
+                    "Damage": 12
+                  },
+                  "Title": "Chinalake",
+                  "Cost": 1500
+                },
+                {
+                  "Image": 5523229364.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "Bigger explosion"
+                    ],
+                    "Attributes": {
+                      "ExplosionRadius": 4
+                    },
+                    "Range": 14,
+                    "Cooldown": 1.2,
+                    "Damage": 28
+                  },
+                  "Title": "Collateral Damage",
+                  "Cost": 6000
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Attributes": {
+                  "type": "object",
+                  "title": "Attributes",
+                  "properties": {
+                    "ExplosionRadius": {
+                      "default": 2.5,
+                      "type": "number"
+                    }
+                  }
+                },
+                "Price": {
+                  "default": 300,
+                  "type": "number"
+                },
+                "Range": {
+                  "default": 7,
+                  "type": "number"
+                },
+                "Cooldown": {
+                  "default": 2.5,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 3,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

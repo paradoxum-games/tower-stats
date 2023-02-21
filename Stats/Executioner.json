@@ -1,0 +1,80 @@
+{
+  "Executioner": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": true
+        },
+        "Limit": 8,
+        "Cooldown": 3,
+        "Price": 800,
+        "Attributes": {
+          "MaxHits": 3,
+          "MaxBounce": 3,
+          "TickRate": 0.15
+        },
+        "Range": 14,
+        "Damage": 4
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Cooldown": 2
+          },
+          "Image": 129697807,
+          "Title": "Improved Throwing",
+          "Cost": 250
+        },
+        {
+          "Stats": {
+            "Damage": 8
+          },
+          "Image": 542098553,
+          "Title": "Double Head Axe",
+          "Cost": 750
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Bounces: 5"
+            ],
+            "Attributes": {
+              "MaxBounce": 5
+            },
+            "Range": 18,
+            "Damage": 15
+          },
+          "Image": 6426220009.0,
+          "Title": "Blood Seeking",
+          "Cost": 2500
+        },
+        {
+          "Stats": {
+            "Detections": {
+              "Hidden": true
+            },
+            "Damage": 30
+          },
+          "Image": 27386833,
+          "Title": "Tactical Ops",
+          "Cost": 6000
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "MaxBounce": 7
+            },
+            "Extras": [
+              "Bounces: 7"
+            ],
+            "Damage": 80
+          },
+          "Image": 143769378,
+          "Title": "Head Chopping",
+          "Cost": 12500
+        }
+      ]
+    }
+  }
+}

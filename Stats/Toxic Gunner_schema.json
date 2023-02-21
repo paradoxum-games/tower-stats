@@ -1,0 +1,311 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "Toxic Gunner": {
+      "type": "object",
+      "title": "Toxic Gunner",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {
+                          "PoisonTick": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "Burst": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "DefenseMelt": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "ReloadSpeed": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "Slowness": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "PoisonLength": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "PoisonDamage": {
+                            "type": "number",
+                            "default": 0
+                          }
+                        }
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 5523192002.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "x2 Reload Speed"
+                    ],
+                    "Attributes": {
+                      "PoisonTick": 0.5,
+                      "Burst": 3,
+                      "DefenseMelt": 0,
+                      "ReloadSpeed": 5,
+                      "Slowness": 10,
+                      "PoisonDamage": 0,
+                      "PoisonLength": 2
+                    },
+                    "Range": 10,
+                    "Cooldown": 0.15,
+                    "Damage": 1
+                  },
+                  "Title": "Faster Reloading",
+                  "Cost": 150
+                },
+                {
+                  "Image": 5523193619.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "Bullets damage over time"
+                    ],
+                    "Attributes": {
+                      "PoisonTick": 0.5,
+                      "PoisonDamage": 1,
+                      "DefenseMelt": 0,
+                      "ReloadSpeed": 5,
+                      "Slowness": 10,
+                      "Burst": 3,
+                      "PoisonLength": 2
+                    },
+                    "Cooldown": 0.15,
+                    "Range": 12,
+                    "Damage": 1
+                  },
+                  "Title": "Poisonous Bullets",
+                  "Cost": 400
+                },
+                {
+                  "Image": 5523195646.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "Increased burst"
+                    ],
+                    "Attributes": {
+                      "PoisonTick": 0.5,
+                      "Burst": 6,
+                      "DefenseMelt": 0,
+                      "ReloadSpeed": 5,
+                      "Slowness": 10,
+                      "PoisonDamage": 1,
+                      "PoisonLength": 2
+                    },
+                    "Cooldown": 0.1,
+                    "Range": 14,
+                    "Damage": 2
+                  },
+                  "Title": "Hazardous Gear",
+                  "Cost": 1600
+                },
+                {
+                  "Image": 5523196519.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "Increased burst",
+                      "Longer effects"
+                    ],
+                    "Attributes": {
+                      "PoisonTick": 0.5,
+                      "Burst": 10,
+                      "DefenseMelt": 0,
+                      "PoisonLength": 4,
+                      "Slowness": 10,
+                      "ReloadSpeed": 5,
+                      "PoisonDamage": 1
+                    },
+                    "Range": 18,
+                    "Cooldown": 0.1,
+                    "Damage": 4
+                  },
+                  "Title": "Nuclear Overload",
+                  "Cost": 6000
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Attributes": {
+                  "type": "object",
+                  "title": "Attributes",
+                  "properties": {
+                    "PoisonTick": {
+                      "default": 0.5,
+                      "type": "number"
+                    },
+                    "Burst": {
+                      "default": 3,
+                      "type": "number"
+                    },
+                    "DefenseMelt": {
+                      "default": 0,
+                      "type": "number"
+                    },
+                    "ReloadSpeed": {
+                      "default": 10,
+                      "type": "number"
+                    },
+                    "Slowness": {
+                      "default": 10,
+                      "type": "number"
+                    },
+                    "PoisonLength": {
+                      "default": 2,
+                      "type": "number"
+                    },
+                    "PoisonDamage": {
+                      "default": 0,
+                      "type": "number"
+                    }
+                  }
+                },
+                "Price": {
+                  "default": 400,
+                  "type": "number"
+                },
+                "Range": {
+                  "default": 10,
+                  "type": "number"
+                },
+                "Cooldown": {
+                  "default": 0.15,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 1,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

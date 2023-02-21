@@ -1,0 +1,84 @@
+{
+  "Warden": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Attributes": {
+          "ParryLength": 1.25,
+          "CanBlock": false,
+          "ParryCooldown": 5,
+          "MaxHits": 1,
+          "StunLength": 1,
+          "CanStun": false
+        },
+        "Price": 500,
+        "Cooldown": 1.2,
+        "Range": 5,
+        "Damage": 5
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Cooldown": 1,
+            "Detections": {
+              "Hidden": true
+            },
+            "Damage": 8
+          },
+          "Image": 11415010529.0,
+          "Title": "Night Shift",
+          "Cost": 350
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.8,
+            "Range": 6,
+            "Damage": 12
+          },
+          "Image": 11415012702.0,
+          "Title": "Heavier Stick",
+          "Cost": 750
+        },
+        {
+          "Stats": {
+            "Detections": {
+              "Lead": true
+            },
+            "Attributes": {
+              "StunLength": 1.5,
+              "CanStun": true
+            },
+            "Extras": [
+              "Stun Enemies"
+            ],
+            "Damage": 30
+          },
+          "Image": 11415014676.0,
+          "Title": "Stunning Blows",
+          "Cost": 5000
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "StunLength": 2,
+              "CanBlock": true
+            },
+            "Range": 7,
+            "Cooldown": 0.8,
+            "Extras": [
+              "Riot Shield",
+              "Longer Stuns"
+            ],
+            "Damage": 80
+          },
+          "Image": 11415015418.0,
+          "Title": "Riot Control",
+          "Cost": 13500
+        }
+      ]
+    }
+  }
+}

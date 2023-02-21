@@ -1,0 +1,60 @@
+{
+  "Farm": {
+    "Default": {
+      "Defaults": {
+        "Income": 50,
+        "Limit": 8,
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Price": 250,
+        "Cooldown": 0,
+        "Range": 3,
+        "Damage": 0
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Income": 100
+          },
+          "Image": 3294497195.0,
+          "Title": "Carrot Farm",
+          "Cost": 200
+        },
+        {
+          "Stats": {
+            "Income": 250
+          },
+          "Image": 3294496318.0,
+          "Title": "Wheat Farm",
+          "Cost": 550
+        },
+        {
+          "Stats": {
+            "Income": 500
+          },
+          "Image": 3294498124.0,
+          "Title": "Tree Farm",
+          "Cost": 1000
+        },
+        {
+          "Stats": {
+            "Income": 750
+          },
+          "Image": 3294499153.0,
+          "Title": "Apple Farm",
+          "Cost": 2500
+        },
+        {
+          "Stats": {
+            "Income": 1500
+          },
+          "Image": 3294500097.0,
+          "Title": "Space Fruit Farm",
+          "Cost": 5000
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,3622 @@
+{
+  "Warden": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Attributes": {
+          "ParryLength": 1.25,
+          "CanBlock": false,
+          "ParryCooldown": 5,
+          "MaxHits": 1,
+          "StunLength": 1,
+          "CanStun": false
+        },
+        "Price": 500,
+        "Cooldown": 1.2,
+        "Range": 5,
+        "Damage": 5
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Cooldown": 1,
+            "Detections": {
+              "Hidden": true
+            },
+            "Damage": 8
+          },
+          "Image": 11415010529.0,
+          "Title": "Night Shift",
+          "Cost": 350
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.8,
+            "Range": 6,
+            "Damage": 12
+          },
+          "Image": 11415012702.0,
+          "Title": "Heavier Stick",
+          "Cost": 750
+        },
+        {
+          "Stats": {
+            "Detections": {
+              "Lead": true
+            },
+            "Attributes": {
+              "StunLength": 1.5,
+              "CanStun": true
+            },
+            "Extras": [
+              "Stun Enemies"
+            ],
+            "Damage": 30
+          },
+          "Image": 11415014676.0,
+          "Title": "Stunning Blows",
+          "Cost": 5000
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "StunLength": 2,
+              "CanBlock": true
+            },
+            "Range": 7,
+            "Cooldown": 0.8,
+            "Extras": [
+              "Riot Shield",
+              "Longer Stuns"
+            ],
+            "Damage": 80
+          },
+          "Image": 11415015418.0,
+          "Title": "Riot Control",
+          "Cost": 13500
+        }
+      ]
+    }
+  },
+  "Minigunner": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Attributes": {
+          "RevTime": 1.4
+        },
+        "Price": 2000,
+        "Cooldown": 0.14,
+        "Range": 16,
+        "Damage": 1
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 18,
+            "Cooldown": 0.1
+          },
+          "Image": 5523183082.0,
+          "Title": "Improved Handling",
+          "Cost": 500
+        },
+        {
+          "Stats": {
+            "Hidden": true,
+            "Detections": {
+              "Hidden": true
+            },
+            "Range": 19
+          },
+          "Image": 5523183560.0,
+          "Title": "Heat Vision Goggles",
+          "Cost": 650
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.05,
+            "Damage": 2
+          },
+          "Image": 5523183784.0,
+          "Title": "Geared Up",
+          "Cost": 5500
+        },
+        {
+          "Stats": {
+            "Range": 21,
+            "Damage": 4
+          },
+          "Image": 5523184267.0,
+          "Title": "Futuristic Armory",
+          "Cost": 9000
+        }
+      ]
+    },
+    "Golden": {
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 18,
+            "Cooldown": 0.1
+          },
+          "Image": 5523183082.0,
+          "Title": "Improved Handling",
+          "Cost": 750
+        },
+        {
+          "Stats": {
+            "Range": 19,
+            "Detections": {
+              "Hidden": true
+            },
+            "Damage": 3
+          },
+          "Image": 5523183560.0,
+          "Title": "Heat Vision Goggles",
+          "Cost": 2000
+        },
+        {
+          "Stats": {
+            "Range": 21,
+            "Damage": 6
+          },
+          "Image": 5523184267.0,
+          "Title": "Futuristic Armory",
+          "Cost": 10000
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.05,
+            "Damage": 4
+          },
+          "Image": 5523183784.0,
+          "Title": "Geared Up",
+          "Cost": 7500
+        }
+      ],
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Attributes": {
+          "RevTime": 1.4
+        },
+        "Price": 3000,
+        "Cooldown": 0.14,
+        "Range": 16,
+        "Damage": 2
+      }
+    }
+  },
+  "Mecha Base": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Limit": 4,
+        "Cooldown": 0.5,
+        "Price": 5000,
+        "Attributes": {
+          "SpawnTime": 60,
+          "UnitToSend": "Mark1"
+        },
+        "Range": 3,
+        "Damage": 0
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Attributes": {
+              "SpawnTime": 40,
+              "UnitToSend": "Mark1Rocket"
+            }
+          },
+          "Image": 4119547116.0,
+          "Title": "Mechanics",
+          "Cost": 400
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "UnitToSend": "Mark2"
+            }
+          },
+          "Image": 4119547593.0,
+          "Title": "Missile Launcher",
+          "Cost": 900
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "UnitToSend": "Mark3"
+            }
+          },
+          "Image": 4119548000.0,
+          "Title": "Minigun Mech",
+          "Cost": 2400
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "UnitToSend": "Mark4"
+            }
+          },
+          "Image": 4119548431.0,
+          "Title": "Destroyer Mech",
+          "Cost": 4500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "UnitToSend": "Mark5"
+            }
+          },
+          "Image": 4119548907.0,
+          "Title": "Void Walker",
+          "Cost": 6500
+        }
+      ]
+    }
+  },
+  "Frost Blaster": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Attributes": {
+          "MaxFreezeTime": 0.4,
+          "MinFreezeTime": 0.2,
+          "DefenseMelt": 0
+        },
+        "Price": 450,
+        "Cooldown": 3,
+        "Range": 10,
+        "Damage": 1
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 13
+          },
+          "Image": 3354968287.0,
+          "Title": "Endurance",
+          "Cost": 350
+        },
+        {
+          "Stats": {
+            "Range": 14,
+            "Detections": {
+              "Hidden": true
+            },
+            "Damage": 5
+          },
+          "Image": 3354969462.0,
+          "Title": "Subarctic Warmth",
+          "Cost": 600
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Defense reducing"
+            ],
+            "Cooldown": 1.5,
+            "Attributes": {
+              "DefenseMelt": 5
+            },
+            "Damage": 15
+          },
+          "Image": 3354970959.0,
+          "Title": "Improved Armor",
+          "Cost": 1500
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Longer freeze"
+            ],
+            "Attributes": {
+              "MaxFreezeTime": 0.8
+            },
+            "Damage": 18
+          },
+          "Image": 3354972102.0,
+          "Title": "Hyper Icer Rifle",
+          "Cost": 3000
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Longer freeze"
+            ],
+            "Range": 18,
+            "Attributes": {
+              "MaxFreezeTime": 1.2
+            },
+            "Damage": 35
+          },
+          "Image": 3280084231.0,
+          "Title": "Subzero Hero",
+          "Cost": 6500
+        }
+      ]
+    }
+  },
+  "DJ Booth": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Limit": 1,
+        "Cooldown": 0,
+        "Price": 600,
+        "Attributes": {
+          "RangeBuff": 10,
+          "Discount": 0
+        },
+        "Range": 15,
+        "Damage": 0
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 17
+          },
+          "Image": 5523221280.0,
+          "Title": "Laptop Studio",
+          "Cost": 300
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "15% range buff"
+            ],
+            "Attributes": {
+              "RangeBuff": 15
+            }
+          },
+          "Image": 5523222880.0,
+          "Title": "Party Mode",
+          "Cost": 850
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "Discount": 10
+            },
+            "Range": 18,
+            "Extras": [
+              "10% discount buff"
+            ]
+          },
+          "Image": 5523224020.0,
+          "Title": "Thrifty Music",
+          "Cost": 2500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "RangeBuff": 25
+            },
+            "Range": 18,
+            "Extras": [
+              "25% range buff"
+            ]
+          },
+          "Image": 5523225033.0,
+          "Title": "Audio Visualizer",
+          "Cost": 4000
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "RangeBuff": 35,
+              "Discount": 20
+            },
+            "Range": 20,
+            "Extras": [
+              "35% range buff",
+              "20% discount buff"
+            ]
+          },
+          "Image": 5523225756.0,
+          "Title": "Apocalypse Rave",
+          "Cost": 9000
+        }
+      ]
+    }
+  },
+  "Commander": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Abilities": [
+          {
+            "Name": "Call Of Arms",
+            "Debounce": 30,
+            "Price": 300,
+            "Level": 2,
+            "Icon": 4594880289.0
+          }
+        ],
+        "Cooldown": 0.5,
+        "Price": 650,
+        "Attributes": {
+          "FirerateBuff": 10
+        },
+        "Range": 12,
+        "Damage": 4
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Attributes": {
+              "FirerateBuff": 15
+            },
+            "Range": 14,
+            "Extras": [
+              "15% firerate buff"
+            ]
+          },
+          "Image": 5525000768.0,
+          "Title": "Leadership",
+          "Cost": 850
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Call to Arms"
+            ]
+          },
+          "Image": 4594880289.0,
+          "Title": "Call to Arms",
+          "Cost": 1800
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "20% firerate buff"
+            ],
+            "Attributes": {
+              "FirerateBuff": 20
+            },
+            "Range": 16,
+            "Damage": 6
+          },
+          "Image": 5525002879.0,
+          "Title": "Intense Training",
+          "Cost": 5500
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "25% firerate buff"
+            ],
+            "Attributes": {
+              "FirerateBuff": 25
+            },
+            "Range": 20,
+            "Damage": 10
+          },
+          "Image": 5525003528.0,
+          "Title": "World Leader",
+          "Cost": 9000
+        }
+      ]
+    }
+  },
+  "War Machine": {
+    "Default": {
+      "Defaults": {
+        "Attributes": {
+          "MissileTime": 5,
+          "DamageBuff": 0,
+          "ExplosionRadius": 5,
+          "Spread": 10,
+          "ExplosionDamage": 20
+        },
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Cooldown": 0.1,
+        "Price": 2000,
+        "Limit": 10,
+        "Range": 12,
+        "Damage": 1
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 18
+          },
+          "Image": 4989372339.0,
+          "Title": "IMPROVED HANDLING",
+          "Cost": 250
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Missile",
+              "20 damage",
+              "5 sec reload"
+            ],
+            "Range": 22,
+            "Damage": 2
+          },
+          "Image": 4989372568.0,
+          "Title": "STARK MISSILE",
+          "Cost": 650
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Nearby troops get 10% DMG buff"
+            ],
+            "Attributes": {
+              "DamageBuff": 10
+            },
+            "Damage": 4
+          },
+          "Image": 3584258139.0,
+          "Title": "EPIC ARMOR PLATING",
+          "Cost": 5000
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Quad Missile Launcher",
+              "25 damage",
+              "Bigger boom"
+            ],
+            "Range": 24,
+            "Attributes": {
+              "ExplosionDamage": 25,
+              "ExplosionRadius": 6
+            },
+            "Damage": 10
+          },
+          "Image": 4989373124.0,
+          "Title": "ULTRA CHARGED BODY ARMOR",
+          "Cost": 12500
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Faster missile reloading",
+              "Nearby troops get 20% DMG buff"
+            ],
+            "Range": 26,
+            "Attributes": {
+              "MissileTime": 4,
+              "DamageBuff": 20
+            },
+            "Damage": 18
+          },
+          "Image": 4989373460.0,
+          "Title": "To The Void and Back",
+          "Cost": 75000
+        }
+      ]
+    }
+  },
+  "Accelerator": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": true,
+          "Flying": false
+        },
+        "Limit": 8,
+        "Cooldown": 0.2,
+        "Price": 3500,
+        "Attributes": {
+          "ChargeTime": 3,
+          "LaserTime": 6,
+          "LaserCooldown": 2
+        },
+        "Range": 13,
+        "Damage": 8
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 16
+          },
+          "Image": 11821094308.0,
+          "Title": "Focused Aiming",
+          "Cost": 600
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Longer burst"
+            ],
+            "Attributes": {
+              "LaserTime": 8.5
+            }
+          },
+          "Image": 11821094198.0,
+          "Title": "Extra Juice",
+          "Cost": 1200
+        },
+        {
+          "Stats": {
+            "Damage": 15
+          },
+          "Image": 11821093989.0,
+          "Title": "Powerhouse Armor",
+          "Cost": 3200
+        },
+        {
+          "Stats": {
+            "Range": 19,
+            "Cooldown": 0.1
+          },
+          "Image": 11821093828.0,
+          "Title": "Super Charged",
+          "Cost": 9500
+        },
+        {
+          "Stats": {
+            "Range": 20,
+            "Attributes": {
+              "LaserTime": 12,
+              "ChargeTime": 2
+            },
+            "Damage": 35
+          },
+          "Image": 11821093672.0,
+          "Title": "Energy From The Void..",
+          "Cost": 30000
+        }
+      ]
+    }
+  },
+  "Mortar": {
+    "Default": {
+      "Defaults": {
+        "Attributes": {
+          "ExplosionRadius": 4
+        },
+        "Detections": {
+          "Flying": true,
+          "Hidden": false,
+          "Lead": true
+        },
+        "Cooldown": 5,
+        "Price": 400,
+        "Limit": 5,
+        "Range": 22,
+        "Damage": 5
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 25
+          },
+          "Image": 4538447265.0,
+          "Title": "Improved Handling",
+          "Cost": 250
+        },
+        {
+          "Stats": {
+            "Cooldown": 4.5
+          },
+          "Image": 4538447347.0,
+          "Title": "Quick Reloading",
+          "Cost": 400
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "ExplosionRadius": 5
+            },
+            "Damage": 15
+          },
+          "Image": 4538447424.0,
+          "Title": "Bigger Cannon",
+          "Cost": 3000
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Larger explosion"
+            ],
+            "Attributes": {
+              "ExplosionRadius": 6
+            },
+            "Damage": 25
+          },
+          "Image": 4538447493.0,
+          "Title": "Stronger Shells",
+          "Cost": 7200
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "ExplosionRadius": 7
+            },
+            "Range": 30,
+            "Cooldown": 3,
+            "Extras": [
+              "Larger explosion"
+            ],
+            "Damage": 60
+          },
+          "Image": 4538447579.0,
+          "Title": "Nuclear Devastation",
+          "Cost": 12000
+        }
+      ]
+    }
+  },
+  "Pursuit": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": true
+        },
+        "Limit": 10,
+        "Cooldown": 0.3,
+        "Price": 1000,
+        "Attributes": {
+          "Spread": 10,
+          "MissileAmount": 2,
+          "MissilesEnabled": false,
+          "TimeBetweenMissiles": 0.5,
+          "ExplosionRadius": 5,
+          "MissileCooldown": 5,
+          "ExplosionDamage": 3
+        },
+        "Range": 9,
+        "Damage": 1
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Damage": 2
+          },
+          "Image": 3577061449.0,
+          "Title": "Armor Penetration",
+          "Cost": 500
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Missiles",
+              "5 second reload"
+            ],
+            "Attributes": {
+              "MissilesEnabled": true
+            }
+          },
+          "Image": 5528331895.0,
+          "Title": "Missiles",
+          "Cost": 650
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.15,
+            "Attributes": {
+              "ExplosionDamage": 5
+            },
+            "Range": 10,
+            "Extras": [
+              "Stronger explosions"
+            ]
+          },
+          "Image": 5528336509.0,
+          "Title": "Tri-Barrel Minigun",
+          "Cost": 1500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "TimeBetweenMissiles": 0.35,
+              "MissileAmount": 4
+            },
+            "Extras": [
+              "More missiles"
+            ],
+            "Damage": 4
+          },
+          "Image": 5528337682.0,
+          "Title": "Huey",
+          "Cost": 6000
+        },
+        {
+          "Stats": {
+            "Detections": {
+              "Hidden": true
+            },
+            "Extras": [
+              "More missiles"
+            ],
+            "Cooldown": 0.1,
+            "Attributes": {
+              "TimeBetweenMissiles": 0.2,
+              "MissileAmount": 6
+            },
+            "Range": 12,
+            "Damage": 8
+          },
+          "Image": 5528341233.0,
+          "Title": "Laser Apache",
+          "Cost": 9500
+        }
+      ]
+    }
+  },
+  "Rocketeer": {
+    "Default": {
+      "Defaults": {
+        "Attributes": {
+          "ExplosionRadius": 4
+        },
+        "Detections": {
+          "Flying": false,
+          "Hidden": false,
+          "Lead": true
+        },
+        "Cooldown": 6,
+        "Price": 850,
+        "Limit": 8,
+        "Range": 16,
+        "Damage": 8
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Cooldown": 5
+          },
+          "Image": 5523197925.0,
+          "Title": "Faster Reloading",
+          "Cost": 350
+        },
+        {
+          "Stats": {
+            "Range": 20
+          },
+          "Image": 5523199083.0,
+          "Title": "Aiming Practice",
+          "Cost": 600
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "ExplosionRadius": 5
+            },
+            "Cooldown": 4.5,
+            "Extras": [
+              "Larger explosion"
+            ],
+            "Damage": 20
+          },
+          "Image": 5523200004.0,
+          "Title": "Explosive Risks",
+          "Cost": 2800
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "ExplosionRadius": 6
+            },
+            "Range": 28,
+            "Extras": [
+              "Larger explosion"
+            ],
+            "Damage": 40
+          },
+          "Image": 5523202707.0,
+          "Title": "Artillery Cannon",
+          "Cost": 7500
+        }
+      ]
+    }
+  },
+  "Executioner": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": true
+        },
+        "Limit": 8,
+        "Cooldown": 3,
+        "Price": 800,
+        "Attributes": {
+          "MaxHits": 3,
+          "MaxBounce": 3,
+          "TickRate": 0.15
+        },
+        "Range": 14,
+        "Damage": 4
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Cooldown": 2
+          },
+          "Image": 129697807,
+          "Title": "Improved Throwing",
+          "Cost": 250
+        },
+        {
+          "Stats": {
+            "Damage": 8
+          },
+          "Image": 542098553,
+          "Title": "Double Head Axe",
+          "Cost": 750
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Bounces: 5"
+            ],
+            "Attributes": {
+              "MaxBounce": 5
+            },
+            "Range": 18,
+            "Damage": 15
+          },
+          "Image": 6426220009.0,
+          "Title": "Blood Seeking",
+          "Cost": 2500
+        },
+        {
+          "Stats": {
+            "Detections": {
+              "Hidden": true
+            },
+            "Damage": 30
+          },
+          "Image": 27386833,
+          "Title": "Tactical Ops",
+          "Cost": 6000
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "MaxBounce": 7
+            },
+            "Extras": [
+              "Bounces: 7"
+            ],
+            "Damage": 80
+          },
+          "Image": 143769378,
+          "Title": "Head Chopping",
+          "Cost": 12500
+        }
+      ]
+    }
+  },
+  "Archer": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": true
+        },
+        "Attributes": {
+          "BurnDamage": 2,
+          "BurnTick": 1,
+          "EnemyBuff": 0.15,
+          "ArrowType": "Normal",
+          "MaxStun": 1,
+          "MaxHits": 1,
+          "MinStun": 0.25,
+          "BurnTime": 3
+        },
+        "Price": 400,
+        "Cooldown": 4,
+        "Range": 20,
+        "Damage": 3
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Cooldown": 3.2
+          },
+          "Image": 3280081327.0,
+          "Title": "Faster Reloading",
+          "Cost": 100
+        },
+        {
+          "Stats": {
+            "Range": 22,
+            "Detections": {
+              "Hidden": true
+            }
+          },
+          "Image": 524302408,
+          "Title": "Hawkeye",
+          "Cost": 250
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "MaxHits": 3
+            },
+            "Extras": [
+              "Arrow penetration"
+            ],
+            "Damage": 8
+          },
+          "Image": 141745478,
+          "Title": "Sharp Shooter",
+          "Cost": 400
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "ArrowType": "Normal"
+            },
+            "Range": 24,
+            "Cooldown": 2
+          },
+          "Image": 456573844,
+          "Title": "Mechanical Bow",
+          "Cost": 1000
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "More penetration"
+            ],
+            "Attributes": {
+              "MaxHits": 6
+            },
+            "Range": 26,
+            "Damage": 25
+          },
+          "Image": 106341823,
+          "Title": "Professional Archer",
+          "Cost": 3500
+        }
+      ]
+    }
+  },
+  "Demoman": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Flying": false,
+          "Hidden": false,
+          "Lead": true
+        },
+        "Attributes": {
+          "ExplosionRadius": 2.5
+        },
+        "Price": 300,
+        "Cooldown": 2.5,
+        "Range": 7,
+        "Damage": 3
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 10,
+            "Cooldown": 2
+          },
+          "Image": 0,
+          "Title": "Further Throwing",
+          "Cost": 150
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "ExplosionRadius": 3.5
+            },
+            "Damage": 6
+          },
+          "Image": 5523227714.0,
+          "Title": "Steil Grenade",
+          "Cost": 525
+        },
+        {
+          "Stats": {
+            "Cooldown": 1.5,
+            "Damage": 12
+          },
+          "Image": 5523228733.0,
+          "Title": "Chinalake",
+          "Cost": 1500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "ExplosionRadius": 4
+            },
+            "Extras": [
+              "Bigger explosion"
+            ],
+            "Cooldown": 1.2,
+            "Range": 14,
+            "Damage": 28
+          },
+          "Image": 5523229364.0,
+          "Title": "Collateral Damage",
+          "Cost": 6000
+        }
+      ]
+    }
+  },
+  "Sledger": {
+    "Default": {
+      "Defaults": {
+        "Attributes": {
+          "CanFreeze": false,
+          "MinFreezeTime": 1.5,
+          "FreezeBonus": false,
+          "MaxHits": 1,
+          "DefenseMelt": 0,
+          "MaxFreezeTime": 2.5
+        },
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Cooldown": 2,
+        "Price": 350,
+        "Limit": 6,
+        "Range": 6,
+        "Damage": 4
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Damage": 6
+          },
+          "Image": 3356186535.0,
+          "Title": "Heavier Swings",
+          "Cost": 250
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "Lead": true,
+              "MaxHits": 2
+            },
+            "Detections": {
+              "Lead": true
+            },
+            "Cooldown": 1.75,
+            "Extras": [
+              "2 max hits."
+            ],
+            "Damage": 8
+          },
+          "Image": 141745478,
+          "Title": "Better Sledge",
+          "Cost": 500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "CanFreeze": true
+            },
+            "Extras": [
+              "Freeze enemies on hit."
+            ],
+            "Damage": 15
+          },
+          "Image": 4118882122.0,
+          "Title": "Freezing Strikes",
+          "Cost": 1500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "FreezeBonus": true
+            },
+            "Cooldown": 1.5,
+            "Extras": [
+              "Frozen enemies take x2 damage."
+            ],
+            "Damage": 35
+          },
+          "Image": 16620737,
+          "Title": "Ice Breaker",
+          "Cost": 2500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "MaxHits": 4
+            },
+            "Cooldown": 1.25,
+            "Extras": [
+              "4 max hits."
+            ],
+            "Damage": 50
+          },
+          "Image": 16868189,
+          "Title": "Arctic Commando",
+          "Cost": 8500
+        }
+      ]
+    }
+  },
+  "Freezer": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Attributes": {
+          "MaxFreezeTime": 0.8,
+          "ExplosionRadius": 3,
+          "DefenseMelt": 0,
+          "MinFreezeTime": 0.35
+        },
+        "Price": 350,
+        "Cooldown": 3,
+        "Range": 8,
+        "Damage": 0
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Attributes": {
+              "MaxFreezeTime": 1.35
+            },
+            "Range": 10,
+            "Extras": [
+              "Longer freeze"
+            ]
+          },
+          "Image": 3354968287.0,
+          "Title": "Frost Knuckles",
+          "Cost": 350
+        },
+        {
+          "Stats": {
+            "Range": 12
+          },
+          "Image": 3354969462.0,
+          "Title": "Frost Vision",
+          "Cost": 400
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Defense melting"
+            ],
+            "Attributes": {
+              "DefenseMelt": 5
+            },
+            "Damage": 2
+          },
+          "Image": 3354970959.0,
+          "Title": "Cold Snap",
+          "Cost": 1400
+        },
+        {
+          "Stats": {
+            "Cooldown": 1.5
+          },
+          "Image": 3354972102.0,
+          "Title": "Arctic Commando",
+          "Cost": 2500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "MaxFreezeTime": 1.5,
+              "DefenseMelt": 10
+            },
+            "Cooldown": 1,
+            "Range": 14,
+            "Extras": [
+              "Longer freeze",
+              "More defense reducing"
+            ]
+          },
+          "Image": 3280084231.0,
+          "Title": "Subzero Hero",
+          "Cost": 6000
+        }
+      ]
+    }
+  },
+  "Elf Camp": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Limit": 2,
+        "Cooldown": 0,
+        "Price": 300,
+        "Attributes": {
+          "BasicElfSpawnTime": 15
+        },
+        "Range": 0,
+        "Damage": 0
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "SpawnTime": 40,
+            "Extras": [
+              "Faster spawning"
+            ],
+            "Attributes": {
+              "BasicElfSpawnTime": 12
+            }
+          },
+          "Image": 11756694085.0,
+          "Title": "Winter Training",
+          "Cost": 150
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Snowball Elfs"
+            ],
+            "Attributes": {
+              "SnowballElfLimit": 4,
+              "SnowballElfSpawnTime": 20
+            }
+          },
+          "Image": 11866247025.0,
+          "Title": "Snowball Fight",
+          "Cost": 325
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Bomber Elfs"
+            ],
+            "Attributes": {
+              "BomberElfSpawnTime": 25
+            }
+          },
+          "Image": 11866247585.0,
+          "Title": "Explosive Surprise",
+          "Cost": 1500
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Guardian Elfs",
+              "Cannoneer Elfs"
+            ],
+            "Attributes": {
+              "CannoneerElfSpawnTime": 25,
+              "CannoneerElfLimit": 4,
+              "GuardianElfLimit": 4,
+              "GuardianElfSpawnTime": 20
+            }
+          },
+          "Image": 11866248209.0,
+          "Title": "Winter Workshop",
+          "Cost": 3500
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Ripped Elfs",
+              "Gift Bombers",
+              "Gunner Elfs"
+            ],
+            "Attributes": {
+              "GunnerElfLimit": 4,
+              "GiftBomberElfLimit": 2,
+              "RippedElfSpawnTime": 80,
+              "RippedElfLimit": 2,
+              "GunnerElfSpawnTime": 25,
+              "GiftBomberElfSpawnTime": 50
+            }
+          },
+          "Image": 11866248664.0,
+          "Title": "X-Mas Army",
+          "Cost": 9500
+        }
+      ]
+    }
+  },
+  "Gladiator": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Abilities": [
+          {
+            "Name": "Warrior's Call",
+            "Debounce": 30,
+            "Price": 0,
+            "Level": 3,
+            "Icon": 4118870230.0
+          }
+        ],
+        "Cooldown": 1,
+        "Price": 300,
+        "Attributes": {
+          "ParryCooldown": 5,
+          "MaxHits": 3,
+          "ParryLength": 1.25
+        },
+        "Range": 5,
+        "Damage": 2
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Damage": 3
+          },
+          "Image": 3356186535.0,
+          "Title": "Warrior Armor",
+          "Cost": 250
+        },
+        {
+          "Stats": {
+            "Detections": {
+              "Hidden": true
+            },
+            "Damage": 5
+          },
+          "Image": 141745478,
+          "Title": "Dangersense",
+          "Cost": 500
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Warrior's Call"
+            ],
+            "Damage": 10
+          },
+          "Image": 4118882122.0,
+          "Title": "Extra Protection",
+          "Cost": 1500
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.75,
+            "Damage": 25
+          },
+          "Image": 16620737,
+          "Title": "Illumina",
+          "Cost": 2500
+        },
+        {
+          "Stats": {
+            "Range": 6,
+            "Cooldown": 0.5,
+            "Damage": 40
+          },
+          "Image": 16868189,
+          "Title": "Darkheart Swordsman",
+          "Cost": 6000
+        }
+      ]
+    }
+  },
+  "Pyromancer": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Flying": false,
+          "Hidden": false,
+          "Lead": true
+        },
+        "Attributes": {
+          "BurnDamage": 1,
+          "EnemyBuff": 0,
+          "DefenseMelt": 0,
+          "TurningSpeed": 4,
+          "BurnTick": 1,
+          "Width": 0,
+          "BurnTime": 3
+        },
+        "Price": 650,
+        "Cooldown": 0.25,
+        "Range": 7,
+        "Damage": 0
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 9,
+            "Extras": [
+              "More range",
+              "Bigger flames"
+            ],
+            "Attributes": {
+              "Width": 1.5
+            }
+          },
+          "Image": 3280081327.0,
+          "Title": "Improved Handling",
+          "Cost": 350
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "DefenseMelt": 5
+            },
+            "Extras": [
+              "Defense melting"
+            ],
+            "Damage": 1
+          },
+          "Image": 3304823121.0,
+          "Title": "Fire Fighting",
+          "Cost": 500
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "More burn damage",
+              "Longer burn time"
+            ],
+            "Attributes": {
+              "BurnDamage": 2,
+              "BurnTime": 5
+            }
+          },
+          "Image": 3304823988.0,
+          "Title": "Fire Hazard",
+          "Cost": 1200
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "BurnDamage": 3,
+              "BurnTick": 0.5,
+              "Width": 1.75,
+              "BurnTime": 6
+            },
+            "Extras": [
+              "More fire damage",
+              "Longer burn time",
+              "Double tick speed"
+            ],
+            "Damage": 2
+          },
+          "Image": 3304824958.0,
+          "Title": "Napalm Thrower",
+          "Cost": 3800
+        },
+        {
+          "Stats": {
+            "Range": 11,
+            "Extras": [
+              "More burn damage",
+              "Longer burn time",
+              "More defense melting",
+              "Bigger flames"
+            ],
+            "Attributes": {
+              "BurnDamage": 8,
+              "DefenseMelt": 10,
+              "Width": 2.5,
+              "BurnTime": 8
+            }
+          },
+          "Image": 3304825822.0,
+          "Title": "Pyromaniac",
+          "Cost": 7500
+        }
+      ]
+    },
+    "Golden": {
+      "Upgrades": [
+        {
+          "Stats": {
+            "Extras": [
+              "More range",
+              "Bigger flames"
+            ],
+            "Range": 11
+          },
+          "Image": 3280081327.0,
+          "Title": "Improved Handling",
+          "Cost": 350
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "DefenseMelt": 5
+            },
+            "Extras": [
+              "Defense melting"
+            ],
+            "Damage": 2
+          },
+          "Image": 3304823121.0,
+          "Title": "Fire Fighting",
+          "Cost": 500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "BurnDamage": 2,
+              "BurnTime": 5
+            },
+            "Extras": [
+              "More burn damage",
+              "Longer burn time"
+            ],
+            "Damage": 3
+          },
+          "Image": 3304823988.0,
+          "Title": "Fire Hazard",
+          "Cost": 1200
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "BurnDamage": 4,
+              "BurnTick": 0.5,
+              "Width": 1.75,
+              "BurnTime": 6
+            },
+            "Range": 13,
+            "Extras": [
+              "More fire damage",
+              "Longer burn time",
+              "Double tick speed"
+            ],
+            "Damage": 4
+          },
+          "Image": 3304824958.0,
+          "Title": "Napalm Thrower",
+          "Cost": 3800
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "BurnDamage": 10,
+              "DefenseMelt": 10,
+              "Width": 2.5,
+              "BurnTime": 8
+            },
+            "Extras": [
+              "More burn damage",
+              "Longer burn time",
+              "More defense melting",
+              "Bigger flames"
+            ],
+            "Damage": 6
+          },
+          "Image": 3304825822.0,
+          "Title": "Pyromaniac",
+          "Cost": 7500
+        }
+      ],
+      "Defaults": {
+        "Detections": {
+          "Flying": false,
+          "Hidden": true,
+          "Lead": true
+        },
+        "Attributes": {
+          "BurnDamage": 1,
+          "EnemyBuff": 0,
+          "DefenseMelt": 0,
+          "TurningSpeed": 4,
+          "BurnTick": 1,
+          "Width": 0,
+          "BurnTime": 3
+        },
+        "Price": 800,
+        "Cooldown": 0.25,
+        "Range": 7,
+        "Damage": 1
+      }
+    }
+  },
+  "Medic": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Abilities": [
+          {
+            "Name": "Cleansing",
+            "Debounce": 30,
+            "Price": 0,
+            "Level": 5,
+            "Icon": 231100685
+          }
+        ],
+        "Cooldown": 1,
+        "Price": 900,
+        "Attributes": {
+          "Healing": 5
+        },
+        "Range": 10,
+        "Damage": 2
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 11,
+            "Damage": 3
+          },
+          "Image": 4119547116.0,
+          "Title": "Medical Precautions",
+          "Cost": 400
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Increased healings"
+            ],
+            "Cooldown": 0.8,
+            "Range": 12,
+            "Damage": 6
+          },
+          "Image": 4119547593.0,
+          "Title": "Prescribed Vitamins",
+          "Cost": 900
+        },
+        {
+          "Stats": {
+            "Detections": {
+              "Hidden": true
+            },
+            "Range": 15
+          },
+          "Image": 4119548000.0,
+          "Title": "BIG BRAIN",
+          "Cost": 2400
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Increased healing"
+            ],
+            "Cooldown": 0.65,
+            "Range": 16,
+            "Damage": 8
+          },
+          "Image": 4119548431.0,
+          "Title": "Medical Pack",
+          "Cost": 4500
+        },
+        {
+          "Stats": {
+            "Range": 18,
+            "Cooldown": 0.3
+          },
+          "Image": 4119548907.0,
+          "Title": "Goddess of Healing",
+          "Cost": 6500
+        }
+      ]
+    }
+  },
+  "Ace Pilot": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": true
+        },
+        "Limit": 10,
+        "Cooldown": 0.15,
+        "Price": 500,
+        "Attributes": {
+          "BombTime": 4,
+          "BombDropping": false,
+          "ExplosionRadius": 4,
+          "HiddenAssist": false,
+          "ExplosionDamage": 10
+        },
+        "Range": 7,
+        "Damage": 1
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Damage": 2
+          },
+          "Image": 3577061449.0,
+          "Title": "Better bullets",
+          "Cost": 250
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "BombDropping": true
+            },
+            "Range": 8,
+            "Extras": [
+              "Bomb dropping"
+            ]
+          },
+          "Image": 5525754186.0,
+          "Title": "Bombs away!",
+          "Cost": 350
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "ExplosionDamage": 18
+            },
+            "Cooldown": 0.1,
+            "Damage": 4
+          },
+          "Image": 5525748117.0,
+          "Title": "Aerial  Ace",
+          "Cost": 1500
+        },
+        {
+          "Stats": {
+            "Detections": {
+              "Hidden": true
+            },
+            "Attributes": {
+              "HiddenAssist": true,
+              "BombTime": 3.5
+            },
+            "Extras": [
+              "Stronger bombs",
+              "Nearby towers get HD at the start of a wave."
+            ],
+            "Damage": 6
+          },
+          "Image": 5525748988.0,
+          "Title": "Spy plane",
+          "Cost": 3600
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "BombTime": 3,
+              "ExplosionRadius": 6,
+              "ExplosionDamage": 24
+            },
+            "Cooldown": 0.05,
+            "Range": 10,
+            "Damage": 9
+          },
+          "Image": 5525749418.0,
+          "Title": "Air fighter",
+          "Cost": 7500
+        }
+      ]
+    }
+  },
+  "Hunter": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": true
+        },
+        "Price": 500,
+        "Cooldown": 2.5,
+        "Range": 15,
+        "Damage": 3
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 16,
+            "Cooldown": 1.8
+          },
+          "Image": 3839040358.0,
+          "Title": "Faster Hands",
+          "Cost": 300
+        },
+        {
+          "Stats": {
+            "Detections": {
+              "Hidden": true
+            },
+            "Range": 17,
+            "Damage": 6
+          },
+          "Image": 3839041547.0,
+          "Title": "Experienced",
+          "Cost": 600
+        },
+        {
+          "Stats": {
+            "Range": 20,
+            "Damage": 12
+          },
+          "Image": 3839042767.0,
+          "Title": "Better Gear",
+          "Cost": 1000
+        },
+        {
+          "Stats": {
+            "Range": 22,
+            "Damage": 24
+          },
+          "Image": 3839043838.0,
+          "Title": "Deadliest Hunter",
+          "Cost": 2500
+        }
+      ]
+    }
+  },
+  "Sniper": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": true
+        },
+        "Price": 300,
+        "Cooldown": 4.5,
+        "Range": 26,
+        "Damage": 4
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Cooldown": 4,
+            "Damage": 6
+          },
+          "Image": 3280081327.0,
+          "Title": "Faster Reloading",
+          "Cost": 150
+        },
+        {
+          "Stats": {
+            "Detections": {
+              "Hidden": true
+            },
+            "Damage": 12
+          },
+          "Image": 3280367022.0,
+          "Title": "Geared Up",
+          "Cost": 500
+        },
+        {
+          "Stats": {
+            "Detections": {
+              "Lead": true
+            },
+            "Cooldown": 3.6,
+            "Range": 28,
+            "Damage": 20
+          },
+          "Image": 3280367963.0,
+          "Title": "Frontlines Sniping",
+          "Cost": 1500
+        },
+        {
+          "Stats": {
+            "Cooldown": 2.5,
+            "Range": 34,
+            "Damage": 35
+          },
+          "Image": 3280368786.0,
+          "Title": "Spec Ops",
+          "Cost": 4500
+        }
+      ]
+    }
+  },
+  "Toxic Gunner": {
+    "Default": {
+      "Defaults": {
+        "Attributes": {
+          "PoisonTick": 0.5,
+          "Burst": 3,
+          "DefenseMelt": 0,
+          "ReloadSpeed": 10,
+          "Slowness": 10,
+          "PoisonDamage": 0,
+          "PoisonLength": 2
+        },
+        "Detections": {
+          "Flying": false,
+          "Hidden": false,
+          "Lead": true
+        },
+        "Price": 400,
+        "Cooldown": 0.15,
+        "Range": 10,
+        "Damage": 1
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Attributes": {
+              "ReloadSpeed": 5
+            },
+            "Extras": [
+              "x2 Reload Speed"
+            ]
+          },
+          "Image": 5523192002.0,
+          "Title": "Faster Reloading",
+          "Cost": 150
+        },
+        {
+          "Stats": {
+            "Range": 12,
+            "Attributes": {
+              "PoisonDamage": 1
+            },
+            "Extras": [
+              "Bullets damage over time"
+            ]
+          },
+          "Image": 5523193619.0,
+          "Title": "Poisonous Bullets",
+          "Cost": 400
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "Burst": 6
+            },
+            "Range": 14,
+            "Cooldown": 0.1,
+            "Extras": [
+              "Increased burst"
+            ],
+            "Damage": 2
+          },
+          "Image": 5523195646.0,
+          "Title": "Hazardous Gear",
+          "Cost": 1600
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Increased burst",
+              "Longer effects"
+            ],
+            "Range": 18,
+            "Attributes": {
+              "Burst": 10,
+              "PoisonLength": 4
+            },
+            "Damage": 4
+          },
+          "Image": 5523196519.0,
+          "Title": "Nuclear Overload",
+          "Cost": 6000
+        }
+      ]
+    }
+  },
+  "Swarmer": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Abilities": [
+          {
+            "Name": "Swarm",
+            "Debounce": 15,
+            "Price": 0,
+            "Level": 4,
+            "Icon": 4865025806.0
+          }
+        ],
+        "Cooldown": 2,
+        "Price": 300,
+        "Attributes": {
+          "BeeDamage": 1,
+          "ExplosionRadius": 8,
+          "StingTime": 3,
+          "TickRate": 1
+        },
+        "Range": 12,
+        "Damage": 1
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Attributes": {
+              "StingTime": 4,
+              "TickRate": 0.75
+            },
+            "Extas": [
+              "Faster tick rate",
+              "Longer stings"
+            ]
+          },
+          "Image": 4865025162.0,
+          "Title": "Aggressive Bees",
+          "Cost": 250
+        },
+        {
+          "Stats": {
+            "Range": 16
+          },
+          "Image": 4865025274.0,
+          "Title": "Improve Handling",
+          "Cost": 300
+        },
+        {
+          "Stats": {
+            "Range": 18,
+            "Cooldown": 1
+          },
+          "Image": 4865025421.0,
+          "Title": "Bee Gun",
+          "Cost": 500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "StingTime": 6,
+              "BeeDamage": 2,
+              "TickRate": 0.5
+            },
+            "Extras": [
+              "More bee damage",
+              "Even faster tick",
+              "Longer stings",
+              "Beehive grenade"
+            ]
+          },
+          "Image": 4865025564.0,
+          "Title": "Beehive of Madness",
+          "Cost": 1200
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.5,
+            "Range": 20,
+            "Attributes": {
+              "StingTime": 8,
+              "BeeDamage": 4,
+              "TickRate": 0.25
+            },
+            "Extras": [
+              "More bee damage",
+              "Faster tick",
+              "Longer strings"
+            ]
+          },
+          "Image": 4865025676.0,
+          "Title": "Beekeeper of Death",
+          "Cost": 4000
+        }
+      ]
+    }
+  },
+  "Soldier": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Attributes": {
+          "Burst": 3,
+          "BurstCool": 1
+        },
+        "Price": 350,
+        "Cooldown": 0.15,
+        "Range": 13,
+        "Damage": 1
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 15
+          },
+          "Image": 5523192002.0,
+          "Title": "Better Vision",
+          "Cost": 100
+        },
+        {
+          "Stats": {
+            "Range": 16,
+            "Detections": {
+              "Hidden": true
+            },
+            "Damage": 2
+          },
+          "Image": 5523193619.0,
+          "Title": "Better Aiming",
+          "Cost": 500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "Burst": 5
+            },
+            "Extras": [
+              "Increased burst (5)"
+            ],
+            "Damage": 3
+          },
+          "Image": 5523195646.0,
+          "Title": "Equipment Upgrades",
+          "Cost": 1500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "Burst": 7
+            },
+            "Extras": [
+              "Increased burst (7)"
+            ],
+            "Cooldown": 0.125,
+            "Range": 18,
+            "Damage": 6
+          },
+          "Image": 5523196519.0,
+          "Title": "Deadliest Soldier",
+          "Cost": 4000
+        }
+      ]
+    },
+    "Golden": {
+      "Upgrades": [
+        {
+          "Image": 5523192002.0,
+          "Attributes": {
+            "Burst": 4
+          },
+          "Cost": 250,
+          "Title": "Trigger Finger",
+          "Stats": {
+            "Range": 16,
+            "Cooldown": 0.15
+          }
+        },
+        {
+          "Stats": {
+            "Detections": {
+              "Hidden": true
+            },
+            "Extras": [
+              "Increased burst (5)"
+            ],
+            "Attributes": {
+              "Burst": 5
+            },
+            "Range": 17,
+            "Damage": 3
+          },
+          "Image": 5523193619.0,
+          "Title": "Better Aiming",
+          "Cost": 750
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "Burst": 8
+            },
+            "Cooldown": 0.125,
+            "Extras": [
+              "Increased burst (8)"
+            ],
+            "Damage": 4
+          },
+          "Image": 5523195646.0,
+          "Title": "Equipment Upgrades",
+          "Cost": 2000
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "Burst": 12
+            },
+            "Extras": [
+              "Increased burst (12)"
+            ],
+            "Cooldown": 0.1,
+            "Range": 19,
+            "Damage": 7
+          },
+          "Image": 5523196519.0,
+          "Title": "Deadliest's Soldier",
+          "Cost": 5000
+        }
+      ],
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Attributes": {
+          "Burst": 3,
+          "BurstCool": 1
+        },
+        "Price": 500,
+        "Cooldown": 0.2,
+        "Range": 13,
+        "Damage": 2
+      }
+    }
+  },
+  "Turret": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Limit": 5,
+        "Price": 4000,
+        "Cooldown": 0.5,
+        "Range": 16,
+        "Damage": 6
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 18
+          },
+          "Image": 149177741,
+          "Title": "Radar",
+          "Cost": 500
+        },
+        {
+          "Stats": {
+            "Range": 19,
+            "Damage": 13
+          },
+          "Image": 149177741,
+          "Title": "Stronger Ammunition",
+          "Cost": 2000
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.375,
+            "Detections": {
+              "Hidden": true
+            },
+            "Range": 21
+          },
+          "Image": 3584258139.0,
+          "Title": "Dual Turret",
+          "Cost": 5000
+        },
+        {
+          "Stats": {
+            "Range": 24,
+            "Cooldown": 0.2
+          },
+          "Image": 3584280869.0,
+          "Title": "Even Heavier Ammo",
+          "Cost": 12500
+        },
+        {
+          "Stats": {
+            "Range": 26,
+            "Damage": 25
+          },
+          "Image": 3584258608.0,
+          "Title": "Double Barrel Minigun",
+          "Cost": 20000
+        }
+      ]
+    }
+  },
+  "Scout": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Price": 200,
+        "Cooldown": 1.5,
+        "Range": 12,
+        "Damage": 1
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Cooldown": 1.2
+          },
+          "Image": 3278746120.0,
+          "Title": "Faster Reloading",
+          "Cost": 50
+        },
+        {
+          "Stats": {
+            "Range": 14,
+            "Detections": {
+              "Hidden": true
+            },
+            "Damage": 2
+          },
+          "Image": 3278749117.0,
+          "Title": "Precise Aiming",
+          "Cost": 300
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.8,
+            "Damage": 4
+          },
+          "Image": 3278741672.0,
+          "Title": "Stronger Equipment",
+          "Cost": 800
+        },
+        {
+          "Stats": {
+            "Range": 16,
+            "Cooldown": 0.4
+          },
+          "Image": 3279537687.0,
+          "Title": "Double Tap",
+          "Cost": 2000
+        }
+      ]
+    },
+    "Golden": {
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 14,
+            "Damage": 3
+          },
+          "Image": 3032133716.0,
+          "Title": "Higher Caliber",
+          "Cost": 125
+        },
+        {
+          "Stats": {
+            "Range": 16,
+            "Cooldown": 1,
+            "Detections": {
+              "Hidden": true
+            },
+            "Damage": 4
+          },
+          "Image": 115730014,
+          "Title": "Precise Aiming",
+          "Cost": 500
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.4,
+            "Range": 18,
+            "Damage": 15
+          },
+          "Image": 3279537687.0,
+          "Title": "Double Tap",
+          "Cost": 4000
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.75,
+            "Damage": 10
+          },
+          "Image": 3278741672.0,
+          "Title": "Golden Deagle",
+          "Cost": 1500
+        }
+      ],
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Price": 200,
+        "Cooldown": 1.2,
+        "Range": 12,
+        "Damage": 2
+      }
+    }
+  },
+  "Crook Boss": {
+    "Default": {
+      "Defaults": {
+        "Attributes": {
+          "MaxCrooks": 3
+        },
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Cooldown": 0.8,
+        "Price": 650,
+        "SpawnTime": 60,
+        "Range": 10,
+        "Damage": 2
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Damage": 3
+          },
+          "Image": 3032133716.0,
+          "Title": "9mm Caliber",
+          "Cost": 300
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Guards"
+            ],
+            "Attributes": {
+              "UnitToSend": "Guard1"
+            },
+            "Range": 11,
+            "Detections": {
+              "Hidden": true
+            }
+          },
+          "Image": 3444643559.0,
+          "Title": "Eyes Everywhere",
+          "Cost": 800
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "UnitToSend": "Guard2"
+            },
+            "SpawnTime": 45,
+            "Range": 13,
+            "Extras": [
+              "x2 guards"
+            ],
+            "Cooldown": 0.2
+          },
+          "Image": 3838914605.0,
+          "Title": "Better Armed",
+          "Cost": 1500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "UnitToSend": "Guard3"
+            },
+            "Extras": [
+              "Stronger guards"
+            ],
+            "Cooldown": 0.15,
+            "Range": 15,
+            "Damage": 7
+          },
+          "Image": 3444644903.0,
+          "Title": "Most Wanted",
+          "Cost": 9000
+        }
+      ]
+    },
+    "Golden": {
+      "Upgrades": [
+        {
+          "Stats": {
+            "Damage": 4
+          },
+          "Image": 3032133716.0,
+          "Title": "9mm Caliber",
+          "Cost": 400
+        },
+        {
+          "Stats": {
+            "Detections": {
+              "Hidden": true
+            },
+            "Cooldown": 0.55,
+            "Attributes": {
+              "UnitToSend": "GoldenGuard1"
+            },
+            "Range": 14,
+            "Extras": [
+              "Guards"
+            ]
+          },
+          "Image": 3444643559.0,
+          "Title": "Henchmen Funds",
+          "Cost": 1000
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.2,
+            "Extras": [
+              "x2 guards"
+            ],
+            "Attributes": {
+              "UnitToSend": "GoldenGuard2"
+            }
+          },
+          "Image": 3838914605.0,
+          "Title": "Better Armed",
+          "Cost": 2000
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "UnitToSend": "GoldenGuard3"
+            },
+            "Extras": [
+              "Stronger guards"
+            ],
+            "Cooldown": 0.13,
+            "Range": 16,
+            "Damage": 10
+          },
+          "Image": 3444644903.0,
+          "Title": "Most Wanted",
+          "Cost": 9000
+        }
+      ],
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Limit": 4,
+        "Cooldown": 0.8,
+        "Price": 600,
+        "SpawnTime": 45,
+        "Range": 12,
+        "Damage": 3
+      }
+    }
+  },
+  "Militant": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Price": 800,
+        "Cooldown": 0.25,
+        "Range": 14,
+        "Damage": 1
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Detections": {
+              "Hidden": true
+            },
+            "Range": 17
+          },
+          "Image": 5523212631.0,
+          "Title": "Radio Comms",
+          "Cost": 250
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.2,
+            "Damage": 2
+          },
+          "Image": 5523215135.0,
+          "Title": "Bigger Rifle",
+          "Cost": 1500
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.18,
+            "Range": 19,
+            "Damage": 4
+          },
+          "Image": 5523216332.0,
+          "Title": "Upskill",
+          "Cost": 3500
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.15,
+            "Range": 21,
+            "Damage": 7
+          },
+          "Image": 5523217773.0,
+          "Title": "Stealth Mercenary",
+          "Cost": 7500
+        }
+      ]
+    }
+  },
+  "Shotgunner": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Attributes": {
+          "Spread": 80,
+          "ShotSize": 6
+        },
+        "Price": 400,
+        "Cooldown": 2.5,
+        "Range": 7,
+        "Damage": 2
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Cooldown": 1.8
+          },
+          "Image": 5587697635.0,
+          "Title": "Faster Reloading",
+          "Cost": 200
+        },
+        {
+          "Stats": {
+            "Detections": {
+              "Hidden": true
+            },
+            "Extras": [
+              "8 Shots",
+              "Tighter Spread"
+            ],
+            "Attributes": {
+              "Spread": 60,
+              "ShotSize": 8
+            },
+            "Range": 9,
+            "Damage": 3
+          },
+          "Image": 5587697884.0,
+          "Title": "Better Handling",
+          "Cost": 1250
+        },
+        {
+          "Stats": {
+            "Cooldown": 1.5,
+            "Damage": 5
+          },
+          "Image": 5587698104.0,
+          "Title": "Slug Madness",
+          "Cost": 3500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "Spread": 50,
+              "ShotSize": 12
+            },
+            "Extras": [
+              "12 Shots",
+              "Tighter Spread"
+            ],
+            "Cooldown": 1,
+            "Range": 11,
+            "Damage": 6
+          },
+          "Image": 5587698246.0,
+          "Title": "Tactical Blowback",
+          "Cost": 10000
+        }
+      ]
+    }
+  },
+  "Slasher": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Attributes": {
+          "MaxHits": 3,
+          "KnifeAngles": [
+            0
+          ],
+          "KnifeCooldown": 4,
+          "KnifeThrow": false
+        },
+        "Price": 400,
+        "Cooldown": 1,
+        "Range": 5,
+        "Damage": 3
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Cooldown": 0.8,
+            "Damage": 4
+          },
+          "Image": 4157646701.0,
+          "Title": "Thinner Blade",
+          "Cost": 250
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "KnifeThrow": true
+            },
+            "Detections": {
+              "Hidden": true
+            },
+            "Range": 6,
+            "Extras": [
+              "Knife throw"
+            ]
+          },
+          "Image": 4157647195.0,
+          "Title": "Blood Sense",
+          "Cost": 300
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.5,
+            "Damage": 6
+          },
+          "Image": 4157647659.0,
+          "Title": "Dual Wield",
+          "Cost": 1350
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "KnifeAngles": [
+                0,
+                15,
+                -15
+              ]
+            },
+            "Cooldown": 0.35,
+            "Extras": [
+              "Triple knife throw"
+            ],
+            "Damage": 10
+          },
+          "Image": 4157648765.0,
+          "Title": "Deadly Assassin",
+          "Cost": 3500
+        }
+      ]
+    }
+  },
+  "Electroshocker": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Flying": false,
+          "Hidden": false,
+          "Lead": true
+        },
+        "Limit": 4,
+        "Cooldown": 3,
+        "Price": 325,
+        "Attributes": {
+          "MinStun": 0.25,
+          "MaxStun": 1,
+          "MaxHits": 1,
+          "DefenseMelt": 0,
+          "ChainRange": 5
+        },
+        "Range": 7,
+        "Damage": 0
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 9
+          },
+          "Image": 3280081327.0,
+          "Title": "Improved Handling",
+          "Cost": 250
+        },
+        {
+          "Stats": {
+            "Range": 10,
+            "Detections": {
+              "Hidden": true
+            }
+          },
+          "Image": 4675534331.0,
+          "Title": "Outside Support",
+          "Cost": 400
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "MaxStun": 1.5
+            },
+            "Extras": [
+              "Longer stuns"
+            ],
+            "Damage": 2
+          },
+          "Image": 4675521746.0,
+          "Title": "Faraday's Vest",
+          "Cost": 1000
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "MaxHits": 3
+            },
+            "Cooldown": 2,
+            "Extras": [
+              "Increased chaining"
+            ],
+            "Damage": 4
+          },
+          "Image": 4675504505.0,
+          "Title": "Lightning Cannon",
+          "Cost": 3000
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "MaxStun": 2,
+              "MaxHits": 5,
+              "DefenseMelt": 1
+            },
+            "Range": 12,
+            "Extras": [
+              "Inceased chaining",
+              "Longer stuns",
+              "Reduce defense"
+            ]
+          },
+          "Image": 4675504640.0,
+          "Title": "Shock Force",
+          "Cost": 6500
+        }
+      ]
+    }
+  },
+  "Paintballer": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Flying": false,
+          "Hidden": false,
+          "Lead": true
+        },
+        "Attributes": {
+          "ExplosiveRange": 2
+        },
+        "Price": 400,
+        "Cooldown": 2,
+        "Range": 11,
+        "Damage": 2
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 13
+          },
+          "Image": 3280081327.0,
+          "Title": "Paintball Gear",
+          "Cost": 100
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "ExplosiveRange": 3
+            },
+            "Extras": [
+              "Larger splash"
+            ],
+            "Damage": 3
+          },
+          "Image": 3319083300.0,
+          "Title": "Shoulder Pads",
+          "Cost": 500
+        },
+        {
+          "Stats": {
+            "Range": 15,
+            "Cooldown": 1.5
+          },
+          "Image": 3280082028.0,
+          "Title": "Double Barrel Gun",
+          "Cost": 700
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "ExplosiveRange": 4
+            },
+            "Cooldown": 1,
+            "Extras": [
+              "Larger splash"
+            ],
+            "Damage": 5
+          },
+          "Image": 3319084508.0,
+          "Title": "Competitive Gear",
+          "Cost": 2500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "ExplosiveRange": 5
+            },
+            "Extras": [
+              "Larger splash"
+            ],
+            "Damage": 10
+          },
+          "Image": 3319085582.0,
+          "Title": "Paintball Champion",
+          "Cost": 3500
+        }
+      ]
+    }
+  },
+  "Engineer": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Flying": false,
+          "Hidden": false,
+          "Lead": true
+        },
+        "Limit": 6,
+        "Cooldown": 1.5,
+        "Price": 750,
+        "Attributes": {
+          "BuildTime": 2,
+          "MaxUnits": 2,
+          "UnitToSend": "Sentry1",
+          "SpawnTime": 1,
+          "Buildzone": 6,
+          "Deadzone": 2
+        },
+        "Range": 14,
+        "Damage": 3
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 15,
+            "Damage": 5
+          },
+          "Image": 4517035597.0,
+          "Title": "Precise Calculations",
+          "Cost": 250
+        },
+        {
+          "Stats": {
+            "Range": 18,
+            "Detections": {
+              "Hidden": true,
+              "Flying": true
+            }
+          },
+          "Image": 149177741,
+          "Title": "Makeshift Radar",
+          "Cost": 400
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "UnitToSend": "Sentry2"
+            },
+            "Cooldown": 1.25,
+            "Extras": [
+              "Rifle Sentry"
+            ],
+            "Damage": 8
+          },
+          "Image": 8998290803.0,
+          "Title": "Auto Converter",
+          "Cost": 1600
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "MaxUnits": 3,
+              "SentryShield": true
+            },
+            "Extras": [
+              "3 Max Units",
+              "Sentry Shield"
+            ],
+            "Cooldown": 1,
+            "Range": 18,
+            "Damage": 15
+          },
+          "Image": 31857714,
+          "Title": "Pressure Tank",
+          "Cost": 3500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "UnitToSend": "Sentry3"
+            },
+            "Extras": [
+              "Minigun Sentry"
+            ],
+            "Damage": 25
+          },
+          "Image": 155526941,
+          "Title": "Heavy Construction",
+          "Cost": 12500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "MaxUnits": 4,
+              "UnitToSend": "Sentry4"
+            },
+            "Extras": [
+              "War Machine Sentry",
+              "4 Max Units"
+            ],
+            "Cooldown": 0.8,
+            "Range": 20,
+            "Damage": 40
+          },
+          "Image": 7852911857.0,
+          "Title": "Illegal Gun Parts",
+          "Cost": 35000
+        }
+      ]
+    }
+  },
+  "Farm": {
+    "Default": {
+      "Defaults": {
+        "Income": 50,
+        "Limit": 8,
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Price": 250,
+        "Cooldown": 0,
+        "Range": 3,
+        "Damage": 0
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Income": 100
+          },
+          "Image": 3294497195.0,
+          "Title": "Carrot Farm",
+          "Cost": 200
+        },
+        {
+          "Stats": {
+            "Income": 250
+          },
+          "Image": 3294496318.0,
+          "Title": "Wheat Farm",
+          "Cost": 550
+        },
+        {
+          "Stats": {
+            "Income": 500
+          },
+          "Image": 3294498124.0,
+          "Title": "Tree Farm",
+          "Cost": 1000
+        },
+        {
+          "Stats": {
+            "Income": 750
+          },
+          "Image": 3294499153.0,
+          "Title": "Apple Farm",
+          "Cost": 2500
+        },
+        {
+          "Stats": {
+            "Income": 1500
+          },
+          "Image": 3294500097.0,
+          "Title": "Space Fruit Farm",
+          "Cost": 5000
+        }
+      ]
+    }
+  },
+  "Ranger": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Flying": true,
+          "Hidden": false,
+          "Lead": false
+        },
+        "Limit": 10,
+        "Price": 3500,
+        "Cooldown": 5,
+        "Range": 20,
+        "Damage": 60
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 25,
+            "Cooldown": 4.5
+          },
+          "Image": 3280081327.0,
+          "Title": "Improved Handling",
+          "Cost": 550
+        },
+        {
+          "Stats": {
+            "Range": 30,
+            "Damage": 100
+          },
+          "Image": 3381734408.0,
+          "Title": "Steady Aiming",
+          "Cost": 1800
+        },
+        {
+          "Stats": {
+            "Range": 35,
+            "Detections": {
+              "Lead": true
+            },
+            "Damage": 165
+          },
+          "Image": 3381734757.0,
+          "Title": "Railgunner",
+          "Cost": 3500
+        },
+        {
+          "Stats": {
+            "Cooldown": 4,
+            "Damage": 230
+          },
+          "Image": 3381735232.0,
+          "Title": "Trained Assassin",
+          "Cost": 11500
+        },
+        {
+          "Stats": {
+            "Cooldown": 3.5,
+            "Range": 40,
+            "Damage": 450
+          },
+          "Image": 3381735846.0,
+          "Title": "Cyber Assassin",
+          "Cost": 22500
+        }
+      ]
+    }
+  },
+  "Commando": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Price": 1600,
+        "Cooldown": 0.5,
+        "Range": 12,
+        "Damage": 2
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 14
+          },
+          "Image": 3615110168.0,
+          "Title": "Radar Pack",
+          "Cost": 350
+        },
+        {
+          "Stats": {
+            "Range": 16,
+            "Extras": [
+              "Missile launcher"
+            ]
+          },
+          "Image": 3615110536.0,
+          "Title": "Disposable Missile",
+          "Cost": 700
+        },
+        {
+          "Stats": {
+            "Range": 17,
+            "Damage": 4
+          },
+          "Image": 3615110964.0,
+          "Title": "Recon Armor",
+          "Cost": 2000
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Quad missiles"
+            ],
+            "Range": 19,
+            "Damage": 10
+          },
+          "Image": 3615111324.0,
+          "Title": "Quad Launcher",
+          "Cost": 7500
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Really cool armor"
+            ],
+            "Range": 22,
+            "Damage": 22
+          },
+          "Image": 3615112120.0,
+          "Title": "Flex Armor",
+          "Cost": 10000
+        }
+      ]
+    }
+  },
+  "Military Base": {
+    "Default": {
+      "Defaults": {
+        "Attributes": {
+          "SpawnTime": 60,
+          "UnitToSend": "Humvee"
+        },
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Cooldown": 0,
+        "Price": 400,
+        "Limit": 5,
+        "Range": 0,
+        "Damage": 0
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Extras": [
+              "Faster spawn time"
+            ],
+            "Attributes": {
+              "SpawnTime": 40,
+              "UnitToSend": "Humvee"
+            }
+          },
+          "Image": 3877874591.0,
+          "Title": "Mechanics",
+          "Cost": 200
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "More health"
+            ],
+            "Attributes": {
+              "UnitToSend": "Humvee 2"
+            }
+          },
+          "Image": 3877875003.0,
+          "Title": "Barbed Wire",
+          "Cost": 400
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Gunner"
+            ],
+            "Attributes": {
+              "UnitToSend": "Humvee 3"
+            }
+          },
+          "Image": 3877873543.0,
+          "Title": "Mounted Gunner",
+          "Cost": 1200
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "More health",
+              "More damage",
+              "Explosive shells"
+            ],
+            "Attributes": {
+              "UnitToSend": "Tank"
+            }
+          },
+          "Image": 3444568329.0,
+          "Title": "Tank",
+          "Cost": 6000
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "More health",
+              "More damage",
+              "Stronger explosions"
+            ],
+            "Attributes": {
+              "UnitToSend": "Railgun Tank"
+            }
+          },
+          "Image": 3444568580.0,
+          "Title": "Railgun Tank",
+          "Cost": 26000
+        }
+      ]
+    }
+  },
+  "Cowboy": {
+    "Default": {
+      "Defaults": {
+        "Income": 25,
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Attributes": {
+          "MaxAmmo": 6,
+          "SpinDuration": 1.7
+        },
+        "Price": 550,
+        "Cooldown": 1,
+        "Range": 11,
+        "Damage": 2
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Income": 50,
+            "Range": 16,
+            "Damage": 4
+          },
+          "Image": 4999425200.0,
+          "Title": "Lucky Shot",
+          "Cost": 300
+        },
+        {
+          "Stats": {
+            "Detections": {
+              "Hidden": true
+            },
+            "Extras": [
+              "Spin: 1.7 → 1.3 secs"
+            ],
+            "Cooldown": 0.6,
+            "Attributes": {
+              "SpinDuration": 1.3
+            },
+            "Range": 18,
+            "Damage": 8
+          },
+          "Image": 5523233366.0,
+          "Title": "Faster Instincts",
+          "Cost": 1650
+        },
+        {
+          "Stats": {
+            "Range": 14,
+            "Cooldown": 0.8
+          },
+          "Image": 5523231844.0,
+          "Title": "Steady Hand",
+          "Cost": 250
+        },
+        {
+          "Stats": {
+            "Income": 80,
+            "Cooldown": 0.35,
+            "Damage": 10
+          },
+          "Image": 5523234030.0,
+          "Title": "Double Tap",
+          "Cost": 4000
+        },
+        {
+          "Stats": {
+            "Income": 100,
+            "Attributes": {
+              "SpinDuration": 1
+            },
+            "Extras": [
+              "Spin: 1.3 → 1 secs"
+            ],
+            "Damage": 20
+          },
+          "Image": 5523234990.0,
+          "Title": "Outlawed",
+          "Cost": 7500
+        }
+      ]
+    },
+    "Golden": {
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 15,
+            "Cooldown": 0.8
+          },
+          "Image": 5523231844.0,
+          "Title": "Steady Hand",
+          "Cost": 300
+        },
+        {
+          "Stats": {
+            "Income": 65,
+            "Range": 18,
+            "Damage": 5
+          },
+          "Image": 4999425200.0,
+          "Title": "Lucky Shot",
+          "Cost": 450
+        },
+        {
+          "Stats": {
+            "Detections": {
+              "Hidden": true
+            },
+            "Extras": [
+              "Spin: 1.7 → 1.3 secs"
+            ],
+            "Cooldown": 0.6,
+            "Attributes": {
+              "SpinDuration": 1.3
+            },
+            "Range": 20,
+            "Damage": 12
+          },
+          "Image": 5523233366.0,
+          "Title": "Faster Instincts",
+          "Cost": 2250
+        },
+        {
+          "Stats": {
+            "Income": 90,
+            "Cooldown": 0.35,
+            "Damage": 15
+          },
+          "Image": 5523234030.0,
+          "Title": "Double Tap",
+          "Cost": 5500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "SpinDuration": 1
+            },
+            "Income": 120,
+            "Extras": [
+              "Spin: 1.3 → 1 secs"
+            ],
+            "Damage": 30
+          },
+          "Image": 5523234990.0,
+          "Title": "Outlawed",
+          "Cost": 12000
+        }
+      ],
+      "Defaults": {
+        "Income": 35,
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Attributes": {
+          "MaxAmmo": 6,
+          "SpinDuration": 1.7
+        },
+        "Price": 700,
+        "Cooldown": 1,
+        "Range": 13,
+        "Damage": 3
+      }
+    }
+  }
+}

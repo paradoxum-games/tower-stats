@@ -1,0 +1,342 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "Archer": {
+      "type": "object",
+      "title": "Archer",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {
+                          "BurnDamage": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "MaxHits": {
+                            "type": "number",
+                            "default": 0,
+                            "description": "How many enemies the attack can pierce"
+                          },
+                          "EnemyBuff": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "ArrowType": {
+                            "type": "string",
+                            "default": ""
+                          },
+                          "MaxStun": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "BurnTick": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "MinStun": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "BurnTime": {
+                            "type": "number",
+                            "default": 0
+                          }
+                        }
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 3280081327.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": true,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "BurnDamage": 2,
+                      "BurnTick": 1,
+                      "EnemyBuff": 0.15,
+                      "ArrowType": "Normal",
+                      "MaxStun": 1,
+                      "MaxHits": 1,
+                      "MinStun": 0.25,
+                      "BurnTime": 3
+                    },
+                    "Range": 20,
+                    "Cooldown": 3.2,
+                    "Damage": 3
+                  },
+                  "Title": "Faster Reloading",
+                  "Cost": 100
+                },
+                {
+                  "Image": 524302408,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": true,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "BurnDamage": 2,
+                      "BurnTick": 1,
+                      "EnemyBuff": 0.15,
+                      "ArrowType": "Normal",
+                      "MaxStun": 1,
+                      "MaxHits": 1,
+                      "MinStun": 0.25,
+                      "BurnTime": 3
+                    },
+                    "Cooldown": 3.2,
+                    "Range": 22,
+                    "Damage": 3
+                  },
+                  "Title": "Hawkeye",
+                  "Cost": 250
+                },
+                {
+                  "Image": 141745478,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": true,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "Arrow penetration"
+                    ],
+                    "Attributes": {
+                      "BurnDamage": 2,
+                      "BurnTick": 1,
+                      "EnemyBuff": 0.15,
+                      "ArrowType": "Normal",
+                      "MaxStun": 1,
+                      "MaxHits": 3,
+                      "MinStun": 0.25,
+                      "BurnTime": 3
+                    },
+                    "Cooldown": 3.2,
+                    "Range": 22,
+                    "Damage": 8
+                  },
+                  "Title": "Sharp Shooter",
+                  "Cost": 400
+                },
+                {
+                  "Image": 456573844,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": true,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "BurnDamage": 2,
+                      "BurnTick": 1,
+                      "EnemyBuff": 0.15,
+                      "ArrowType": "Normal",
+                      "MaxStun": 1,
+                      "MaxHits": 3,
+                      "MinStun": 0.25,
+                      "BurnTime": 3
+                    },
+                    "Range": 24,
+                    "Cooldown": 2,
+                    "Damage": 8
+                  },
+                  "Title": "Mechanical Bow",
+                  "Cost": 1000
+                },
+                {
+                  "Image": 106341823,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": true,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "More penetration"
+                    ],
+                    "Attributes": {
+                      "BurnDamage": 2,
+                      "BurnTick": 1,
+                      "EnemyBuff": 0.15,
+                      "ArrowType": "Normal",
+                      "MaxStun": 1,
+                      "MaxHits": 6,
+                      "MinStun": 0.25,
+                      "BurnTime": 3
+                    },
+                    "Range": 26,
+                    "Cooldown": 2,
+                    "Damage": 25
+                  },
+                  "Title": "Professional Archer",
+                  "Cost": 3500
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Attributes": {
+                  "type": "object",
+                  "title": "Attributes",
+                  "properties": {
+                    "BurnDamage": {
+                      "default": 2,
+                      "type": "number"
+                    },
+                    "MaxHits": {
+                      "default": 1,
+                      "type": "number"
+                    },
+                    "EnemyBuff": {
+                      "default": 0.15,
+                      "type": "number"
+                    },
+                    "ArrowType": {
+                      "default": "Normal",
+                      "type": "string"
+                    },
+                    "MaxStun": {
+                      "default": 1,
+                      "type": "number"
+                    },
+                    "BurnTick": {
+                      "default": 1,
+                      "type": "number"
+                    },
+                    "MinStun": {
+                      "default": 0.25,
+                      "type": "number"
+                    },
+                    "BurnTime": {
+                      "default": 3,
+                      "type": "number"
+                    }
+                  }
+                },
+                "Price": {
+                  "default": 400,
+                  "type": "number"
+                },
+                "Range": {
+                  "default": 20,
+                  "type": "number"
+                },
+                "Cooldown": {
+                  "default": 4,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 3,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

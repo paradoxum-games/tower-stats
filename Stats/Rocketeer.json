@@ -1,0 +1,69 @@
+{
+  "Rocketeer": {
+    "Default": {
+      "Defaults": {
+        "Attributes": {
+          "ExplosionRadius": 4
+        },
+        "Detections": {
+          "Flying": false,
+          "Hidden": false,
+          "Lead": true
+        },
+        "Cooldown": 6,
+        "Price": 850,
+        "Limit": 8,
+        "Range": 16,
+        "Damage": 8
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Cooldown": 5
+          },
+          "Image": 5523197925.0,
+          "Title": "Faster Reloading",
+          "Cost": 350
+        },
+        {
+          "Stats": {
+            "Range": 20
+          },
+          "Image": 5523199083.0,
+          "Title": "Aiming Practice",
+          "Cost": 600
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "ExplosionRadius": 5
+            },
+            "Cooldown": 4.5,
+            "Extras": [
+              "Larger explosion"
+            ],
+            "Damage": 20
+          },
+          "Image": 5523200004.0,
+          "Title": "Explosive Risks",
+          "Cost": 2800
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "ExplosionRadius": 6
+            },
+            "Range": 28,
+            "Extras": [
+              "Larger explosion"
+            ],
+            "Damage": 40
+          },
+          "Image": 5523202707.0,
+          "Title": "Artillery Cannon",
+          "Cost": 7500
+        }
+      ]
+    }
+  }
+}

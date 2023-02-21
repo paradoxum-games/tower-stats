@@ -1,0 +1,80 @@
+{
+  "Slasher": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Attributes": {
+          "MaxHits": 3,
+          "KnifeAngles": [
+            0
+          ],
+          "KnifeCooldown": 4,
+          "KnifeThrow": false
+        },
+        "Price": 400,
+        "Cooldown": 1,
+        "Range": 5,
+        "Damage": 3
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Cooldown": 0.8,
+            "Damage": 4
+          },
+          "Image": 4157646701.0,
+          "Title": "Thinner Blade",
+          "Cost": 250
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "KnifeThrow": true
+            },
+            "Detections": {
+              "Hidden": true
+            },
+            "Range": 6,
+            "Extras": [
+              "Knife throw"
+            ]
+          },
+          "Image": 4157647195.0,
+          "Title": "Blood Sense",
+          "Cost": 300
+        },
+        {
+          "Stats": {
+            "Cooldown": 0.5,
+            "Damage": 6
+          },
+          "Image": 4157647659.0,
+          "Title": "Dual Wield",
+          "Cost": 1350
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "KnifeAngles": [
+                0,
+                15,
+                -15
+              ]
+            },
+            "Cooldown": 0.35,
+            "Extras": [
+              "Triple knife throw"
+            ],
+            "Damage": 10
+          },
+          "Image": 4157648765.0,
+          "Title": "Deadly Assassin",
+          "Cost": 3500
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "Pyromancer": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Flying": false,
+          "Hidden": false,
+          "Lead": true
+        },
+        "Attributes": {
+          "BurnDamage": 1,
+          "EnemyBuff": 0,
+          "DefenseMelt": 0,
+          "TurningSpeed": 4,
+          "BurnTick": 1,
+          "Width": 0,
+          "BurnTime": 3
+        },
+        "Price": 650,
+        "Cooldown": 0.25,
+        "Range": 7,
+        "Damage": 0
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 9,
+            "Extras": [
+              "More range",
+              "Bigger flames"
+            ],
+            "Attributes": {
+              "Width": 1.5
+            }
+          },
+          "Image": 3280081327.0,
+          "Title": "Improved Handling",
+          "Cost": 350
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "DefenseMelt": 5
+            },
+            "Extras": [
+              "Defense melting"
+            ],
+            "Damage": 1
+          },
+          "Image": 3304823121.0,
+          "Title": "Fire Fighting",
+          "Cost": 500
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "More burn damage",
+              "Longer burn time"
+            ],
+            "Attributes": {
+              "BurnDamage": 2,
+              "BurnTime": 5
+            }
+          },
+          "Image": 3304823988.0,
+          "Title": "Fire Hazard",
+          "Cost": 1200
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "BurnDamage": 3,
+              "BurnTick": 0.5,
+              "Width": 1.75,
+              "BurnTime": 6
+            },
+            "Extras": [
+              "More fire damage",
+              "Longer burn time",
+              "Double tick speed"
+            ],
+            "Damage": 2
+          },
+          "Image": 3304824958.0,
+          "Title": "Napalm Thrower",
+          "Cost": 3800
+        },
+        {
+          "Stats": {
+            "Range": 11,
+            "Extras": [
+              "More burn damage",
+              "Longer burn time",
+              "More defense melting",
+              "Bigger flames"
+            ],
+            "Attributes": {
+              "BurnDamage": 8,
+              "DefenseMelt": 10,
+              "Width": 2.5,
+              "BurnTime": 8
+            }
+          },
+          "Image": 3304825822.0,
+          "Title": "Pyromaniac",
+          "Cost": 7500
+        }
+      ]
+    },
+    "Golden": {
+      "Upgrades": [
+        {
+          "Stats": {
+            "Extras": [
+              "More range",
+              "Bigger flames"
+            ],
+            "Range": 11
+          },
+          "Image": 3280081327.0,
+          "Title": "Improved Handling",
+          "Cost": 350
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "DefenseMelt": 5
+            },
+            "Extras": [
+              "Defense melting"
+            ],
+            "Damage": 2
+          },
+          "Image": 3304823121.0,
+          "Title": "Fire Fighting",
+          "Cost": 500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "BurnDamage": 2,
+              "BurnTime": 5
+            },
+            "Extras": [
+              "More burn damage",
+              "Longer burn time"
+            ],
+            "Damage": 3
+          },
+          "Image": 3304823988.0,
+          "Title": "Fire Hazard",
+          "Cost": 1200
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "BurnDamage": 4,
+              "BurnTick": 0.5,
+              "Width": 1.75,
+              "BurnTime": 6
+            },
+            "Range": 13,
+            "Extras": [
+              "More fire damage",
+              "Longer burn time",
+              "Double tick speed"
+            ],
+            "Damage": 4
+          },
+          "Image": 3304824958.0,
+          "Title": "Napalm Thrower",
+          "Cost": 3800
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "BurnDamage": 10,
+              "DefenseMelt": 10,
+              "Width": 2.5,
+              "BurnTime": 8
+            },
+            "Extras": [
+              "More burn damage",
+              "Longer burn time",
+              "More defense melting",
+              "Bigger flames"
+            ],
+            "Damage": 6
+          },
+          "Image": 3304825822.0,
+          "Title": "Pyromaniac",
+          "Cost": 7500
+        }
+      ],
+      "Defaults": {
+        "Detections": {
+          "Flying": false,
+          "Hidden": true,
+          "Lead": true
+        },
+        "Attributes": {
+          "BurnDamage": 1,
+          "EnemyBuff": 0,
+          "DefenseMelt": 0,
+          "TurningSpeed": 4,
+          "BurnTick": 1,
+          "Width": 0,
+          "BurnTime": 3
+        },
+        "Price": 800,
+        "Cooldown": 0.25,
+        "Range": 7,
+        "Damage": 1
+      }
+    }
+  }
+}

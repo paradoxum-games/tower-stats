@@ -1,0 +1,317 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "War Machine": {
+      "type": "object",
+      "title": "War Machine",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {
+                          "MissileTime": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "DamageBuff": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "ExplosionRadius": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "Spread": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "ExplosionDamage": {
+                            "type": "number",
+                            "default": 0
+                          }
+                        }
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 4989372339.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "MissileTime": 5,
+                      "DamageBuff": 0,
+                      "ExplosionRadius": 5,
+                      "Spread": 10,
+                      "ExplosionDamage": 20
+                    },
+                    "Cooldown": 0.1,
+                    "Range": 18,
+                    "Damage": 1
+                  },
+                  "Title": "IMPROVED HANDLING",
+                  "Cost": 250
+                },
+                {
+                  "Image": 4989372568.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "Missile",
+                      "20 damage",
+                      "5 sec reload"
+                    ],
+                    "Attributes": {
+                      "MissileTime": 5,
+                      "DamageBuff": 0,
+                      "ExplosionRadius": 5,
+                      "Spread": 10,
+                      "ExplosionDamage": 20
+                    },
+                    "Range": 22,
+                    "Cooldown": 0.1,
+                    "Damage": 2
+                  },
+                  "Title": "STARK MISSILE",
+                  "Cost": 650
+                },
+                {
+                  "Image": 3584258139.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "Nearby troops get 10% DMG buff"
+                    ],
+                    "Attributes": {
+                      "MissileTime": 5,
+                      "DamageBuff": 10,
+                      "ExplosionRadius": 5,
+                      "Spread": 10,
+                      "ExplosionDamage": 20
+                    },
+                    "Cooldown": 0.1,
+                    "Range": 22,
+                    "Damage": 4
+                  },
+                  "Title": "EPIC ARMOR PLATING",
+                  "Cost": 5000
+                },
+                {
+                  "Image": 4989373124.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "Quad Missile Launcher",
+                      "25 damage",
+                      "Bigger boom"
+                    ],
+                    "Attributes": {
+                      "MissileTime": 5,
+                      "DamageBuff": 10,
+                      "ExplosionRadius": 6,
+                      "Spread": 10,
+                      "ExplosionDamage": 25
+                    },
+                    "Range": 24,
+                    "Cooldown": 0.1,
+                    "Damage": 10
+                  },
+                  "Title": "ULTRA CHARGED BODY ARMOR",
+                  "Cost": 12500
+                },
+                {
+                  "Image": 4989373460.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "Faster missile reloading",
+                      "Nearby troops get 20% DMG buff"
+                    ],
+                    "Attributes": {
+                      "MissileTime": 4,
+                      "DamageBuff": 20,
+                      "ExplosionRadius": 6,
+                      "Spread": 10,
+                      "ExplosionDamage": 25
+                    },
+                    "Range": 26,
+                    "Cooldown": 0.1,
+                    "Damage": 18
+                  },
+                  "Title": "To The Void and Back",
+                  "Cost": 75000
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Attributes": {
+                  "type": "object",
+                  "title": "Attributes",
+                  "properties": {
+                    "MissileTime": {
+                      "default": 5,
+                      "type": "number"
+                    },
+                    "DamageBuff": {
+                      "default": 0,
+                      "type": "number"
+                    },
+                    "ExplosionRadius": {
+                      "default": 5,
+                      "type": "number"
+                    },
+                    "Spread": {
+                      "default": 10,
+                      "type": "number"
+                    },
+                    "ExplosionDamage": {
+                      "default": 20,
+                      "type": "number"
+                    }
+                  }
+                },
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Range": {
+                  "default": 12,
+                  "type": "number"
+                },
+                "Price": {
+                  "default": 2000,
+                  "type": "number"
+                },
+                "Limit": {
+                  "default": 10,
+                  "type": "number"
+                },
+                "Cooldown": {
+                  "default": 0.1,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 1,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

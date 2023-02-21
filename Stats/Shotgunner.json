@@ -1,0 +1,77 @@
+{
+  "Shotgunner": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Attributes": {
+          "Spread": 80,
+          "ShotSize": 6
+        },
+        "Price": 400,
+        "Cooldown": 2.5,
+        "Range": 7,
+        "Damage": 2
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Cooldown": 1.8
+          },
+          "Image": 5587697635.0,
+          "Title": "Faster Reloading",
+          "Cost": 200
+        },
+        {
+          "Stats": {
+            "Detections": {
+              "Hidden": true
+            },
+            "Extras": [
+              "8 Shots",
+              "Tighter Spread"
+            ],
+            "Attributes": {
+              "Spread": 60,
+              "ShotSize": 8
+            },
+            "Range": 9,
+            "Damage": 3
+          },
+          "Image": 5587697884.0,
+          "Title": "Better Handling",
+          "Cost": 1250
+        },
+        {
+          "Stats": {
+            "Cooldown": 1.5,
+            "Damage": 5
+          },
+          "Image": 5587698104.0,
+          "Title": "Slug Madness",
+          "Cost": 3500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "Spread": 50,
+              "ShotSize": 12
+            },
+            "Extras": [
+              "12 Shots",
+              "Tighter Spread"
+            ],
+            "Cooldown": 1,
+            "Range": 11,
+            "Damage": 6
+          },
+          "Image": 5587698246.0,
+          "Title": "Tactical Blowback",
+          "Cost": 10000
+        }
+      ]
+    }
+  }
+}

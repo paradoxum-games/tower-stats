@@ -1,0 +1,74 @@
+{
+  "Mecha Base": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": false
+        },
+        "Limit": 4,
+        "Cooldown": 0.5,
+        "Price": 5000,
+        "Attributes": {
+          "SpawnTime": 60,
+          "UnitToSend": "Mark1"
+        },
+        "Range": 3,
+        "Damage": 0
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Attributes": {
+              "SpawnTime": 40,
+              "UnitToSend": "Mark1Rocket"
+            }
+          },
+          "Image": 4119547116.0,
+          "Title": "Mechanics",
+          "Cost": 400
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "UnitToSend": "Mark2"
+            }
+          },
+          "Image": 4119547593.0,
+          "Title": "Missile Launcher",
+          "Cost": 900
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "UnitToSend": "Mark3"
+            }
+          },
+          "Image": 4119548000.0,
+          "Title": "Minigun Mech",
+          "Cost": 2400
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "UnitToSend": "Mark4"
+            }
+          },
+          "Image": 4119548431.0,
+          "Title": "Destroyer Mech",
+          "Cost": 4500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "UnitToSend": "Mark5"
+            }
+          },
+          "Image": 4119548907.0,
+          "Title": "Void Walker",
+          "Cost": 6500
+        }
+      ]
+    }
+  }
+}

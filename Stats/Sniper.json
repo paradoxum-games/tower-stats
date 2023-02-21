@@ -1,0 +1,61 @@
+{
+  "Sniper": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Hidden": false,
+          "Flying": true
+        },
+        "Price": 300,
+        "Cooldown": 4.5,
+        "Range": 26,
+        "Damage": 4
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Cooldown": 4,
+            "Damage": 6
+          },
+          "Image": 3280081327.0,
+          "Title": "Faster Reloading",
+          "Cost": 150
+        },
+        {
+          "Stats": {
+            "Detections": {
+              "Hidden": true
+            },
+            "Damage": 12
+          },
+          "Image": 3280367022.0,
+          "Title": "Geared Up",
+          "Cost": 500
+        },
+        {
+          "Stats": {
+            "Detections": {
+              "Lead": true
+            },
+            "Cooldown": 3.6,
+            "Range": 28,
+            "Damage": 20
+          },
+          "Image": 3280367963.0,
+          "Title": "Frontlines Sniping",
+          "Cost": 1500
+        },
+        {
+          "Stats": {
+            "Cooldown": 2.5,
+            "Range": 34,
+            "Damage": 35
+          },
+          "Image": 3280368786.0,
+          "Title": "Spec Ops",
+          "Cost": 4500
+        }
+      ]
+    }
+  }
+}

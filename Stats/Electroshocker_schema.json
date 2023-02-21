@@ -1,0 +1,312 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "Electroshocker": {
+      "type": "object",
+      "title": "Electroshocker",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {
+                          "MinStun": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "MaxStun": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "MaxHits": {
+                            "type": "number",
+                            "default": 0,
+                            "description": "How many enemies the attack can pierce"
+                          },
+                          "DefenseMelt": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "ChainRange": {
+                            "type": "number",
+                            "default": 0
+                          }
+                        }
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 3280081327.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": true
+                    },
+                    "Attributes": {
+                      "MinStun": 0.25,
+                      "MaxStun": 1,
+                      "MaxHits": 1,
+                      "DefenseMelt": 0,
+                      "ChainRange": 5
+                    },
+                    "Cooldown": 3,
+                    "Range": 9,
+                    "Damage": 0
+                  },
+                  "Title": "Improved Handling",
+                  "Cost": 250
+                },
+                {
+                  "Image": 4675534331.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": true
+                    },
+                    "Attributes": {
+                      "MinStun": 0.25,
+                      "MaxStun": 1,
+                      "MaxHits": 1,
+                      "DefenseMelt": 0,
+                      "ChainRange": 5
+                    },
+                    "Cooldown": 3,
+                    "Range": 10,
+                    "Damage": 0
+                  },
+                  "Title": "Outside Support",
+                  "Cost": 400
+                },
+                {
+                  "Image": 4675521746.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "Longer stuns"
+                    ],
+                    "Attributes": {
+                      "MinStun": 0.25,
+                      "MaxStun": 1.5,
+                      "MaxHits": 1,
+                      "DefenseMelt": 0,
+                      "ChainRange": 5
+                    },
+                    "Cooldown": 3,
+                    "Range": 10,
+                    "Damage": 2
+                  },
+                  "Title": "Faraday's Vest",
+                  "Cost": 1000
+                },
+                {
+                  "Image": 4675504505.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "Increased chaining"
+                    ],
+                    "Attributes": {
+                      "MinStun": 0.25,
+                      "MaxStun": 1.5,
+                      "MaxHits": 3,
+                      "DefenseMelt": 0,
+                      "ChainRange": 5
+                    },
+                    "Cooldown": 2,
+                    "Range": 10,
+                    "Damage": 4
+                  },
+                  "Title": "Lightning Cannon",
+                  "Cost": 3000
+                },
+                {
+                  "Image": 4675504640.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": true
+                    },
+                    "Extras": [
+                      "Inceased chaining",
+                      "Longer stuns",
+                      "Reduce defense"
+                    ],
+                    "Attributes": {
+                      "DefenseMelt": 1,
+                      "MaxStun": 2,
+                      "MaxHits": 5,
+                      "MinStun": 0.25,
+                      "ChainRange": 5
+                    },
+                    "Cooldown": 2,
+                    "Range": 12,
+                    "Damage": 4
+                  },
+                  "Title": "Shock Force",
+                  "Cost": 6500
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Limit": {
+                  "default": 4,
+                  "type": "number"
+                },
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Range": {
+                  "default": 7,
+                  "type": "number"
+                },
+                "Price": {
+                  "default": 325,
+                  "type": "number"
+                },
+                "Attributes": {
+                  "type": "object",
+                  "title": "Attributes",
+                  "properties": {
+                    "MinStun": {
+                      "default": 0.25,
+                      "type": "number"
+                    },
+                    "MaxStun": {
+                      "default": 1,
+                      "type": "number"
+                    },
+                    "MaxHits": {
+                      "default": 1,
+                      "type": "number"
+                    },
+                    "DefenseMelt": {
+                      "default": 0,
+                      "type": "number"
+                    },
+                    "ChainRange": {
+                      "default": 5,
+                      "type": "number"
+                    }
+                  }
+                },
+                "Cooldown": {
+                  "default": 3,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 0,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

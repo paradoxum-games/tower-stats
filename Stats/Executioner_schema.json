@@ -1,0 +1,281 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "Executioner": {
+      "type": "object",
+      "title": "Executioner",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {
+                          "MaxHits": {
+                            "type": "number",
+                            "default": 0,
+                            "description": "How many enemies the attack can pierce"
+                          },
+                          "MaxBounce": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "TickRate": {
+                            "type": "number",
+                            "default": 0
+                          }
+                        }
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 129697807,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": true,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "MaxHits": 3,
+                      "MaxBounce": 3,
+                      "TickRate": 0.15
+                    },
+                    "Range": 14,
+                    "Cooldown": 2,
+                    "Damage": 4
+                  },
+                  "Title": "Improved Throwing",
+                  "Cost": 250
+                },
+                {
+                  "Image": 542098553,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": true,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "MaxHits": 3,
+                      "MaxBounce": 3,
+                      "TickRate": 0.15
+                    },
+                    "Cooldown": 2,
+                    "Range": 14,
+                    "Damage": 8
+                  },
+                  "Title": "Double Head Axe",
+                  "Cost": 750
+                },
+                {
+                  "Image": 6426220009.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": true,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "Bounces: 5"
+                    ],
+                    "Attributes": {
+                      "MaxHits": 3,
+                      "MaxBounce": 5,
+                      "TickRate": 0.15
+                    },
+                    "Range": 18,
+                    "Cooldown": 2,
+                    "Damage": 15
+                  },
+                  "Title": "Blood Seeking",
+                  "Cost": 2500
+                },
+                {
+                  "Image": 27386833,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": true,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "MaxHits": 3,
+                      "MaxBounce": 5,
+                      "TickRate": 0.15
+                    },
+                    "Cooldown": 2,
+                    "Range": 18,
+                    "Damage": 30
+                  },
+                  "Title": "Tactical Ops",
+                  "Cost": 6000
+                },
+                {
+                  "Image": 143769378,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": true,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "Bounces: 7"
+                    ],
+                    "Attributes": {
+                      "MaxHits": 3,
+                      "MaxBounce": 7,
+                      "TickRate": 0.15
+                    },
+                    "Cooldown": 2,
+                    "Range": 18,
+                    "Damage": 80
+                  },
+                  "Title": "Head Chopping",
+                  "Cost": 12500
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Limit": {
+                  "default": 8,
+                  "type": "number"
+                },
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Range": {
+                  "default": 14,
+                  "type": "number"
+                },
+                "Price": {
+                  "default": 800,
+                  "type": "number"
+                },
+                "Attributes": {
+                  "type": "object",
+                  "title": "Attributes",
+                  "properties": {
+                    "MaxHits": {
+                      "default": 3,
+                      "type": "number"
+                    },
+                    "MaxBounce": {
+                      "default": 3,
+                      "type": "number"
+                    },
+                    "TickRate": {
+                      "default": 0.15,
+                      "type": "number"
+                    }
+                  }
+                },
+                "Cooldown": {
+                  "default": 3,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 4,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "Medic": {
+      "type": "object",
+      "title": "Medic",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {
+                          "Healing": {
+                            "type": "number",
+                            "default": 0
+                          }
+                        }
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 4119547116.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "Healing": 5
+                    },
+                    "Range": 11,
+                    "Cooldown": 1,
+                    "Damage": 3
+                  },
+                  "Title": "Medical Precautions",
+                  "Cost": 400
+                },
+                {
+                  "Image": 4119547593.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "Increased healings"
+                    ],
+                    "Attributes": {
+                      "Healing": 5
+                    },
+                    "Range": 12,
+                    "Cooldown": 0.8,
+                    "Damage": 6
+                  },
+                  "Title": "Prescribed Vitamins",
+                  "Cost": 900
+                },
+                {
+                  "Image": 4119548000.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "Healing": 5
+                    },
+                    "Range": 15,
+                    "Cooldown": 0.8,
+                    "Damage": 6
+                  },
+                  "Title": "BIG BRAIN",
+                  "Cost": 2400
+                },
+                {
+                  "Image": 4119548431.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Extras": [
+                      "Increased healing"
+                    ],
+                    "Attributes": {
+                      "Healing": 5
+                    },
+                    "Range": 16,
+                    "Cooldown": 0.65,
+                    "Damage": 8
+                  },
+                  "Title": "Medical Pack",
+                  "Cost": 4500
+                },
+                {
+                  "Image": 4119548907.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "Healing": 5
+                    },
+                    "Cooldown": 0.3,
+                    "Range": 18,
+                    "Damage": 8
+                  },
+                  "Title": "Goddess of Healing",
+                  "Cost": 6500
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Attributes": {
+                  "type": "object",
+                  "title": "Attributes",
+                  "properties": {
+                    "Healing": {
+                      "default": 5,
+                      "type": "number"
+                    }
+                  }
+                },
+                "Price": {
+                  "default": 900,
+                  "type": "number"
+                },
+                "Range": {
+                  "default": 10,
+                  "type": "number"
+                },
+                "Cooldown": {
+                  "default": 1,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 2,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

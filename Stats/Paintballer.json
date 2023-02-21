@@ -1,0 +1,82 @@
+{
+  "Paintballer": {
+    "Default": {
+      "Defaults": {
+        "Detections": {
+          "Flying": false,
+          "Hidden": false,
+          "Lead": true
+        },
+        "Attributes": {
+          "ExplosiveRange": 2
+        },
+        "Price": 400,
+        "Cooldown": 2,
+        "Range": 11,
+        "Damage": 2
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 13
+          },
+          "Image": 3280081327.0,
+          "Title": "Paintball Gear",
+          "Cost": 100
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "ExplosiveRange": 3
+            },
+            "Extras": [
+              "Larger splash"
+            ],
+            "Damage": 3
+          },
+          "Image": 3319083300.0,
+          "Title": "Shoulder Pads",
+          "Cost": 500
+        },
+        {
+          "Stats": {
+            "Range": 15,
+            "Cooldown": 1.5
+          },
+          "Image": 3280082028.0,
+          "Title": "Double Barrel Gun",
+          "Cost": 700
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "ExplosiveRange": 4
+            },
+            "Cooldown": 1,
+            "Extras": [
+              "Larger splash"
+            ],
+            "Damage": 5
+          },
+          "Image": 3319084508.0,
+          "Title": "Competitive Gear",
+          "Cost": 2500
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "ExplosiveRange": 5
+            },
+            "Extras": [
+              "Larger splash"
+            ],
+            "Damage": 10
+          },
+          "Image": 3319085582.0,
+          "Title": "Paintball Champion",
+          "Cost": 3500
+        }
+      ]
+    }
+  }
+}

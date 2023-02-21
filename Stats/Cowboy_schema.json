@@ -1,0 +1,540 @@
+{
+  "type": "object",
+  "title": "Towers",
+  "properties": {
+    "Cowboy": {
+      "type": "object",
+      "title": "Cowboy",
+      "properties": {
+        "Default": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Default Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {
+                          "MaxAmmo": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "SpinDuration": {
+                            "type": "number",
+                            "default": 0
+                          }
+                        }
+                      },
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Income": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 4999425200.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Income": 50,
+                    "Range": 16,
+                    "Attributes": {
+                      "MaxAmmo": 6,
+                      "SpinDuration": 1.7
+                    },
+                    "Cooldown": 1,
+                    "Damage": 4
+                  },
+                  "Title": "Lucky Shot",
+                  "Cost": 300
+                },
+                {
+                  "Image": 5523233366.0,
+                  "Stats": {
+                    "Extras": [
+                      "Spin: 1.7 → 1.3 secs"
+                    ],
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Income": 50,
+                    "Range": 18,
+                    "Attributes": {
+                      "MaxAmmo": 6,
+                      "SpinDuration": 1.3
+                    },
+                    "Cooldown": 0.6,
+                    "Damage": 8
+                  },
+                  "Title": "Faster Instincts",
+                  "Cost": 1650
+                },
+                {
+                  "Image": 5523231844.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Income": 50,
+                    "Cooldown": 0.8,
+                    "Attributes": {
+                      "MaxAmmo": 6,
+                      "SpinDuration": 1.3
+                    },
+                    "Range": 14,
+                    "Damage": 8
+                  },
+                  "Title": "Steady Hand",
+                  "Cost": 250
+                },
+                {
+                  "Image": 5523234030.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Income": 80,
+                    "Cooldown": 0.35,
+                    "Attributes": {
+                      "MaxAmmo": 6,
+                      "SpinDuration": 1.3
+                    },
+                    "Range": 14,
+                    "Damage": 10
+                  },
+                  "Title": "Double Tap",
+                  "Cost": 4000
+                },
+                {
+                  "Image": 5523234990.0,
+                  "Stats": {
+                    "Extras": [
+                      "Spin: 1.3 → 1 secs"
+                    ],
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Attributes": {
+                      "MaxAmmo": 6,
+                      "SpinDuration": 1
+                    },
+                    "Income": 100,
+                    "Cooldown": 0.35,
+                    "Range": 14,
+                    "Damage": 20
+                  },
+                  "Title": "Outlawed",
+                  "Cost": 7500
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Income": {
+                  "default": 25,
+                  "type": "number"
+                },
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Range": {
+                  "default": 11,
+                  "type": "number"
+                },
+                "Price": {
+                  "default": 550,
+                  "type": "number"
+                },
+                "Attributes": {
+                  "type": "object",
+                  "title": "Attributes",
+                  "properties": {
+                    "MaxAmmo": {
+                      "default": 6,
+                      "type": "number"
+                    },
+                    "SpinDuration": {
+                      "default": 1.7,
+                      "type": "number"
+                    }
+                  }
+                },
+                "Cooldown": {
+                  "default": 1,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 2,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        },
+        "Golden": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Golden Stats",
+          "properties": {
+            "Upgrades": {
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "title": "Upgrade",
+                "properties": {
+                  "Image": {
+                    "default": 0,
+                    "type": "integer"
+                  },
+                  "Stats": {
+                    "type": "object",
+                    "title": "Stats",
+                    "properties": {
+                      "Attributes": {
+                        "type": "object",
+                        "title": "Attributes",
+                        "properties": {
+                          "MaxAmmo": {
+                            "type": "number",
+                            "default": 0
+                          },
+                          "SpinDuration": {
+                            "type": "number",
+                            "default": 0
+                          }
+                        }
+                      },
+                      "Extras": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Extras",
+                        "description": "Text bullet points to display in the upgrade menu"
+                      },
+                      "Income": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Detections": {
+                        "additionalProperties": false,
+                        "type": "object",
+                        "title": "Detections",
+                        "properties": {
+                          "Flying": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Hidden": {
+                            "default": false,
+                            "type": "boolean"
+                          },
+                          "Lead": {
+                            "default": false,
+                            "type": "boolean"
+                          }
+                        }
+                      },
+                      "Cooldown": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Range": {
+                        "default": 0,
+                        "type": "number"
+                      },
+                      "Damage": {
+                        "default": 0,
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "Title": {
+                    "default": "",
+                    "type": "string"
+                  },
+                  "Cost": {
+                    "default": 0,
+                    "type": "number"
+                  }
+                }
+              },
+              "type": "array",
+              "title": "Upgrades",
+              "additionalProperties": false,
+              "default": [
+                {
+                  "Image": 5523231844.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Income": 35,
+                    "Cooldown": 0.8,
+                    "Attributes": {
+                      "MaxAmmo": 6,
+                      "SpinDuration": 1.7
+                    },
+                    "Range": 15,
+                    "Damage": 3
+                  },
+                  "Title": "Steady Hand",
+                  "Cost": 300
+                },
+                {
+                  "Image": 4999425200.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": false,
+                      "Lead": false
+                    },
+                    "Income": 65,
+                    "Range": 18,
+                    "Attributes": {
+                      "MaxAmmo": 6,
+                      "SpinDuration": 1.7
+                    },
+                    "Cooldown": 0.8,
+                    "Damage": 5
+                  },
+                  "Title": "Lucky Shot",
+                  "Cost": 450
+                },
+                {
+                  "Image": 5523233366.0,
+                  "Stats": {
+                    "Extras": [
+                      "Spin: 1.7 → 1.3 secs"
+                    ],
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Income": 65,
+                    "Range": 20,
+                    "Attributes": {
+                      "MaxAmmo": 6,
+                      "SpinDuration": 1.3
+                    },
+                    "Cooldown": 0.6,
+                    "Damage": 12
+                  },
+                  "Title": "Faster Instincts",
+                  "Cost": 2250
+                },
+                {
+                  "Image": 5523234030.0,
+                  "Stats": {
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Income": 90,
+                    "Cooldown": 0.35,
+                    "Attributes": {
+                      "MaxAmmo": 6,
+                      "SpinDuration": 1.3
+                    },
+                    "Range": 20,
+                    "Damage": 15
+                  },
+                  "Title": "Double Tap",
+                  "Cost": 5500
+                },
+                {
+                  "Image": 5523234990.0,
+                  "Stats": {
+                    "Extras": [
+                      "Spin: 1.3 → 1 secs"
+                    ],
+                    "Detections": {
+                      "Flying": false,
+                      "Hidden": true,
+                      "Lead": false
+                    },
+                    "Income": 120,
+                    "Attributes": {
+                      "MaxAmmo": 6,
+                      "SpinDuration": 1
+                    },
+                    "Cooldown": 0.35,
+                    "Range": 20,
+                    "Damage": 30
+                  },
+                  "Title": "Outlawed",
+                  "Cost": 12000
+                }
+              ],
+              "description": "Stats for each upgrade"
+            },
+            "Defaults": {
+              "type": "object",
+              "title": "Defaults",
+              "properties": {
+                "Income": {
+                  "default": 35,
+                  "type": "number"
+                },
+                "Detections": {
+                  "additionalProperties": false,
+                  "type": "object",
+                  "title": "Detections",
+                  "properties": {
+                    "Flying": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Hidden": {
+                      "default": false,
+                      "type": "boolean"
+                    },
+                    "Lead": {
+                      "default": false,
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Range": {
+                  "default": 13,
+                  "type": "number"
+                },
+                "Price": {
+                  "default": 700,
+                  "type": "number"
+                },
+                "Attributes": {
+                  "type": "object",
+                  "title": "Attributes",
+                  "properties": {
+                    "MaxAmmo": {
+                      "default": 6,
+                      "type": "number"
+                    },
+                    "SpinDuration": {
+                      "default": 1.7,
+                      "type": "number"
+                    }
+                  }
+                },
+                "Cooldown": {
+                  "default": 1,
+                  "type": "number"
+                },
+                "Damage": {
+                  "default": 3,
+                  "type": "number"
+                }
+              },
+              "additionalProperties": false,
+              "description": "The default stats for the tower"
+            }
+          }
+        }
+      }
+    }
+  }
+}

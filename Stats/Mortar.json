@@ -1,0 +1,80 @@
+{
+  "Mortar": {
+    "Default": {
+      "Defaults": {
+        "Attributes": {
+          "ExplosionRadius": 4
+        },
+        "Detections": {
+          "Flying": true,
+          "Hidden": false,
+          "Lead": true
+        },
+        "Cooldown": 5,
+        "Price": 400,
+        "Limit": 5,
+        "Range": 22,
+        "Damage": 5
+      },
+      "Upgrades": [
+        {
+          "Stats": {
+            "Range": 25
+          },
+          "Image": 4538447265.0,
+          "Title": "Improved Handling",
+          "Cost": 250
+        },
+        {
+          "Stats": {
+            "Cooldown": 4.5
+          },
+          "Image": 4538447347.0,
+          "Title": "Quick Reloading",
+          "Cost": 400
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "ExplosionRadius": 5
+            },
+            "Damage": 15
+          },
+          "Image": 4538447424.0,
+          "Title": "Bigger Cannon",
+          "Cost": 3000
+        },
+        {
+          "Stats": {
+            "Extras": [
+              "Larger explosion"
+            ],
+            "Attributes": {
+              "ExplosionRadius": 6
+            },
+            "Damage": 25
+          },
+          "Image": 4538447493.0,
+          "Title": "Stronger Shells",
+          "Cost": 7200
+        },
+        {
+          "Stats": {
+            "Attributes": {
+              "ExplosionRadius": 7
+            },
+            "Range": 30,
+            "Cooldown": 3,
+            "Extras": [
+              "Larger explosion"
+            ],
+            "Damage": 60
+          },
+          "Image": 4538447579.0,
+          "Title": "Nuclear Devastation",
+          "Cost": 12000
+        }
+      ]
+    }
+  }
+}

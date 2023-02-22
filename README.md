@@ -23,7 +23,7 @@ To edit existing stats, go to our [Stat Editor](https://paradoxum-games.github.i
 
 * Once you have edited a tower's stats to your liking, press the `Download Stats` button. This will download a [JSON](https://www.json.org/json-en.html) file of your edited stats.
 * Once you have your edited stats downloaded, join the [Stat Editor Game](https://www.roblox.com/games/12508011272/Stat-Editor) and enter a match.
-* Once in a match, open the console *(~ key for PC, /cmdr in chat for mobile)* and type the following: `set_stats ""`. Copy the JSON file you downloaded between the quotes and press `Enter`. If successful you should see `Overriden stats for specified towers.` in the console output.
+* Once in a match, open the console *(~ key for PC, /cmdr in chat for mobile)* and type the following: `set_stats ""`. Copy and paste the JSON file you downloaded between the quotes and press `Enter`. If successful you should see `Overriden stats for specified towers.` in the console output.
 * Running the stats command with different towers will accumulate changes, this means that you can run `set_stats` once with Soldier stats, and again with Scout stats.
 
 ## 📘 Saving And Loading

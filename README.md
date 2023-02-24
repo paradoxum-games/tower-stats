@@ -32,6 +32,11 @@ To edit existing stats, go to our [Stat Editor](https://paradoxum-games.github.i
 * When you want to load previously saved stats, you can use the `load_stats` command with the same name you saved the stats to.
 * If you wish to export all stats combined, you can use the `export_stats` command. This will open a text box with your exported stats that you can copy paste from. It's highly recommended you export from this menu before sharing combined stats in the discord.
 
+Here's an example of saving and loading:
+1. Loading in stats for all desired towers using the `set_stats` command
+2. Saving all stats combined by using `save_stats MyNewStats`
+3. Joining a new match and loading your previously saved stats using `load_stats MyNewStats`
+
 ## ⚠️ Gotchas And Warnings
 
 * Only one player's tower stat overrides will apply at a single time, if you apply a secondary stat change to a tower, it will override the previous changes!
